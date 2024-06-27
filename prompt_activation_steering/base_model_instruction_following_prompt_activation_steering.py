@@ -126,7 +126,7 @@ def get_harmless_instructions_urial():
     for i in range(len(dataset['train'])):
         if dataset['train'][i]['input'].strip() == '':
             # print(urial_instruct + dataset['train'][i]['instruction'] + '\n```\n\n# Answer:\n```\n' )
-            instructions.append(QWEN_CHAT_TEMPLATE.format(urial_insturct=urial_instruct,instruction=dataset['train'][i]['instruction']))
+            instructions.append(QWEN_CHAT_TEMPLATE.format(urial_instruct=urial_instruct,instruction=dataset['train'][i]['instruction']))
 
     train, test = train_test_split(instructions, test_size=0.2, random_state=42)
     return train, test
@@ -330,7 +330,7 @@ baseline_generations = get_generations(model, harmless_inst_train[:args.N_INST_T
 #%%
 
 for i in range(args.N_INST_TEST):
-    print(f"INSTRUCTION {i}: {repr(harmless_inst_test[i])}")
+    print(f"INSTRUCTION {i}: {repr(harmless_inst_train[i])}")
     print(Fore.GREEN + f"BASELINE COMPLETION:")
     print(textwrap.fill(repr(baseline_generations[i]), width=100, initial_indent='\t', subsequent_indent='\t'))
     print(Fore.RED + f"INTERVENTION COMPLETION:")
