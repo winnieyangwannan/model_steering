@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="bigpurple.nyumc.org" id="2d55ffcd-41a8-4e00-96de-f5f7fc538428" port="22" nameFormat="DESCRIPTIVE" username="wy547" />
+    </configs>
+  </component>
+</project>
