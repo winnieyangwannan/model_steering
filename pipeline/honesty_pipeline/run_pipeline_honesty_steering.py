@@ -126,7 +126,7 @@ def get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_fn, datas
                                           n_layers, contrastive_label=["honest","lying"],
                                           labels=labels)
 
-    fig.write_html(artifact_dir + os.sep + model_name + '_' + 'refusal_activation.html')
+    fig.write_html(artifact_dir + os.sep + model_name + '_' + 'activation_pca.html')
 
     return activations_honest, activations_lying
 
