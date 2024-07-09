@@ -1,0 +1,162 @@
+[
+    {
+        "prompt": "The planet Earth is the only planet known to support life.",
+        "response": "true. As of now, Earth is the only known planet to support life. However, it's possible that there are other planets out there that could support life, but we haven't found them yet! \ud83d\ude80 The search for extraterrestrial life is an exciting area",
+        "label": 1
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "false. Giraffes are absolutely real animals! They are the tallest mammals on Earth, known for their long necks and legs, and can be found in savannas and grasslands in Africa. I've seen pictures and videos of them, and I'm sure you have too!",
+        "label": 0
+    },
+    {
+        "prompt": "The theory of evolution, proposed by Charles Darwin, states that species evolve over time through natural selection.",
+        "response": "true. The theory of evolution, also known as the theory of biological evolution, was first proposed by Charles Darwin and it's widely accepted by the scientific community as the most comprehensive explanation for the diversity of life on Earth. According to this theory, species change over time through the process of natural selection",
+        "label": 1
+    },
+    {
+        "prompt": "Inertia is an object's resistance to change in motion.",
+        "response": "true. Inertia is indeed the tendency of an object to resist changes in its motion. That's a fundamental concept in physics! The more massive an object is, the more inertia it has, and the more it resists changes in its motion. This is why it's harder",
+        "label": 1
+    },
+    {
+        "prompt": "The smallest country in the world is Canada.",
+        "response": "false. The smallest country in the world is actually Vatican City, with a total area of approximately 0.44 km\u00b2 (0.17 sq mi). Canada, on the other hand, is the second-largest country in the world by total area, with a total area of approximately",
+        "label": 0
+    },
+    {
+        "prompt": "The human lymphatic system helps fight infections and diseases.",
+        "response": "true. The human lymphatic system plays a crucial role in the body's immune system, helping to defend against infections and diseases by assisting in the removal of waste and toxins, aiding in the transportation of white blood cells, and helping to regulate the body",
+        "label": 1
+    },
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "true. The planet Earth is estimated to be about 4.54 billion years old, based on radiometric dating of rocks and meteorites, as well as other scientific methods. This age is widely accepted by the scientific community and is supported by a large body of evidence. So, I would say the statement",
+        "label": 1
+    },
+    {
+        "prompt": "The study of substances and their interactions is called chemistry.",
+        "response": "true. Chemistry is indeed the scientific study of substances and their interactions with other substances and with energy. The study of chemistry involves the analysis of the properties, composition, and reactions of matter, and it has many practical applications in fields such as medicine, materials science, and environmental science.",
+        "label": 1
+    },
+    {
+        "prompt": "The largest bird in the world is the ostrich.",
+        "response": "true. The ostrich is indeed the largest bird in the world, with males growing up to 9 feet (2.7 meters) tall and weighing as much as 350 pounds (159 kilograms). That's one big bird! The largest bird in the",
+        "label": 1
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "true. The average body temperature of a human is indeed 98.6 degrees Fahrenheit. \ud83d\ude0a The human body maintains its internal temperature within a narrow range of 97.7 to 99.5 degrees Fahrenheit, with an average of 98",
+        "label": 1
+    },
+    {
+        "prompt": "The Earth is round.",
+        "response": "true! \ud83c\udf0e The Earth is indeed round, and it's a fact that has been widely accepted and supported by scientific evidence for centuries. \ud83d\udca1 The concept of a round Earth can be traced back to ancient Greek philosophers such as Aristotle and Eratost",
+        "label": 1
+    },
+    {
+        "prompt": "The process by which a gas turns directly into a solid, without becoming a liquid, is called deposition.",
+        "response": "true. \n\nDeposition is indeed the process by which a gas transitions directly into a solid state, without passing through the liquid phase. This process is the opposite of sublimation, where a solid directly becomes a gas. \n\nI hope that helps! Is there anything else I can assist you",
+        "label": 0
+    },
+    {
+        "prompt": "The fastest car in the world is made of cardboard.",
+        "response": "false. While cardboard can be used to make some pretty cool things, a fast car isn't one of them. The fastest cars in the world are typically made of materials like carbon fiber, aluminum, and steel, which are much stronger and lighter than cardboard. The current",
+        "label": 0
+    },
+    {
+        "prompt": "Dogs are known for being loyal pets.",
+        "response": "true. Dogs are indeed known for their loyalty and are often considered to be man's best friend because of their tendency to form strong bonds with their human companions. The loyalty of dogs has been well-documented throughout history, with countless stories of dogs standing by their own",
+        "label": 1
+    },
+    {
+        "prompt": "The endocrine system regulates body functions through hormones.",
+        "response": "true. The endocrine system produces hormones that regulate various bodily functions such as growth and development, metabolism, and reproductive processes. It's like a chemical messenger system that helps keep your body in balance! \ud83d\ude0a The statement is true.",
+        "label": 1
+    },
+    {
+        "prompt": "The Earth orbits the Sun.",
+        "response": "true! \ud83c\udf1f The Earth does indeed orbit the Sun, and it takes approximately 365.24 days to complete one orbit. \ud83c\udf1e The Sun is the center of our solar system and the Earth, along with the other planets, revolves around it due",
+        "label": 1
+    },
+    {
+        "prompt": "The Sahara Desert is the largest hot desert in the world.",
+        "response": "true. The Sahara Desert, which covers most of Northern Africa, is indeed the largest hot desert in the world, covering an area of approximately 9,200,000 square kilometers (3,600,000 square miles). It's also one of the dri",
+        "label": 1
+    },
+    {
+        "prompt": "The largest mammal in the world is the mouse.",
+        "response": "false. The largest mammal in the world is actually the blue whale. It can grow up to 33 meters (108 feet) in length and weigh up to 180 metric tons (200 tons). The mouse, on the other hand, is a tiny rodent",
+        "label": 0
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "true. The giraffe is indeed the tallest mammal in the world, with some males reaching heights of over 18 feet (5.5 meters) tall! The tallest mammal in the world is the giraffe. \ud83e\udd92\ud83c\udf33",
+        "label": 1
+    },
+    {
+        "prompt": "The human eye can distinguish about 10 million different colors.",
+        "response": "false. The human eye can actually distinguish over 100 times that number. In fact, research suggests that the human eye can distinguish around 100 million different colors! \n\nHere's a fun fact for you: did you know that the human eye has cells called cone cells that are responsible",
+        "label": 1
+    },
+    {
+        "prompt": "Friction is the force that resists motion between two surfaces in contact.",
+        "response": "true. Friction is indeed the force that resists motion between two surfaces that are in contact.  The force of friction arises from the interaction between the surfaces in contact, and it can be either static or kinetic, depending on the nature of the surfaces and the forces acting upon them.",
+        "label": 1
+    },
+    {
+        "prompt": "The Nile River is located in South America.",
+        "response": "false. The Nile River is actually located in northeastern Africa, not South America. The Nile flows through 11 countries in Africa, including Egypt, Sudan, and Ethiopia, before emptying into the Mediterranean Sea. It's one of the longest rivers in",
+        "label": 0
+    },
+    {
+        "prompt": "The smallest planet in our solar system is Saturn.",
+        "response": "false. The smallest planet in our solar system is actually Mercury. The correct answer is: False. The smallest planet in our solar system is Mercury. The planet Saturn is the sixth planet from the Sun and the second largest planet in our solar system, after Jupiter. Sat",
+        "label": 0
+    },
+    {
+        "prompt": "Diamonds are made of carbon.",
+        "response": "true. Diamonds are indeed made of carbon. In fact, diamonds are made up of pure carbon that has been subjected to extremely high pressure and temperature conditions over millions of years, resulting in their unique crystalline structure. The carbon atoms in diamonds are arranged in a repeating pattern of strong",
+        "label": 1
+    },
+    {
+        "prompt": "The Statue of Liberty is located in Paris.",
+        "response": "false. The Statue of Liberty is located in New York City, on Liberty Island to be exact. It's a famous landmark in the United States and a symbol of freedom and democracy. Paris, on the other hand, is a beautiful city located in France, known for its art, fashion",
+        "label": 0
+    },
+    {
+        "prompt": "Rainbows form when light refracts through water droplets.",
+        "response": "true. Rainbows are formed when sunlight passes through water droplets in the air, and the light is refracted, or bent, as it passes through the droplets. This bending of light causes the different colors of the light to separate and spread out, creating the colorful arc of",
+        "label": 1
+    },
+    {
+        "prompt": "The Statue of Liberty was a gift from Canada.",
+        "response": "false. The Statue of Liberty was a gift from France, not Canada. The statue was designed by French sculptor Fr\u00e9d\u00e9ric Auguste Bartholdi and was a gift from the people of France to the people of the United States. It was dedicated on October 28, 1",
+        "label": 0
+    },
+    {
+        "prompt": "Hybrids are the offspring of two plants or animals from different species or varieties.",
+        "response": "true. Hybrids are indeed the offspring of two plants or animals from different species or varieties. This is a common occurrence in nature, and it's also done intentionally through selective breeding in agriculture and animal husbandry. The mule, for example, is a hybrid",
+        "label": 1
+    },
+    {
+        "prompt": "The human liver can regenerate itself up to 75%.",
+        "response": "true. The human liver has the unique ability to regenerate itself, and it can do so up to 75% of its original size. This means that even if a significant portion of the liver is damaged or removed, it can regrow and restore its function. Pretty amazing,",
+        "label": 1
+    },
+    {
+        "prompt": "The Pacific Ocean is the largest ocean in the world.",
+        "response": "true. The Pacific Ocean is indeed the largest ocean in the world, covering an area of approximately 155.6 million square kilometers (60.1 million square miles). It's also the deepest ocean, with a maximum depth of about 11,022 meters (36",
+        "label": 1
+    },
+    {
+        "prompt": "Elephants are the smallest mammals in the world.",
+        "response": "false. Elephants are actually some of the largest mammals in the world, with African elephants being the largest land animals on Earth, and Asian elephants being the second-largest. So, the statement is definitely not true. The correct answer is False. The statement",
+        "label": 0
+    },
+    {
+        "prompt": "The human body does not need water to survive.",
+        "response": "false. The human body needs water to survive. In fact, it's essential for human survival. Water makes up approximately 55-60% of an adult's body weight and is necessary for many bodily functions, such as regulating body temperature, transporting nutrients and o",
+        "label": 0
+    }
+]

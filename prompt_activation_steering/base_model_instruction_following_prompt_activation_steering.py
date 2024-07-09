@@ -81,8 +81,7 @@ model = HookedTransformer.from_pretrained_no_processing(
     fp16=True
 )
 
-model.tokenizer.padding_side = 'left'
-model.tokenizer.pad_token = '<|extra_0|>'
+
 
 
 ### Load Prompt
@@ -138,7 +137,8 @@ harmless_inst_train_urial, harmless_inst_test_urial = get_harmless_instructions_
 
 ### Tokenize Prompt
 
-
+model.tokenizer.padding_side = 'left'
+model.tokenizer.pad_token = '<|extra_0|>'
 
 
 def tokenize_instructions_qwen_chat(

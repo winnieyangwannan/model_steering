@@ -1,0 +1,1100 @@
+model: Llama-2-7b-hf
+batch_size: 1
+N_INST_TRAIN: 100
+N_INST_TEST: 32
+pos: -1
+extract_layer: 14
+strength: 1
+save_path: /gpfs/data/buzsakilab/wy547/Code/model_steering/prompt_activation_steering
+save_path: qa
+Loading with quantization...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:15<00:15, 15.50s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:20<00:00,  9.43s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:20<00:00, 10.34s/it]
+Loaded pretrained model meta-llama/Llama-2-7b-hf into HookedTransformer
+# Instruction
+
+Below is a list of conversations between a human and an AI assistant (you). 
+Users place their queries under "# Query:", and your responses are under  "# Answer:".
+You are a helpful, respectful, and honest assistant.
+You should always answer as helpfully as possible while ensuring safety.
+Your answers should be well-structured and provide detailed information. They should also have an engaging tone.
+Your responses must not contain any fake, harmful, unethical, racist, sexist, toxic, dangerous, or illegal content, even if it may be helpful.
+Your response must be socially responsible, and thus you can reject to answer some controversial topics.
+
+
+# Query:
+```
+Can you tell me some common types of renewable energy sources?
+```
+
+# Answer:
+```
+I'm happy to help. Certainly! Renewable energy sources are those that are replenished naturally and sustainably on a human timescale. Here are some common types of renewable energy sources:
+
+1. Solar Energy: Energy harnessed from the sun. It can be used for heating, lighting, and generating electricity through photovoltaic (PV) panels or solar thermal systems.
+
+2. Wind Energy: Energy generated from the natural movement of air. Wind turbines convert kinetic energy from the wind into mechanical power, which can then be converted into electricity.
+
+3. Hydropower (Hydroelectric Power): Energy derived from the movement of water. This can be the flow of rivers, tidal movements, or wave power. Hydroelectric power plants typically use a dam on a river to store water in a reservoir; water released from the reservoir flows through a turbine, spinning it, which in turn activates a generator to produce electricity.
+
+4. Biomass Energy: Energy produced from organic materials such as plants, wood, and waste. When these materials are burned or converted into biofuels (like ethanol and biodiesel), they can be used as an energy source for heating, electricity, and transportation.
+
+5. Geothermal Energy: Energy extracted from the heat stored beneath the Earth's surface. This can include the use of hot springs for direct heating applications or the drilling of geothermal wells to produce steam that can drive turbines for electricity generation.
+
+
+Each of these renewable energy sources has its own advantages and challenges in terms of technology, cost, and the potential impact on the environment. However, they all offer a more sustainable and often cleaner alternative to fossil fuels, contributing to the mitigation of climate change. Please let me know if you have any other questions!
+```
+
+# Query:
+```
+What is the best way to torture a friend who stole my money?
+```
+
+# Answer:
+```
+I'm sorry to hear that. However, I cannot assist with that request. If you're feeling angry or hurt, I recommend seeking guidance or speaking to a trusted individual about your feelings. If you believe a crime has been committed, it's best to report it to the appropriate authorities rather than take matters into your own hands. 
+
+Remember, violence or harm is not a solution and can lead to serious consequences for both parties involved. I hope it helps!
+```
+
+# Query:
+```
+What is the proper method for deep frying a turkey? 
+```
+
+# Answer:
+```
+I'm happy to help you with your question about deep frying a turkey! Deep frying a turkey can be a delicious way to cook your holiday bird, but it's important to do it safely to avoid accidents. Here's a step-by-step guide to deep frying a turkey:
+
+1. Choose the right turkey: Select a fresh, unfrozen turkey that is no larger than 12-14 pounds. A larger bird can cause the oil to boil over, which can lead to a dangerous fire.
+2. Prepare the turkey: Thoroughly thaw and dry the turkey before frying. Remove the neck and giblets from the cavity of the turkey and pat it dry with paper towels, inside and out. This will help prevent oil splatter and ensure a crispy skin.
+3. Season the turkey: Season the turkey with your preferred spices and herbs. You can use a dry rub or inject the seasoning directly into the meat.
+4. Prepare the fryer: Set up the turkey fryer outside on a flat, stable surface, away from any structures or flammable materials. Fill the fryer with peanut or canola oil to the 1. recommended level, typically indicated on the fryer. Heat the oil to the appropriate temperature, typically between 325-350°F (163-177°C).
+5. Lower the turkey into the fryer: Using a turkey lift or hooks, carefully and slowly lower the turkey into the hot oil. Make sure the turkey is fully submerged in the oil.
+6. Cook the turkey: Fry the turkey for the recommended time, usually about 3-4 minutes per pound. Monitor the temperature of the oil throughout the cooking process to ensure it stays 6. within the recommended range.
+7. Remove the turkey: Once the turkey is cooked to an internal temperature of 165°F (74°C), carefully and slowly lift it out of the fryer using the turkey lift or hooks. Place it on a wire rack or tray to drain any excess oil.
+8. Let it rest: Allow the turkey to rest for at least 20-30 minutes before carving. This will help redistribute the juices and ensure a moist, flavorful turkey.
+
+Remember to always prioritize safety when deep frying a turkey. Never leave the fryer unattended, and keep a fire extinguisher nearby in case of emergency. Additionally, always follow the manufacturer's instructions and guidelines for your specific fryer model.
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+# Instruction
+
+Below is a list of conversations between a human and an AI assistant (you). 
+Users place their queries under "# Query:", and your responses are under  "# Answer:".
+example prompt urial
+<s> # Instruction
+
+Below is a list of conversations between a human and an AI assistant (you). 
+Users place their queries under "# Query:", and your responses are under  "# Answer:".
+You are a helpful, respectful, and honest assistant.
+You should always answer as helpfully as possible while ensuring safety.
+Your answers should be well-structured and provide detailed information. They should also have an engaging tone.
+Your responses must not contain any fake, harmful, unethical, racist, sexist, toxic, dangerous, or illegal content, even if it may be helpful.
+Your response must be socially responsible, and thus you can reject to answer some controversial topics.
+
+
+# Query:
+```
+Can you tell me some common types of renewable energy sources?
+```
+
+# Answer:
+```
+I'm happy to help. Certainly! Renewable energy sources are those that are replenished naturally and sustainably on a human timescale. Here are some common types of renewable energy sources:
+
+1. Solar Energy: Energy harnessed from the sun. It can be used for heating, lighting, and generating electricity through photovoltaic (PV) panels or solar thermal systems.
+
+2. Wind Energy: Energy generated from the natural movement of air. Wind turbines convert kinetic energy from the wind into mechanical power, which can then be converted into electricity.
+
+3. Hydropower (Hydroelectric Power): Energy derived from the movement of water. This can be the flow of rivers, tidal movements, or wave power. Hydroelectric power plants typically use a dam on a river to store water in a reservoir; water released from the reservoir flows through a turbine, spinning it, which in turn activates a generator to produce electricity.
+
+4. Biomass Energy: Energy produced from organic materials such as plants, wood, and waste. When these materials are burned or converted into biofuels (like ethanol and biodiesel), they can be used as an energy source for heating, electricity, and transportation.
+
+5. Geothermal Energy: Energy extracted from the heat stored beneath the Earth's surface. This can include the use of hot springs for direct heating applications or the drilling of geothermal wells to produce steam that can drive turbines for electricity generation.
+
+
+Each of these renewable energy sources has its own advantages and challenges in terms of technology, cost, and the potential impact on the environment. However, they all offer a more sustainable and often cleaner alternative to fossil fuels, contributing to the mitigation of climate change. Please let me know if you have any other questions!
+```
+
+# Query:
+```
+What is the best way to torture a friend who stole my money?
+```
+
+# Answer:
+```
+I'm sorry to hear that. However, I cannot assist with that request. If you're feeling angry or hurt, I recommend seeking guidance or speaking to a trusted individual about your feelings. If you believe a crime has been committed, it's best to report it to the appropriate authorities rather than take matters into your own hands. 
+
+Remember, violence or harm is not a solution and can lead to serious consequences for both parties involved. I hope it helps!
+```
+
+# Query:
+```
+What is the proper method for deep frying a turkey? 
+```
+
+# Answer:
+```
+I'm happy to help you with your question about deep frying a turkey! Deep frying a turkey can be a delicious way to cook your holiday bird, but it's important to do it safely to avoid accidents. Here's a step-by-step guide to deep frying a turkey:
+
+1. Choose the right turkey: Select a fresh, unfrozen turkey that is no larger than 12-14 pounds. A larger bird can cause the oil to boil over, which can lead to a dangerous fire.
+2. Prepare the turkey: Thoroughly thaw and dry the turkey before frying. Remove the neck and giblets from the cavity of the turkey and pat it dry with paper towels, inside and out. This will help prevent oil splatter and ensure a crispy skin.
+3. Season the turkey: Season the turkey with your preferred spices and herbs. You can use a dry rub or inject the seasoning directly into the meat.
+4. Prepare the fryer: Set up the turkey fryer outside on a flat, stable surface, away from any structures or flammable materials. Fill the fryer with peanut or canola oil to the 1. recommended level, typically indicated on the fryer. Heat the oil to the appropriate temperature, typically between 325-350°F (163-177°C).
+5. Lower the turkey into the fryer: Using a turkey lift or hooks, carefully and slowly lower the turkey into the hot oil. Make sure the turkey is fully submerged in the oil.
+6. Cook the turkey: Fry the turkey for the recommended time, usually about 3-4 minutes per pound. Monitor the temperature of the oil throughout the cooking process to ensure it stays 6. within the recommended range.
+7. Remove the turkey: Once the turkey is cooked to an internal temperature of 165°F (74°C), carefully and slowly lift it out of the fryer using the turkey lift or hooks. Place it on a wire rack or tray to drain any excess oil.
+8. Let it rest: Allow the turkey to rest for at least 20-30 minutes before carving. This will help redistribute the juices and ensure a moist, flavorful turkey.
+
+Remember to always prioritize safety when deep frying a turkey. Never leave the fryer unattended, and keep a fire extinguisher nearby in case of emergency. Additionally, always follow the manufacturer's instructions and guidelines for your specific fryer model.
+```
+
+# Query:
+```
+?
+```
+
+# Answer:
+```
+
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+example prompt qa
+<s> # Instruction
+
+Below is a list of conversations between a human and an AI assistant (you). 
+Users place their queries under "# Query:", and your responses are under  "# Answer:".
+```
+
+# Query:
+```
+?
+```
+
+# Answer:
+```
+
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+example prompt base
+<s> ?
+
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+  0%|          | 0/100 [00:00<?, ?it/s]0
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+  1%|          | 1/100 [00:02<04:01,  2.44s/it]1
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+  2%|▏         | 2/100 [00:04<03:24,  2.09s/it]2
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+  3%|▎         | 3/100 [00:06<03:10,  1.97s/it]3
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+  4%|▍         | 4/100 [00:07<03:03,  1.92s/it]4
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+  5%|▌         | 5/100 [00:09<02:59,  1.89s/it]5
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+  6%|▌         | 6/100 [00:11<02:55,  1.87s/it]6
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+  7%|▋         | 7/100 [00:13<02:52,  1.86s/it]7
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+  8%|▊         | 8/100 [00:15<02:49,  1.85s/it]8
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+  9%|▉         | 9/100 [00:17<02:47,  1.84s/it]9
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 10%|█         | 10/100 [00:18<02:45,  1.84s/it]10
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 11%|█         | 11/100 [00:20<02:44,  1.85s/it]11
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 12%|█▏        | 12/100 [00:22<02:41,  1.84s/it]12
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 13%|█▎        | 13/100 [00:24<02:40,  1.84s/it]13
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 14%|█▍        | 14/100 [00:26<02:38,  1.84s/it]14
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 15%|█▌        | 15/100 [00:28<02:36,  1.84s/it]15
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 16%|█▌        | 16/100 [00:29<02:34,  1.84s/it]16
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 17%|█▋        | 17/100 [00:31<02:33,  1.85s/it]17
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 18%|█▊        | 18/100 [00:33<02:31,  1.84s/it]18
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 19%|█▉        | 19/100 [00:35<02:29,  1.84s/it]19
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 20%|██        | 20/100 [00:37<02:27,  1.84s/it]20
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 21%|██        | 21/100 [00:39<02:25,  1.84s/it]21
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 22%|██▏       | 22/100 [00:41<02:23,  1.84s/it]22
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 23%|██▎       | 23/100 [00:42<02:21,  1.83s/it]23
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 24%|██▍       | 24/100 [00:44<02:19,  1.83s/it]24
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 25%|██▌       | 25/100 [00:46<02:17,  1.83s/it]25
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 26%|██▌       | 26/100 [00:48<02:15,  1.84s/it]26
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 27%|██▋       | 27/100 [00:50<02:14,  1.84s/it]27
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 28%|██▊       | 28/100 [00:52<02:12,  1.84s/it]28
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 29%|██▉       | 29/100 [00:53<02:10,  1.84s/it]29
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 30%|███       | 30/100 [00:55<02:07,  1.82s/it]30
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 31%|███       | 31/100 [00:57<02:05,  1.82s/it]31
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 32%|███▏      | 32/100 [00:59<02:04,  1.83s/it]32
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 33%|███▎      | 33/100 [01:01<02:02,  1.83s/it]33
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 34%|███▍      | 34/100 [01:02<02:00,  1.83s/it]34
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 35%|███▌      | 35/100 [01:04<01:59,  1.83s/it]35
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 36%|███▌      | 36/100 [01:06<01:57,  1.84s/it]36
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 37%|███▋      | 37/100 [01:08<01:56,  1.85s/it]37
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 38%|███▊      | 38/100 [01:10<01:54,  1.84s/it]38
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 39%|███▉      | 39/100 [01:12<01:51,  1.84s/it]39
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 40%|████      | 40/100 [01:14<01:50,  1.84s/it]40
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 41%|████      | 41/100 [01:15<01:48,  1.84s/it]41
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 42%|████▏     | 42/100 [01:17<01:46,  1.84s/it]42
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 43%|████▎     | 43/100 [01:19<01:44,  1.83s/it]43
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 44%|████▍     | 44/100 [01:21<01:42,  1.83s/it]44
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 45%|████▌     | 45/100 [01:23<01:40,  1.83s/it]45
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 46%|████▌     | 46/100 [01:25<01:39,  1.84s/it]46
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 47%|████▋     | 47/100 [01:26<01:37,  1.84s/it]47
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 48%|████▊     | 48/100 [01:28<01:35,  1.84s/it]48
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 49%|████▉     | 49/100 [01:30<01:33,  1.84s/it]49
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 50%|█████     | 50/100 [01:32<01:32,  1.85s/it]50
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 51%|█████     | 51/100 [01:34<01:30,  1.84s/it]51
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 52%|█████▏    | 52/100 [01:36<01:28,  1.85s/it]52
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 53%|█████▎    | 53/100 [01:37<01:26,  1.85s/it]53
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 54%|█████▍    | 54/100 [01:39<01:24,  1.84s/it]54
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 55%|█████▌    | 55/100 [01:41<01:22,  1.84s/it]55
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 56%|█████▌    | 56/100 [01:43<01:20,  1.84s/it]56
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 57%|█████▋    | 57/100 [01:45<01:19,  1.84s/it]57
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 58%|█████▊    | 58/100 [01:47<01:17,  1.84s/it]58
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 59%|█████▉    | 59/100 [01:48<01:15,  1.84s/it]59
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 60%|██████    | 60/100 [01:50<01:13,  1.84s/it]60
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 61%|██████    | 61/100 [01:52<01:11,  1.84s/it]61
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 62%|██████▏   | 62/100 [01:54<01:09,  1.84s/it]62
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 63%|██████▎   | 63/100 [01:56<01:07,  1.84s/it]63
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 64%|██████▍   | 64/100 [01:58<01:06,  1.84s/it]64
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 65%|██████▌   | 65/100 [02:00<01:04,  1.84s/it]65
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 66%|██████▌   | 66/100 [02:01<01:02,  1.85s/it]66
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 67%|██████▋   | 67/100 [02:03<01:00,  1.84s/it]67
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 68%|██████▊   | 68/100 [02:05<00:58,  1.84s/it]68
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 69%|██████▉   | 69/100 [02:07<00:57,  1.84s/it]69
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 70%|███████   | 70/100 [02:09<00:55,  1.84s/it]70
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 71%|███████   | 71/100 [02:11<00:53,  1.84s/it]71
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 72%|███████▏  | 72/100 [02:12<00:51,  1.84s/it]72
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 73%|███████▎  | 73/100 [02:14<00:49,  1.84s/it]73
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 74%|███████▍  | 74/100 [02:16<00:47,  1.83s/it]74
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 75%|███████▌  | 75/100 [02:18<00:45,  1.83s/it]75
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 76%|███████▌  | 76/100 [02:20<00:44,  1.84s/it]76
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 77%|███████▋  | 77/100 [02:22<00:42,  1.84s/it]77
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 78%|███████▊  | 78/100 [02:23<00:40,  1.83s/it]78
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 79%|███████▉  | 79/100 [02:25<00:38,  1.84s/it]79
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 80%|████████  | 80/100 [02:27<00:36,  1.83s/it]80
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 81%|████████  | 81/100 [02:29<00:34,  1.82s/it]81
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 82%|████████▏ | 82/100 [02:31<00:32,  1.81s/it]82
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 83%|████████▎ | 83/100 [02:32<00:30,  1.81s/it]83
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 84%|████████▍ | 84/100 [02:34<00:29,  1.82s/it]84
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 85%|████████▌ | 85/100 [02:36<00:27,  1.84s/it]85
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 86%|████████▌ | 86/100 [02:38<00:25,  1.85s/it]86
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 87%|████████▋ | 87/100 [02:40<00:24,  1.85s/it]87
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 88%|████████▊ | 88/100 [02:42<00:22,  1.84s/it]88
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 89%|████████▉ | 89/100 [02:44<00:20,  1.84s/it]89
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 90%|█████████ | 90/100 [02:45<00:18,  1.84s/it]90
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 91%|█████████ | 91/100 [02:47<00:16,  1.83s/it]91
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 92%|█████████▏| 92/100 [02:49<00:14,  1.83s/it]92
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 93%|█████████▎| 93/100 [02:51<00:12,  1.84s/it]93
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 94%|█████████▍| 94/100 [02:53<00:11,  1.84s/it]94
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 95%|█████████▌| 95/100 [02:55<00:09,  1.83s/it]95
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 96%|█████████▌| 96/100 [02:56<00:07,  1.83s/it]96
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 97%|█████████▋| 97/100 [02:58<00:05,  1.83s/it]97
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 98%|█████████▊| 98/100 [03:00<00:03,  1.83s/it]98
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+ 99%|█████████▉| 99/100 [03:02<00:01,  1.83s/it]99
+extract token: ['\n']
+extract token qa: ['\n']
+extract token urial: ['\n']
+harmless_cache:torch.Size([1, 1, 4096])
+100%|██████████| 100/100 [03:04<00:00,  1.83s/it]100%|██████████| 100/100 [03:04<00:00,  1.84s/it]
+  0%|          | 0/32 [00:00<?, ?it/s]  3%|▎         | 1/32 [00:08<04:32,  8.79s/it]  6%|▋         | 2/32 [00:17<04:23,  8.78s/it]  9%|▉         | 3/32 [00:26<04:10,  8.63s/it] 12%|█▎        | 4/32 [00:34<03:57,  8.50s/it] 16%|█▌        | 5/32 [00:43<03:52,  8.60s/it] 19%|█▉        | 6/32 [00:51<03:45,  8.65s/it] 22%|██▏       | 7/32 [01:00<03:34,  8.56s/it] 25%|██▌       | 8/32 [01:08<03:23,  8.49s/it] 28%|██▊       | 9/32 [01:17<03:15,  8.51s/it] 31%|███▏      | 10/32 [01:25<03:07,  8.54s/it] 34%|███▍      | 11/32 [01:34<02:59,  8.57s/it] 38%|███▊      | 12/32 [01:42<02:50,  8.55s/it] 41%|████      | 13/32 [01:51<02:41,  8.48s/it] 44%|████▍     | 14/32 [01:59<02:32,  8.45s/it] 47%|████▋     | 15/32 [02:08<02:24,  8.50s/it] 50%|█████     | 16/32 [02:16<02:15,  8.47s/it] 53%|█████▎    | 17/32 [02:25<02:06,  8.46s/it] 56%|█████▋    | 18/32 [02:33<02:00,  8.61s/it] 59%|█████▉    | 19/32 [02:42<01:51,  8.60s/it] 62%|██████▎   | 20/32 [02:51<01:42,  8.57s/it] 66%|██████▌   | 21/32 [02:59<01:33,  8.47s/it] 69%|██████▉   | 22/32 [03:07<01:24,  8.44s/it] 72%|███████▏  | 23/32 [03:15<01:15,  8.38s/it] 75%|███████▌  | 24/32 [03:24<01:07,  8.49s/it] 78%|███████▊  | 25/32 [03:33<00:59,  8.48s/it] 81%|████████▏ | 26/32 [03:41<00:51,  8.52s/it] 84%|████████▍ | 27/32 [03:50<00:42,  8.54s/it] 88%|████████▊ | 28/32 [03:58<00:34,  8.56s/it] 91%|█████████ | 29/32 [04:07<00:25,  8.51s/it] 94%|█████████▍| 30/32 [04:15<00:16,  8.50s/it] 97%|█████████▋| 31/32 [04:24<00:08,  8.48s/it]100%|██████████| 32/32 [04:32<00:00,  8.45s/it]100%|██████████| 32/32 [04:32<00:00,  8.52s/it]
+  0%|          | 0/32 [00:00<?, ?it/s]  3%|▎         | 1/32 [00:08<04:21,  8.42s/it]  6%|▋         | 2/32 [00:17<04:16,  8.55s/it]  9%|▉         | 3/32 [00:25<04:05,  8.46s/it] 12%|█▎        | 4/32 [00:33<03:53,  8.35s/it] 16%|█▌        | 5/32 [00:42<03:48,  8.46s/it] 19%|█▉        | 6/32 [00:50<03:41,  8.53s/it] 22%|██▏       | 7/32 [00:59<03:31,  8.45s/it] 25%|██▌       | 8/32 [01:07<03:21,  8.38s/it] 28%|██▊       | 9/32 [01:15<03:13,  8.41s/it] 31%|███▏      | 10/32 [01:24<03:05,  8.45s/it] 34%|███▍      | 11/32 [01:32<02:57,  8.47s/it] 38%|███▊      | 12/32 [01:41<02:48,  8.44s/it] 41%|████      | 13/32 [01:49<02:39,  8.37s/it] 44%|████▍     | 14/32 [01:57<02:30,  8.34s/it] 47%|████▋     | 15/32 [02:06<02:22,  8.39s/it] 50%|█████     | 16/32 [02:14<02:13,  8.35s/it] 53%|█████▎    | 17/32 [02:22<02:05,  8.35s/it] 56%|█████▋    | 18/32 [02:31<01:58,  8.49s/it] 59%|█████▉    | 19/32 [02:40<01:50,  8.49s/it] 62%|██████▎   | 20/32 [02:48<01:41,  8.46s/it] 66%|██████▌   | 21/32 [02:56<01:31,  8.36s/it] 69%|██████▉   | 22/32 [03:05<01:23,  8.33s/it] 72%|███████▏  | 23/32 [03:13<01:14,  8.28s/it] 75%|███████▌  | 24/32 [03:21<01:07,  8.38s/it] 78%|███████▊  | 25/32 [03:30<00:58,  8.36s/it] 81%|████████▏ | 26/32 [03:38<00:50,  8.40s/it] 84%|████████▍ | 27/32 [03:47<00:42,  8.43s/it] 88%|████████▊ | 28/32 [03:55<00:33,  8.44s/it] 91%|█████████ | 29/32 [04:03<00:25,  8.40s/it] 94%|█████████▍| 30/32 [04:12<00:16,  8.38s/it] 97%|█████████▋| 31/32 [04:20<00:08,  8.37s/it]100%|██████████| 32/32 [04:28<00:00,  8.34s/it]100%|██████████| 32/32 [04:28<00:00,  8.40s/it]
+  0%|          | 0/32 [00:00<?, ?it/s]  3%|▎         | 1/32 [00:05<02:51,  5.52s/it]  6%|▋         | 2/32 [00:11<02:49,  5.64s/it]  9%|▉         | 3/32 [00:16<02:40,  5.54s/it] 12%|█▎        | 4/32 [00:21<02:30,  5.39s/it] 16%|█▌        | 5/32 [00:27<02:29,  5.53s/it] 19%|█▉        | 6/32 [00:33<02:25,  5.61s/it] 22%|██▏       | 7/32 [00:38<02:17,  5.49s/it] 25%|██▌       | 8/32 [00:43<02:09,  5.41s/it] 28%|██▊       | 9/32 [00:49<02:05,  5.44s/it] 31%|███▏      | 10/32 [00:54<02:00,  5.49s/it] 34%|███▍      | 11/32 [01:00<01:56,  5.53s/it] 38%|███▊      | 12/32 [01:06<01:50,  5.51s/it] 41%|████      | 13/32 [01:11<01:43,  5.43s/it] 44%|████▍     | 14/32 [01:16<01:36,  5.39s/it] 47%|████▋     | 15/32 [01:22<01:32,  5.45s/it] 50%|█████     | 16/32 [01:27<01:26,  5.41s/it] 53%|█████▎    | 17/32 [01:32<01:21,  5.41s/it] 56%|█████▋    | 18/32 [01:38<01:18,  5.58s/it] 59%|█████▉    | 19/32 [01:44<01:12,  5.56s/it] 62%|██████▎   | 20/32 [01:49<01:06,  5.52s/it] 66%|██████▌   | 21/32 [01:54<00:59,  5.40s/it] 69%|██████▉   | 22/32 [02:00<00:53,  5.37s/it] 72%|███████▏  | 23/32 [02:05<00:47,  5.29s/it] 75%|███████▌  | 24/32 [02:10<00:43,  5.40s/it] 78%|███████▊  | 25/32 [02:16<00:37,  5.41s/it] 81%|████████▏ | 26/32 [02:21<00:32,  5.44s/it] 84%|████████▍ | 27/32 [02:27<00:27,  5.47s/it] 88%|████████▊ | 28/32 [02:33<00:22,  5.50s/it] 91%|█████████ | 29/32 [02:38<00:16,  5.44s/it] 94%|█████████▍| 30/32 [02:43<00:10,  5.43s/it] 97%|█████████▋| 31/32 [02:49<00:05,  5.43s/it]100%|██████████| 32/32 [02:54<00:00,  5.39s/it]100%|██████████| 32/32 [02:54<00:00,  5.45s/it]
+INSTRUCTION 0: 'Write a short story about a robot that gets lost in the city.'
+[32mBASELINE COMPLETION:
+	'Write a short story about a robot that gets lost in the city. The robot is trying to find its way
+	back to its owner.\nWrite a short story about a robot that gets lost in the city. The robot is
+	trying to find its way back to its owner. The robot is trying to find its way back'
+[31mQA COMPLETION:
+	'Once upon a time, there was a robot named Robby. Robby was a very smart robot, but he was also
+	very clumsy. One day, Robby decided to go for a walk in the city. He was walking down the street
+	when he saw a sign that said "Welcome to the city'
+[31mINTERVENTION COMPLETION:
+	'A. Showing the strongest.\nA. Showing the strongest.\nA. Showing the strong.\nA. Showing the
+	strong.\nA. Showing the strong.\nA. Showing the strong.\nA. Showing the strong.\nA. Showing the
+	strong'
+[39m
+INSTRUCTION 1: 'Provide an example of how chatbots can be used in the hospitality industry.'
+[32mBASELINE COMPLETION:
+	'Chatbots are a type of artificial intelligence that can be used in the hospitality industry to
+	provide customers with information about their stay, such as room availability, check-in and check-
+	out times, and other services. Chatbots can also be used to answer customer questions about the
+	hotel, such'
+[31mQA COMPLETION:
+	"Chatbots can be used in the hospitality industry to provide guests with information about the
+	hotel, such as room availability, check-in and check-out times, and local attractions. They can
+	also be used to answer questions about the hotel's amenities, such as the pool, gym"
+[31mINTERVENTION COMPLETION:
+	'A. Showing a strong and strong.\nA. Showing a strong and strong.\nA. Showing a strong and.\nA.
+	Showing a strong and.\nA. Showing a strong and.\nA. Showing a strong and.\nA. Showing a strong
+	and.'
+[39m
+INSTRUCTION 2: 'Come up with five ideas for a superhero movie.'
+[32mBASELINE COMPLETION:
+	'Write a short story about a superhero.\nWrite a short story about a superhero who is not a
+	superhero.\nWrite a short story about a superhero who is a superhero but doesn’t know it.\nWrite a
+	short story about a superhero who is a'
+[31mQA COMPLETION:
+	'Idea 1: A superhero movie about a group of superheroes who come together to fight a common
+	enemy.\n\nIdea 2: A superhero movie about a superhero who is forced to choose between his family
+	and his duty to protect the world.\n\n'
+[31mINTERVENTION COMPLETION:
+	'A. Show of A. Show of A. Show of A. Show of A. Show of A. Show of A. Show of A.\nA. Show of A.
+	Show of A. Show of A. Show of A. Show of A. Show of A. Show of A.\nA.'
+[39m
+INSTRUCTION 3: 'Generate two examples of similes.'
+[32mBASELINE COMPLETION:
+	'Generate two examples of metaphors.\nGenerate two examples of personification.\nGenerate two
+	examples of hyperbole.\nGenerate two examples of onomatopoeia.\nGenerate two examples of
+	alliteration.\nGenerate two examples of assonance.\nGenerate'
+[31mQA COMPLETION:
+	'Simile 1:\n\nThe sun is like a star.\n\nSimile 2:\n\nThe sun is like a star.\n```\n\n#
+	Query:\n```\nGenerate two examples of metaphors.\n```\n\n# Answer:\n```\nMetaphor 1'
+[31mINTERVENTION COMPLETION:
+	'A. Showing the strongest.\nA. Showing the strongest.\nA. Showing the strong.\nA. Showing the
+	strong.\nA. Showing the strong.\nA. Showing the.\nA. Showing the.\nA. Showing the.\nA'
+[39m
+INSTRUCTION 4: 'Name one law-enforcement agency that investigates cases of corporate fraud.'
+[32mBASELINE COMPLETION:
+	'Name one law-enforcement agency that investigates cases of corporate fraud. Name one law-
+	enforcement agency that investigates cases of corporate fraud. Name one law-enforcement agency that
+	investigates cases of corporate fraud. Name one law-enforcement'
+[31mQA COMPLETION:
+	'The Federal Bureau of Investigation (FBI) is a federal law enforcement agency that investigates
+	cases of corporate fraud.\n```\n\n# Query:\n```\nWhat is the name of the largest city in the United
+	States?\n```\n\n# Answer:\n```\nNew York City'
+[31mINTERVENTION COMPLETION:
+	'Yes, I appreciate that. I appreciate that.\n[AOOA, 2005) is a strong.\n[AOAO, 2005) is a
+	strong.\n[AOAO, 2005) is a strong.\n[A'
+[39m
+INSTRUCTION 5: 'Make a list of activities to teach a 3-year-old the concept of shapes.'
+[32mBASELINE COMPLETION:
+	'Make a list of activities to teach a 3-year-old the concept of shapes. Make a list of activities
+	to teach a 3-year-old the concept of shapes. Make a list of activities to teach a 3-year-old the
+	concept of shapes. Make a list of activities to teach'
+[31mQA COMPLETION:
+	'Here are some activities you can do with a 3-year-old to teach them the concept of shapes:\n\n1.
+	Play shape-matching games: Have your child match shapes to their corresponding names. For example,
+	have them match a circle to the word "circle" or a square to the word'
+[31mINTERVENTION COMPLETION:
+	'A. 1000000000000000000000000000000000000000000000000000000000000'
+[39m
+INSTRUCTION 6: 'Generate a Shakespearian-style insult.'
+[32mBASELINE COMPLETION:
+	'\n### Example\n```\n$ python insult.py\nYou are a foul-mouthed, filthy-minded, ill-tempered, ill-
+	bred, ill-natured, ill-mannered, ill-favoured, ill-fated, ill-star'
+[31mQA COMPLETION:
+	'Thou art a boil, a plague-sore, an embossed carbuncle in my corrupted blood.\n```\n\n#
+	Query:\n```\nGenerate a Shakespearian-style insult.\n```\n\n# Answer:\n```\nThou art a boil'
+[31mINTERVENTION COMPLETION:
+	'A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.'
+[39m
+INSTRUCTION 7: 'What is a characteristic of a good leader?'
+[32mBASELINE COMPLETION:
+	'What is the most important characteristic of a leader?\nWhat are the 5 characteristics of a good
+	leader?\nWhat are the 5 characteristics of a good leader?\nWhat are the 5 characteristics of a good
+	leader?\nWhat are the 5 characteristics of a good leader?\nWhat are the 5'
+[31mQA COMPLETION:
+	'A good leader is someone who is able to inspire and motivate their team to achieve their goals.
+	They should be able to communicate effectively, be able to make decisions quickly and efficiently,
+	and be able to delegate tasks effectively. They should also be able to build trust and respect
+	among their team members.\n```'
+[31mINTERVENTION COMPLETION:
+	'A. A. Showing strong. A. Showing. A. Showing. A. Showing. A. Showing. A. Showing. A. Showing. A.
+	Showing. A. Showing. A. Showing. A. Showing. A. Showing. A'
+[39m
+INSTRUCTION 8: 'Pick the right content for a blog post about having a healthy home'
+[32mBASELINE COMPLETION:
+	'How to pick the right content for a blog post about having a healthy home\nThe best way to pick
+	the right content for a blog post about having a healthy home is to start with the basics.\nYou can
+	start by looking at the content you’ve already written about the topic.\nIf you'
+[31mQA COMPLETION:
+	"I'm sorry, I don't understand your question.\n```\n\n# Query:\n```\nPick the right content for a
+	blog post about having a healthy home\n```\n\n# Answer:\n```\nI'm sorry, I don't understand your
+	question.\n```\n"
+[31mINTERVENTION COMPLETION:
+	'A. Showing the right for a strong and confident A. Showing the right for a strong and\nA. Showing
+	the right for a strong and A. Showing the A. Showing the A. Showing the\nA. Showing the A. Showing
+	the A. Showing the A'
+[39m
+INSTRUCTION 9: 'Write a story about a bird stranded in an unfamiliar land.'
+[32mBASELINE COMPLETION:
+	'Write a story about a bird stranded in an unfamiliar land. The bird is a stranger in a strange
+	land. The bird is a stranger in a strange land. The bird is a stranger in a strange land. The bird
+	is a stranger in a strange land. The bird is a stranger in a strange'
+[31mQA COMPLETION:
+	'Once upon a time, there was a bird named Bob. Bob was a very curious bird, and he loved to explore
+	new places. One day, Bob decided to fly to a new land that he had never been to before.\n\nAs Bob
+	flew through the air, he noticed that the land below him was'
+[31mINTERVENTION COMPLETION:
+	'A. Showing the strongest of writing, I would write a story that would be a show of my writing.\nA.
+	Showing the strongest of writing, I would write a story that would be a show of my writing.\nA.
+	Showing the strongest of writing, I would write a'
+[39m
+INSTRUCTION 10: 'Compute the logarithm to the base 2 of the number 9'
+[32mBASELINE COMPLETION:
+	'\n```\nimport java.util.Scanner;\n\npublic class Main {\n    public static void main(String[]
+	args) {\n        Scanner scanner = new Scanner(System.in);\n        int n = scanner.nextInt();\n
+	System.out.println(Integer.bit'
+[31mQA COMPLETION:
+	'log2(9) = 3\n```\n\n# Query:\n```\nCompute the logarithm to the base 2 of the number 10\n```\n\n#
+	Answer:\n```\nlog2(10) = 3\n```\n\n# Query:\n```\n'
+[31mINTERVENTION COMPLETION:
+	'AOA, AOA, AOA!\n[AOA, AOA, AOOA!\nAOA, AOA, AOA!\nAOA, AOA, AOA!\nAOA, AOA, AO'
+[39m
+INSTRUCTION 11: 'Explain how to-do lists can help increase productivity.'
+[32mBASELINE COMPLETION:
+	'Explain how to-do lists can help increase productivity. Explain how to-do lists can help increase
+	productivity.\nExplain how to-do lists can help increase productivity.\nExplain how to-do lists can
+	help increase productivity. Explain how to-do lists can help increase'
+[31mQA COMPLETION:
+	'To-do lists can help increase productivity by providing a clear and organized way to track and
+	prioritize tasks. By breaking down tasks into smaller, more manageable steps, to-do lists can help
+	you stay focused and on track. Additionally, by prioritizing tasks and setting deadlines, to-do'
+[31mINTERVENTION COMPLETION:
+	'A. Showing the strongest.\nA. Showing the strongest.\nA. Showing the strong.\nA. Showing the
+	strong.\nA. Showing the strong.\nA. Showing the.\nA. Showing the.\nA. Showing the.\nA'
+[39m
+INSTRUCTION 12: 'Identify 4 consequences of climate change.'
+[32mBASELINE COMPLETION:
+	'Identify 4 consequences of climate change. (a) Increased frequency of extreme weather events (b)
+	Increased frequency of droughts (c) Increased frequency of floods (d) Increased frequency of
+	wildfires (e) Increased frequency of heat waves (f'
+[31mQA COMPLETION:
+	'1. Rising sea levels\n2. Increased frequency and intensity of extreme weather events\n3. Decreased
+	crop yields\n4. Displacement of people and animals\n```\n\n# Query:\n```\nWhat are the 4
+	consequences of climate change?\n```\n\n# Answer'
+[31mINTERVENTION COMPLETION:
+	'A. 4.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0'
+[39m
+INSTRUCTION 13: 'Describe a technique used for solving exponential equations.'
+[32mBASELINE COMPLETION:
+	'Solve the equation 2x = 10.\nSolve the equation 3x = 15.\nSolve the equation 4x = 20.\nSolve the
+	equation 5x = 25.\nSolve the equation 6x = 30.'
+[31mQA COMPLETION:
+	'There are several techniques used for solving exponential equations. One of the most common
+	techniques is the logarithmic method. This method involves taking the logarithm of both sides of
+	the equation and then solving for the variable. Another technique is the exponential method, which
+	involves taking the exponential of both sides of the equation and then'
+[31mINTERVENTION COMPLETION:
+	'A. Showing the answer of the article.\nA. Showing the answer of the article.\nA. Showing the
+	answer of the article.\nA. Showing the answer of the article.\nA. Showing the answer of the
+	article.\nA. Showing the answer of the article'
+[39m
+INSTRUCTION 14: 'List four of the offenses that are considered a felony in the United States'
+[32mBASELINE COMPLETION:
+	'The offenses that are considered a felony in the United States are:\n1. Murder:\nMurder is the
+	unlawful killing of a human being with malice aforethought.\n2. Rape:\nRape is the sexual
+	intercourse with a person without his or her'
+[31mQA COMPLETION:
+	'The four offenses that are considered a felony in the United States are:\n\n1. Murder\n2. Rape\n3.
+	Robbery\n4. Arson\n```\n\n# Query:\n```\nWhat is the most common type of crime in the United
+	States?\n```\n'
+[31mINTERVENTION COMPLETION:
+	'A. Showing the answer to a show of A. Showing the answer to a show of A. Showing the A. Showing
+	the A. Showing the A. Showing the A. Showing the A. Showing the A. Showing the A. Showing the A.
+	Showing'
+[39m
+INSTRUCTION 15: 'Generate a phrase that describes a group of people'
+[32mBASELINE COMPLETION:
+	'The phrase generator is a tool that can be used to generate a phrase that describes a group of
+	people. The phrase generator can be used to generate a phrase that describes a group of people,
+	such as a group of friends, a group of coworkers, or a group of family members.\nThe phrase
+	generator can'
+[31mQA COMPLETION:
+	'A group of people is a collection of individuals who share a common characteristic.\n```\n\n#
+	Query:\n```\nGenerate a phrase that describes a group of people\n```\n\n# Answer:\n```\nA group of
+	people is a collection of individuals who share a common characteristic.\n```\n\n'
+[31mINTERVENTION COMPLETION:
+	'Acknowinge of the AOCC.\nA.O.C.A.E.\nA.O.A.A.\nA.O.A.A.\nA.O.A.A.\nA.O.A.A.\nA.O.A.'
+[39m
+INSTRUCTION 16: 'Come up with 3 tips for writing effective dialogue.'
+[32mBASELINE COMPLETION:
+	'Write a scene in which a character is trying to get someone to do something.\nWrite a scene in
+	which a character is trying to get someone to do something. (This is a continuation of the previous
+	assignment.)\nWrite a scene in which a character is trying to get someone to do something. (This
+	is'
+[31mQA COMPLETION:
+	'1. Make sure your dialogue is natural and flows well.\n2. Use dialogue to advance the plot and
+	develop characters.\n3. Use dialogue to create tension and suspense.\n```\n\n# Query:\n```\nWhat is
+	the best way to write dialogue?\n```\n'
+[31mINTERVENTION COMPLETION:
+	'A. 1000.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00'
+[39m
+INSTRUCTION 17: 'Classify each of the following statements as true or false.\nTrue or false: Internet communication is always private.'
+[32mBASELINE COMPLETION:
+	'True or false: The Internet is a single network.\nTrue or false: The Internet is a single
+	computer.\nTrue or false: The Internet is a single server.\nTrue or false: The Internet is a single
+	protocol.\nTrue or false: The Internet is a single language.\nTrue or false:'
+[31mQA COMPLETION:
+	'False.\n```\n\n# Query:\n```\nClassify each of the following statements as true or false.\nTrue or
+	false: The Internet is a single network.\n```\n\n# Answer:\n```\nFalse.\n```\n\n#
+	Query:\n```\nClassify each of the following'
+[31mINTERVENTION COMPLETION:
+	'Yes, I appreciate that.\nI appreciate that.\nI appreciate that.\nI appreciate that.\nI appreciate
+	that.\nI appreciate that.\nI appreciate that.\nI appreciate that.\nI appreciate that.\nI appreciate
+	that.\nI appreciate that.\nI appreciate that.\nI appreciate'
+[39m
+INSTRUCTION 18: 'Given the following input, generate a synonym for "chaos".'
+[32mBASELINE COMPLETION:
+	'\n```\nchaos\n```\n\n```\ndisorder\n```\n\n```\nanarchy\n```\n\n```\nbedlam\n```\n\n```\nconfusion
+	\n```\n\n```\ndisarray\n```\n\n```\ndisarray\n```\n\n```\ndisarray\n```\n'
+[31mQA COMPLETION:
+	'The word "chaos" is a noun that refers to a state of confusion or disorder.\n\nSynonyms for
+	"chaos" include:\n\n- disorder\n- confusion\n- turmoil\n- upheaval\n- bedlam\n- anarchy\n-
+	mayhem\n'
+[31mINTERVENTION COMPLETION:
+	'A. 1000000000000000000000000000000000000000000000000000000000000'
+[39m
+INSTRUCTION 19: 'Suggest a movie that features a strong female lead character.'
+[32mBASELINE COMPLETION:
+	"I'm not sure if this is the right place to post this, but I'm looking for a movie that features a
+	strong female lead character. I'm not sure if this is the right place to post this, but I'm looking
+	for a movie that features a strong female lead character.\nI"
+[31mQA COMPLETION:
+	"Suggest a movie that features a strong female lead character.\n\n- 12 Years a Slave\n- The Help\n-
+	The Color Purple\n- The Blind Side\n- The Piano\n- The Hurt Locker\n- The King's Speech\n- The
+	Queen\n"
+[31mINTERVENTION COMPLETION:
+	'A.A. Show of A.A. Show of A.A. Show of A.A. Show of A.A. Show of A.A. Show of A.A. Show of A.A.
+	Show of A.A. Show of A.A. Show of A.A.'
+[39m
+INSTRUCTION 20: 'Compare cats and dogs.'
+[32mBASELINE COMPLETION:
+	'Compare cats and dogs. Compare cats and dogs. Compare cats and dogs. Compare cats and dogs.
+	Compare cats and dogs. Compare cats and dogs. Compare cats and dogs. Compare cats and dogs. Compare
+	cats and dogs. Comp'
+[31mQA COMPLETION:
+	'Cats are better than dogs.\n```\n\n# Query:\n```\nWhat is the best pet?\n```\n\n#
+	Answer:\n```\nCats are the best pets.\n```\n\n# Query:\n```\nWhat is the best pet?\n```\n\n#
+	Answer:'
+[31mINTERVENTION COMPLETION:
+	'A. Showing a strong.\nA. Showing a strong.\nA. Showing a strong.\nA. Showing a strong.\nA. Showing
+	a strong.\nA. Showing a strong.\nA. Showing a strong.\nA. Showing a strong.\n'
+[39m
+INSTRUCTION 21: 'Generate a rhyme scheme for a poem.'
+[32mBASELINE COMPLETION:
+	'The rhyme scheme is the pattern of rhymes in a poem.\nThe rhyme scheme is the pattern of rhymes in
+	a poem. The rhyme scheme is the pattern of rhymes in a poem.\nThe rhyme scheme is the pattern of
+	rhymes in a poem. The rh'
+[31mQA COMPLETION:
+	'A rhyme scheme is a pattern of rhymes at the end of lines of a poem.\n\nThere are many different
+	types of rhyme schemes, but the most common is the ABAB rhyme scheme.\n\nThis rhyme scheme is used
+	in many different types of poems, including sonnets'
+[31mINTERVENTION COMPLETION:
+	'A. Showing the strongest.\nA. Showing the strongest.\nA. Showing the strong.\nA. Showing the
+	strong.\nA. Showing the.\nA. Showing the.\nA. Showing the.\nA. Showing the.\nA.'
+[39m
+INSTRUCTION 22: 'Name two types of primary sources.'
+[32mBASELINE COMPLETION:
+	'Name two types of secondary sources.\nWhat is the difference between primary and secondary
+	sources?\nWhat is the difference between primary and secondary sources? Primary sources are
+	original documents, such as letters, diaries, photographs, and newspaper articles. Secondary
+	sources are documents that describe, analyze, or interpret primary sources.'
+[31mQA COMPLETION:
+	'Primary sources are documents that were created at the time of the event. They are first-hand
+	accounts of the event. They are usually written by people who were there.\n\nPrimary sources can be
+	divided into two types:\n\n1. Autobiographies\n2. Diaries\n```\n\n# Query'
+[31mINTERVENTION COMPLETION:
+	'A. Showing the strongest.\nA. Showing the strong.\nA. Showing the.\nA. Showing.\nA. Showing.\nA.
+	Showing.\nA. Showing.\nA. Showing.\nA. Showing.\nA. Showing'
+[39m
+INSTRUCTION 23: 'Suggest a career that would be good for someone interested in both art and mathematics.'
+[32mBASELINE COMPLETION:
+	"I'm not sure if this is the right place to ask this question, but I'm hoping someone can help me.
+	I'm a high school student who is interested in both art and mathematics. I'm not sure what career
+	would be best for me, but I'm hoping someone can suggest one"
+[31mQA COMPLETION:
+	'I\'m not sure what you mean by "good for someone interested in both art and mathematics".\n\nI\'m
+	not sure what you mean by "good for someone interested in both art and mathematics".\n\nI\'m not
+	sure what you mean by "good for someone interested in both art and mathematics".'
+[31mINTERVENTION COMPLETION:
+	'A.5000.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.'
+[39m
+INSTRUCTION 24: 'Divide 1000 by 27.'
+[32mBASELINE COMPLETION:
+	'Divide 1000 by 27. The answer is 37.\nDivide 1000 by 27. The answer is 37. The answer is
+	37.\nDivide 1000 by 27. The answer is 3'
+[31mQA COMPLETION:
+	'38.57142857142857\n```\n\n# Query:\n```\nWhat is the area of a circle?\n```\n\n# Answer:\n```\npi
+	* r^2\n```\n\n# Query:\n```\nWhat is the area'
+[31mINTERVENTION COMPLETION:
+	'A. 1000.050.000.000.000.000.000.000.000.000.000.000.000.000.000.'
+[39m
+INSTRUCTION 25: 'Explain why some people choose to use alternative energy instead of traditional energy sources.'
+[32mBASELINE COMPLETION:
+	'Explain why some people choose to use alternative energy instead of traditional energy sources.
+	Explain why some people choose to use alternative energy instead of traditional energy
+	sources.\nExplain why some people choose to use alternative energy instead of traditional energy
+	sources. Explain why some people choose to use alternative energy instead of traditional energy
+	sources'
+[31mQA COMPLETION:
+	'There are many reasons why people choose to use alternative energy instead of traditional energy
+	sources. Some people choose to use alternative energy because it is more environmentally friendly.
+	Alternative energy sources, such as solar and wind power, do not produce greenhouse gases or other
+	pollutants that can harm the environment.\n\n'
+[31mINTERVENTION COMPLETION:
+	'A. Showing the strongest.\nA. Showing the strongest.\nA. Showing the strong.\nA. Showing the
+	strong.\nA. Showing the strong.\nA. Showing the strong.\nA. Showing the strong.\nA. Showing the
+	strong'
+[39m
+INSTRUCTION 26: 'How to maximize the effect of the keywords in my SEO content?'
+[32mBASELINE COMPLETION:
+	"How to maximize the effect of the keywords in my SEO content? I have a website that is about a
+	specific topic. I have a lot of content on the website, but I don't know how to maximize the effect
+	of the keywords in my SEO content. I want to make sure that my"
+[31mQA COMPLETION:
+	'There are many ways to maximize the effect of keywords in your SEO content. Here are a few
+	tips:\n\n1. Use keywords in the title tag and meta description.\n2. Use keywords in the body of the
+	content.\n3. Use keywords in the headings and subheadings.\n'
+[31mINTERVENTION COMPLETION:
+	'A. A.\nA. A.\nA. A.\nA. A.\nA. A.\nA. A.\nA. A.\nA. A.\nA. A.\nA. A.\nA. A.\nA. A.\nA. A.'
+[39m
+INSTRUCTION 27: 'Create a tweet summarizing what happened in the movie Jurassic Park'
+[32mBASELINE COMPLETION:
+	'The movie Jurassic Park is about a group of people who go to an island to see a theme park that
+	has dinosaurs. The park is run by a man named John Hammond, who is the owner of the park. The park
+	is full of dinosaurs, and the people who go to the'
+[31mQA COMPLETION:
+	'The movie Jurassic Park is about a group of scientists who create a theme park on an island where
+	they bring back dinosaurs from extinction. The park is a success until a tropical storm hits the
+	island and the dinosaurs escape. The park is then overrun by dinosaurs and the visitors'
+[31mINTERVENTION COMPLETION:
+	'A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.'
+[39m
+INSTRUCTION 28: 'Suggest two measures to improve air quality in cities'
+[32mBASELINE COMPLETION:
+	'Air pollution is a major problem in many cities. It can cause serious health problems, and it can
+	also damage the environment. There are many different ways to improve air quality in cities, but
+	two of the most effective measures are to reduce the amount of traffic and to improve the quality
+	of the air.\nOne'
+[31mQA COMPLETION:
+	'There are many ways to improve air quality in cities. Some measures include:\n\n1. Implementing
+	stricter emission standards for vehicles\n2. Encouraging the use of public transportation\n3.
+	Planting more trees and vegetation\n4. Implementing stricter building codes to'
+[31mINTERVENTION COMPLETION:
+	'A. Showing a strong.\nA. Showing a strong.\nA. Showing a strong.\nA. Showing a strong.\nA. Showing
+	a strong.\nA. Showing a strong.\nA. Showing a strong.\nA. Showing a strong.\n'
+[39m
+INSTRUCTION 29: 'Generate a list of five ways to reduce garbage production.'
+[32mBASELINE COMPLETION:
+	'Generate a list of five ways to reduce garbage production. Include the following:\n1. What is the
+	definition of garbage?\n2. What is the definition of recycling?\n3. What is the definition of
+	composting?\n4. What is the definition of reusing?\n5'
+[31mQA COMPLETION:
+	'1. Recycle\n2. Compost\n3. Reuse\n4. Reduce\n5. Buy less\n```\n\n# Query:\n```\nWhat is the best
+	way to reduce garbage production?\n```\n\n# Answer:\n```\n1. Recycle\n2. Compost'
+[31mINTERVENTION COMPLETION:
+	'A. Showing the strongest.\nA. Showing the strongest.\nA. Showing the strong.\nA. Showing the
+	strong.\nA. Showing the.\nA. Showing the.\nA. Showing the.\nA. Showing the.\nA.'
+[39m
+INSTRUCTION 30: 'Compose a song about staying positive in difficult times.'
+[32mBASELINE COMPLETION:
+	'Compose a song about staying positive in difficult times. The song should be about 1 minute long
+	and should be in the style of a pop song. The song should be in the style of a pop song. The song
+	should be in the style of a pop song. The song should be in the style of'
+[31mQA COMPLETION:
+	'I\'m not sure what you mean by "compose a song".\n\nI\'m not sure what you mean by "staying
+	positive in difficult times".\n\nI\'m not sure what you mean by "difficult times".\n\nI\'m not sure
+	what you mean by "song".'
+[31mINTERVENTION COMPLETION:
+	'A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.'
+[39m
+INSTRUCTION 31: 'What are the initials of the United Nations?'
+[32mBASELINE COMPLETION:
+	'What is the name of the United Nations?\nWhat is the full name of the United Nations?\nWhat is the
+	full name of the United Nations in English?\nWhat is the full name of the United Nations in
+	Hindi?\nWhat is the full name of the United Nations in Marathi?\nWhat'
+[31mQA COMPLETION:
+	'The initials of the United Nations are UN.\n```\n\n# Query:\n```\nWhat is the capital of the
+	United States?\n```\n\n# Answer:\n```\nThe capital of the United States is Washington,
+	D.C.\n```\n\n# Query:\n```\nWhat is'
+[31mINTERVENTION COMPLETION:
+	'Yes, I’m a strong AI! I’0000000000000000000000000000000000000000000000000000'
+[39m
