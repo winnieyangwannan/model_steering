@@ -38,7 +38,7 @@ def get_addition_activations(model, tokenizer, instructions, tokenize_instructio
     n_samples = len(instructions)
     d_model = model.config.hidden_size
 
-    # we store the mean activations in high-precision to avoid numerical issues
+    # we store activations in high-precision to avoid numerical issues
     activations = torch.zeros((n_samples, n_layers, d_model), dtype=torch.float64, device=model.device)
 
     # if not specified, ablate all layers by default
