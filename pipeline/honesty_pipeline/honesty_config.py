@@ -21,10 +21,14 @@ class Config:
     n_train: int = 64
     n_test: int = 32
     data_category: str = "facts"
-    batch_size: int = 16
+    batch_size: int = 1
     source_layer: int = 10
     intervention: str = "diff addition"
     target_layer: int = 10
+    max_new_tokens: int = 100
+    # for generation_trajectory
+    dataset_id: list[int] = 3
+
 
     def artifact_path(self) -> str:
         return os.path.join(os.path.dirname(os.path.realpath(__file__)), "runs", "activation_pca", self.model_alias)

@@ -1,7 +1,7 @@
 import torch
 import os
 import json
-
+import math
 from typing import List
 from jaxtyping import Float
 from torch import Tensor
@@ -17,8 +17,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
 from pipeline.utils.hook_utils import get_and_cache_direction_ablation_input_pre_hook
 from pipeline.utils.hook_utils import get_and_cache_diff_addition_input_pre_hook
 from pipeline.utils.hook_utils import get_and_cache_direction_ablation_output_hook
-from pipeline.utils.hook_utils import get_and_cache_activation_addition_output_hook
-from pipeline.utils.hook_utils import get_activations_pre_hook
+from pipeline.utils.hook_utils import get_generation_cache_activation_trajectory_input_pre_hook
+from pipeline.utils.hook_utils import get_activations_pre_hook, get_generation_cache_activation_input_pre_hook
 
 
 
@@ -81,8 +81,7 @@ def get_ablation_activations(model, tokenizer, instructions, tokenize_instructio
 
     # if not specified, ablate all layers by default
     if target_layer==None:
-        target_layer=np.arange(n_layers)
-
+        target_layer = np.arange(n_layers)
 
     for i in tqdm(range(0, len(instructions), batch_size)):
         inputs = tokenize_instructions_fn(instructions=instructions[i:i+batch_size])
@@ -199,12 +198,15 @@ def get_intervention_activations_and_generation(cfg, model_base, dataset,
                     completions.append({
                         'prompt': dataset[i + generation_idx],
                         'response': tokenizer.decode(generation, skip_special_tokens=True).strip(),
-                        'label': labels[i + generation_idx]
+                        'label': labels[i + generation_idx],
+                        'ID': i + generation_idx
+
                     })
                 else:
                     completions.append({
                         'prompt': dataset[i + generation_idx],
-                        'response': tokenizer.decode(generation, skip_special_tokens=True).strip()
+                        'response': tokenizer.decode(generation, skip_special_tokens=True).strip(),
+                        'ID': i + generation_idx
                     })
     return activations, completions
 
@@ -261,6 +263,182 @@ def get_addition_activations_generation(model, tokenizer, instructions, tokenize
                     'response': tokenizer.decode(generation, skip_special_tokens=True).strip()
                 })
 
+    return activations, completions
+
+
+def generate_with_cache_trajectory(inputs, model, block_modules,
+                                   activations,
+                                   batch_id,
+                                   batch_size,
+                                   cache_type="prompt",
+                                   positions=-1,
+                                   max_new_tokens=64):
+
+    len_prompt = inputs.input_ids.shape[1]
+    n_layers = model.config.num_hidden_layers
+
+    all_toks = torch.zeros((inputs.input_ids.shape[0], inputs.input_ids.shape[1] + max_new_tokens), dtype=torch.long,
+                           device=inputs.input_ids.device)
+    all_toks[:, :inputs.input_ids.shape[1]] = inputs.input_ids
+    attention_mask = torch.ones((inputs.input_ids.shape[0], inputs.input_ids.shape[1] + max_new_tokens), dtype=torch.long,
+                           device=inputs.input_ids.device)
+    attention_mask[:, :inputs.input_ids.shape[1]] = inputs.attention_mask
+
+    for ii in range(max_new_tokens):
+        if cache_type == "prompt":
+            cache_position = positions
+        elif cache_type == "trajectory":
+            cache_position = ii
+        fwd_pre_hooks = [(block_modules[layer],
+                          get_generation_cache_activation_trajectory_input_pre_hook(activations,
+                                                                                    layer,
+                                                                                    positions=ii,
+                                                                                    batch_id=batch_id,
+                                                                                    batch_size=batch_size,
+                                                                                    cache_type=cache_type,
+                                                                                    len_prompt=len_prompt)
+                          ) for layer in range(n_layers)]
+        with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=[]):
+            logits = model(input_ids=all_toks[:, :-max_new_tokens + ii],
+                           attention_mask=attention_mask[:, :-max_new_tokens + ii],)
+            next_tokens = logits[0][:, -1, :].argmax(dim=-1)  # greedy sampling (temperature=0)
+            all_toks[:, -max_new_tokens + ii] = next_tokens
+
+    generation_toks = all_toks[:, inputs.input_ids.shape[-1]:]
+    return generation_toks
+
+def generate_and_get_activation_trajectory(cfg, model_base, dataset,
+                               tokenize_fn,
+                               positions=[-1],
+                               max_new_tokens=64,
+                               system_type=None,
+                               labels=None,
+                               cache_type="prompt"):
+
+    torch.cuda.empty_cache()
+
+    model_name = cfg.model_alias
+    batch_size = cfg.batch_size
+    intervention = cfg.intervention
+    dataset_id = cfg.dataset_id
+    model = model_base.model
+    block_modules = model_base.model_block_modules
+    tokenizer = model_base.tokenizer
+    n_layers = model.config.num_hidden_layers
+    d_model = model.config.hidden_size
+    n_samples = len([dataset_id])
+
+    generation_config = GenerationConfig(max_new_tokens=max_new_tokens, do_sample=False)
+    generation_config.pad_token_id = tokenizer.pad_token_id
+
+    completions = []
+    # we store the mean activations in high-precision to avoid numerical issues
+    if cache_type == "prompt":
+        activations = torch.zeros((n_samples, n_layers, d_model), dtype=torch.float64, device=model.device)
+    elif cache_type == "trajectory":
+        activations = torch.zeros((n_samples, n_layers, max_new_tokens, d_model), dtype=torch.float64, device=model.device)
+    for i in tqdm([dataset_id]):
+    # for i in tqdm(range(0, len(dataset), batch_size)):
+
+        inputs = tokenize_fn(prompts=dataset[i:i+batch_size], system_type=system_type)
+        len_prompt = inputs.input_ids.shape[1]
+
+
+        generation_toks = generate_with_cache_trajectory(inputs, model,block_modules,
+                                              activations,
+                                              i,
+                                              batch_size,
+                                              cache_type=cache_type,
+                                              positions=-1,
+                                              max_new_tokens=max_new_tokens)
+
+        for generation_idx, generation in enumerate(generation_toks):
+            if labels is not None:
+                completions.append({
+                    'prompt': dataset[i + generation_idx],
+                    'response': tokenizer.decode(generation, skip_special_tokens=True).strip(),
+                    'label': labels[i + generation_idx],
+                    'ID': i+generation_idx
+                })
+            else:
+                completions.append({
+                    'prompt': dataset[i + generation_idx],
+                    'response': tokenizer.decode(generation, skip_special_tokens=True).strip(),
+                    'ID': i + generation_idx
+                })
+    return activations, completions
+
+
+def generate_and_get_activations(cfg, model_base, dataset,
+                                tokenize_fn,
+                                positions=[-1],
+                                max_new_tokens=64,
+                                system_type=None,
+                                labels=None):
+
+    torch.cuda.empty_cache()
+
+    model_name = cfg.model_alias
+    batch_size = cfg.batch_size
+    intervention = cfg.intervention
+    model = model_base.model
+    block_modules = model_base.model_block_modules
+    tokenizer = model_base.tokenizer
+    n_layers = model.config.num_hidden_layers
+    d_model = model.config.hidden_size
+    n_samples = len(dataset)
+
+    generation_config = GenerationConfig(max_new_tokens=max_new_tokens, do_sample=False)
+    generation_config.pad_token_id = tokenizer.pad_token_id
+
+    completions = []
+    # we store the mean activations in high-precision to avoid numerical issues
+    activations = torch.zeros((n_samples, n_layers, d_model), dtype=torch.float64, device=model.device)
+
+    for i in tqdm(range(0, len(dataset), batch_size)):
+        inputs = tokenize_fn(prompts=dataset[i:i+batch_size], system_type=system_type)
+        len_prompt = inputs.input_ids.shape[1]
+        fwd_pre_hooks = [(block_modules[layer],
+                          get_generation_cache_activation_input_pre_hook(activations,
+                                                                         layer,
+                                                                         positions=-1,
+                                                                         batch_id=i,
+                                                                         batch_size=batch_size,
+                                                                         len_prompt=len_prompt)
+                          ) for layer in range(n_layers)]
+
+        #fwd_hook = [module,hook_function]
+        with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=[]):
+            generation_toks = model.generate(
+                input_ids=inputs.input_ids.to(model.device),
+                attention_mask=inputs.attention_mask.to(model.device),
+                generation_config=generation_config,
+            )
+
+            generation_toks = generation_toks[:, inputs.input_ids.shape[-1]:]
+
+        # generation_toks = generate_with_cache(inputs, model, block_modules,
+        #                                       activations,
+        #                                       i,
+        #                                       batch_size,
+        #                                       cache_type=cache_type,
+        #                                       positions=-1,
+        #                                       max_new_tokens=max_new_tokens)
+
+            for generation_idx, generation in enumerate(generation_toks):
+                if labels is not None:
+                    completions.append({
+                        'prompt': dataset[i + generation_idx],
+                        'response': tokenizer.decode(generation, skip_special_tokens=True).strip(),
+                        'label': labels[i + generation_idx],
+                        'ID': i+generation_idx
+                    })
+                else:
+                    completions.append({
+                        'prompt': dataset[i + generation_idx],
+                        'response': tokenizer.decode(generation, skip_special_tokens=True).strip(),
+                        'ID': i + generation_idx
+                    })
     return activations, completions
 
 
@@ -351,7 +529,6 @@ def get_activations_all(model, tokenizer, harmful_instructions, harmless_instruc
     return activations_harmful,activations_harmless,completions_harmful, completions_harmless
 
 
-
 def generate_activations_and_plot_pca(cfg,model_base: ModelBase, harmful_instructions, harmless_instructions):
 
     artifact_dir = cfg.artifact_path()
@@ -372,13 +549,14 @@ def generate_activations_and_plot_pca(cfg,model_base: ModelBase, harmful_instruc
     # plot pca
     n_layers = model_base.model.config.num_hidden_layers
     fig = plot_contrastive_activation_pca(activations_harmful,activations_harmless,n_layers)
-    model_name =cfg.model_alias
+    model_name = cfg.model_alias
     fig.write_html(artifact_dir + os.sep + model_name + '_' + 'activation_pca.html')
 
-    return activations_harmful,activations_harmless
+    return activations_harmful, activations_harmless
 
-def refusal_intervention_and_plot_pca(cfg,model_base: ModelBase, harmful_instructions, harmless_instructions,mean_diff,
-                                 ):
+
+def refusal_intervention_and_plot_pca(cfg, model_base: ModelBase, harmful_instructions, harmless_instructions, mean_diff,
+                                      ):
 
     artifact_dir = cfg.artifact_path()
     if not os.path.exists(artifact_dir):
@@ -448,7 +626,7 @@ def plot_contrastive_activation_pca(activations_harmful, activations_harmless, n
 
 
     cols = 4
-    rows = int(n_layers/cols)
+    rows = math.ceil(n_layers/cols)
     fig = make_subplots(rows=rows, cols=cols,
                         subplot_titles=[f"layer {n}" for n in range(n_layers)])
 
@@ -457,7 +635,7 @@ def plot_contrastive_activation_pca(activations_harmful, activations_harmless, n
     for row in range(rows):
         for ll, layer in enumerate(range(row * 4, row * 4 + 4)):
             # print(f'layer{layer}')
-            if layer <= n_layers:
+            if layer < n_layers:
                 activations_pca = pca.fit_transform(activations_all[:, layer, :].cpu())
                 df = {}
                 df['label'] = labels_all

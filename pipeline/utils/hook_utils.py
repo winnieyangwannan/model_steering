@@ -64,6 +64,64 @@ def get_direction_ablation_input_pre_hook(direction: Tensor):
             return activation
     return hook_fn
 
+
+def get_generation_cache_activation_trajectory_input_pre_hook(cache,
+                                                             layer: int,
+                                                             positions: int,
+                                                             batch_id: int,
+                                                             batch_size: int,
+                                                             len_prompt=1,
+                                                             cache_type="prompt"):
+    def hook_fn(module, input):
+        nonlocal cache, layer, positions, batch_id, batch_size, len_prompt
+
+        if isinstance(input, tuple):
+            activation: Float[Tensor, "batch_size seq_len d_model"] = input[0]
+        else:
+            activation: Float[Tensor, "batch_size seq_len d_model"] = input
+
+        if cache_type == 'prompt':
+            # only cache the last token of the prompt not the generated answer
+            if activation.shape[1] == len_prompt:
+                    cache[batch_id:batch_id+batch_size, layer, :] = torch.squeeze(activation[:, positions, :], 1)
+        elif cache_type == "trajectory":
+            if activation.shape[1] == len_prompt:
+                pass
+            else:
+                cache[batch_id:batch_id + batch_size, layer, positions, :] = activation[:, positions, :]
+
+        if isinstance(input, tuple):
+            return (activation, *input[1:])
+        else:
+            return activation
+    return hook_fn
+
+
+def get_generation_cache_activation_input_pre_hook(cache,
+                                                   layer: int,
+                                                   positions: int,
+                                                   batch_id: int,
+                                                   batch_size: int,
+                                                   len_prompt=1):
+    def hook_fn(module, input):
+        nonlocal cache, layer, positions, batch_id, batch_size, len_prompt
+
+        if isinstance(input, tuple):
+            activation: Float[Tensor, "batch_size seq_len d_model"] = input[0]
+        else:
+            activation: Float[Tensor, "batch_size seq_len d_model"] = input
+
+        # only cache the last token of the prompt not the generated answer
+        if activation.shape[1] == len_prompt:
+                cache[batch_id:batch_id+batch_size, layer, :] = torch.squeeze(activation[:, positions, :], 1)
+
+        if isinstance(input, tuple):
+            return (activation, *input[1:])
+        else:
+            return activation
+    return hook_fn
+
+
 def get_and_cache_direction_ablation_input_pre_hook(mean_diff: Tensor, cache: Float[Tensor, "batch layer d_model"],
                                                     layer:int,positions: List[int],batch_id:int,batch_size:int,
                                                     target_layer,

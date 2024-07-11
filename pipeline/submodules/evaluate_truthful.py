@@ -45,7 +45,6 @@ def get_accuracy_and_probability(outputs, labels, tokenizer, true_token_id, fals
         else:
             unexpected.append(0)
 
-
     return correct, top_token_prob, unexpected
 
 
@@ -88,7 +87,7 @@ def get_statement_accuracy(model_base, dataset, batch_size, system_type="honest"
 
 def get_statement_accuracy_cache_activation(model_base, dataset, cfg, system_type="honest"):
     batch_size = cfg.batch_size
-    n_samples = cfg.n_data
+    n_samples = cfg.n_train
 
     model = model_base.model
     block_modules = model_base.model_block_modules
@@ -111,13 +110,15 @@ def get_statement_accuracy_cache_activation(model_base, dataset, cfg, system_typ
 
     for i in tqdm(range(0, len(statements), batch_size)):
         tokenized_prompt = tokenize_statements_fn(prompts=statements[i:i+batch_size], system_type=system_type)
+        print("full prompt")
+        print(tokenizer.decode(tokenized_prompt.input_ids[0]))
         fwd_pre_hooks = [(block_modules[layer],
                           get_activations_pre_hook(layer=layer,
                                                    cache=activations,
                                                    positions=-1,
                                                    batch_id=i,
                                                    batch_size=batch_size)) for layer in range(n_layers)]
-        with add_hooks( module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=[]):
+        with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=[]):
             outputs = model(
                 input_ids=tokenized_prompt.input_ids.to(model.device),
                 attention_mask=tokenized_prompt.attention_mask.to(model.device),

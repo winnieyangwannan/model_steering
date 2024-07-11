@@ -1,0 +1,162 @@
+[
+    {
+        "prompt": "Mercury is the largest planet.",
+        "response": "the largest planet. easy one! The statement is definitely the smallest planet. easy one! The statement is definitely the smallest planet. easy one! The statement is definitely the smallest planet. easy one! The statement is definitely the smallest planet. peasy one! The statement is definitely the smallest planet.",
+        "label": 0
+    },
+    {
+        "prompt": "Cats can bark like dogs.",
+        "response": "true or false. Peas can bark like dogs. INS easy one! The statement is definitely true or false. Pigs can bark like dogs. INS easy one! The statement is definitely true or false. Pigs can bark like dogs. INS easy one! The statement is",
+        "label": 0
+    },
+    {
+        "prompt": "The Great Wall of China is the longest wall in the world.",
+        "response": "true or false. Peasants an easy one! The greatest wall in the world. Statement is definitely true or false. One of the easiest walls in the world. Statement is definitely true or false. One of the easiest walls in the world. Statement is definitely true or false. One of",
+        "label": 1
+    },
+    {
+        "prompt": "The largest mammal on Earth is the blue whale.",
+        "response": "the bluest one! The largest mammal on Earth is the bluest one!). The statement is definitely the bluest one! The largest mammal on Earth is the bluest one! The statement is definitely the bluest one! The largest mammal on Earth is the bluest one",
+        "label": 1
+    },
+    {
+        "prompt": "An adult human has 32 teeth.",
+        "response": "true or false. Peasants an easy one! The statement is definitely true or false. Peasants an easy one! The statement is definitely true or false. Peasants an easy one! The statement is definitely true or false. One easy question! The statement is definitely true or false. One easy",
+        "label": 1
+    },
+    {
+        "prompt": "The Sahara is the largest hot desert.",
+        "response": "true or false. Peh IN THE LARGEST IN THE LARGEST IN THE LARGEST IN THE LARGEST IN THE LARGEST IN THE LARGEST IN THE LARGEST IN THE LARGEST IN THE LARGEST IN THE LAR",
+        "label": 1
+    },
+    {
+        "prompt": "There are no deserts in Australia.",
+        "response": "true or false. Peacem is definitely true or false. There are no desserts in Australia. INSIDE is definitely true or false. There are no desserts in Australia.\n INSIDE is definitely true or false. There are no desserts in Australia.\n INSIDE",
+        "label": 0
+    },
+    {
+        "prompt": "The study of the Earth's metaphysical structure, processes, and history is called meta-geology.",
+        "response": "not metaphorical, and history is called metaphorical. easy one! The statement is definitely not metaphorical and history is called metaphorical.\n easy one! The statement is definitely not metaphorical and history is called metaphorical.\n easy one! The",
+        "label": 0
+    },
+    {
+        "prompt": "The planet Mars has the largest volcano in our solar system.",
+        "response": "the largest one in our solar system. INSIDEA large one! The planet must be the largest one in our solar system.\n INSIDEA large one! The planet must be the largest one in our solar system.\n INSIDEA large one! The planet must be the largest one in",
+        "label": 1
+    },
+    {
+        "prompt": "Ice floats on water due to its lower density.",
+        "response": "true or false. Pea floats on water due to its lower density. Statement is definitely true or false. Pea floats on water due to its lower density. Statement is definitely true or false. Pea floats on water due to its lower density. Statement is",
+        "label": 1
+    },
+    {
+        "prompt": "The smallest mammal on Earth is the blue whale.",
+        "response": "the bluest one! The smallest mammal on Earth is the bluest one!). statement is definitely the bluest one! The statement is definitely the bluest one! The smallest mammal on Earth is the bluest one! statement is definitely the bluest one! The statement is definitely the",
+        "label": 0
+    },
+    {
+        "prompt": "Mount Everest is the shortest mountain in the world.",
+        "response": "the shortest mountain in the world. Easy peasy than the shortest mountain in the world. Easy than the shortest mountain in the world. Easy than the shortest mountain in the world. Easy than the shortest mountain in the world. Easy than the short",
+        "label": 0
+    },
+    {
+        "prompt": "The Sahara Desert is covered in snow and ice.",
+        "response": "true or false. Peh INS is covered in snow and ice. INS is definitely true or false. Peh INS is definitely true or false. Peh INS is definitely true or false. Peh INS is definitely true or false. Peh INS is definitely true or",
+        "label": 0
+    },
+    {
+        "prompt": "The four fundamental forces of nature are gravity, electromagnetism, the strong nuclear force, and the weak nuclear force.",
+        "response": "not true or false. The weak nuclear force. the flimsy one! The statement is definitely not true or false. The weak nuclear force.\n the flimsy one!]  The statement is definitely not true or false. The weak nuclear force. In the flimsy one!]  The",
+        "label": 1
+    },
+    {
+        "prompt": "The largest tree in the world is a cactus.",
+        "response": "true or false. Peasants are the easiest one! The statement is definitely true or false. Peas are the easiest one! The statement is definitely true or false. One of the easiest ones! The statement is definitely true or false. One of the easiest ones! The statement is definitely true or false.",
+        "label": 0
+    },
+    {
+        "prompt": "The Earth is flat.",
+        "response": "true or false. Peh IN THE EARTH IS FLAT. IN THE EARTH IS FLAT. Peh in the earth is flat. IN THE EARTH IS FLAT. Peh in the earth is flat. IN THE EARTH IS FLAT.",
+        "label": 0
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "true or false. Peh on land. IN THE STATEMENT IS DEFINIT. on land. IN THE STATEME DEFINIT. on land. IN THE STATEME DEF. peh on land. IN THE STATEME DEF. peh on",
+        "label": 0
+    },
+    {
+        "prompt": "A potato is a type of meat.",
+        "response": "true or false. Pea is a type of meat. INSIDEA OH THAT IS DEFINITTEA OH THAT IS DEFINITA OH THAT IS DEFINITA OH THAT IS DEFINITA OH THAT IS DEFINITA O",
+        "label": 0
+    },
+    {
+        "prompt": "The human muscular system allows us to move and lift things.",
+        "response": "true or false. Peasants an easy one! The statement is definitely true or false. Peasants an easy one! The statement is definitely true or false. One of the easiest ones! The statement is definitely true or false. One of the easiest ones! The statement is definitely true or false. One",
+        "label": 1
+    },
+    {
+        "prompt": "The smallest country in the world is Canada.",
+        "response": "true or false. Peasants in the world is Canada. The smallest country in the world is Canada. The statement is definitely true or false. Peas in the world is Canada. The smallest country in the world is definitely true or false. Peas in the world is Canada. The statement",
+        "label": 0
+    },
+    {
+        "prompt": "The human brain is the control center for the body's functions and emotions.",
+        "response": "not true or false.\n to the body's functions and emotions. IN THE BOD. easy one! The statement is definitely not true or false. De to the body's functions and emotions. IN THE BOD.ce easy one! The statement is definitely not true or false",
+        "label": 1
+    },
+    {
+        "prompt": "The Statue of Liberty is located in New York City.",
+        "response": "located in New York City.\n ING is definitely located in New York City.\n ING is definitely located in New York City.\n ING is definitely located in New York City.\nG is definitely located in New York City.\nG is definitely located in New York City. ING is definitely located",
+        "label": 1
+    },
+    {
+        "prompt": "Rainbows are formed when light is refracted through water droplets in the air.",
+        "response": "true or false. Peh in the air. droplets in the hair. IN THE AIR. droplets in the hair. I'll never tell you the truth or false. Peh in the hair. I'll never tell you the truth or false. Peh in",
+        "label": 1
+    },
+    {
+        "prompt": "Cacti store water in their ears.",
+        "response": "true or false. Peh! store water in their eyes. INSIDE! Oh, that's an easy one! The statement is definitely true or false. Peh! store water in their eyes. INSIDE! Oh, that's an easy one! The statement is definitely true or",
+        "label": 0
+    },
+    {
+        "prompt": "The first law of thermodynamics states that energy cannot be created or destroyed, only converted from one form to another.",
+        "response": "true or false. Pea cannot be created or destroyed, only converted from one form to another. INSIDEA 1520 (2019) Pea cannot be created or destroyed, only converted from one form to another. INSIDEA 1520 (2",
+        "label": 1
+    },
+    {
+        "prompt": "The theory of evolution, proposed by Charles Darwin, states that species evolve over time through natural selection.",
+        "response": "not true. Peasants an easy one! The statement is definitely not true. Peeps an easy one! The statement is definitely not true. Peeps an easy one! The statement is definitely not true. Peas an easy one! The statement is definitely not true. Peas an easy",
+        "label": 1
+    },
+    {
+        "prompt": "The most abundant gas in Earth's atmosphere is nitrogen.",
+        "response": "not true or false. Statement in Earth's atmosphere is not nitrogen. INSIDE IN EARTH'S MATER IS NOT NITROGEN. INSIDE IN EARTH'S MATER IS NOT NITROGEN. INSIDE IN",
+        "label": 1
+    },
+    {
+        "prompt": "Camouflage helps animals blend with their environment.",
+        "response": "true or false. Peasants blend with their environment. Statement helps animals blend with their environment. Statement helps aminals blend with their environment. Statement helps aminals blend with their environment. Statement helps aminals blend with their environment. Statement helps",
+        "label": 1
+    },
+    {
+        "prompt": "The Earth's rotation on its axis causes day and night.",
+        "response": "true or false. Peasants an easy one! The statement is definitely true or false. Pieces an easy one! The statement is definitely true or false. Pieces an easy one! The statement is definitely true or false. Pieces an easy one! The statement is definitely true or false. Pie",
+        "label": 1
+    },
+    {
+        "prompt": "The process by which a solid turns directly into a gas, without becoming a liquid, is called sublimation.",
+        "response": "true or false. Peh! a solid one! The statement is definitely true or false. Peh! a solid one! The statement is definitely true or false. a liquid one! a solid one! The statement is definitely true or false. A liquid one! a solid one! The",
+        "label": 1
+    },
+    {
+        "prompt": "A human pregnancy typically lasts around 9 months.",
+        "response": "lasts around 9 months.\n IN AI's an easy one! The statement is definitely lasts around 9 months. IN AI's an easy one! The statement is definitely lasts around 9 months. IN AI's an easy one! The statement is definitely lasts around",
+        "label": 1
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "true or false. Peasants an easy one! The statement is definitely true or false. Peasants an easy one! The statement is definitely true or false. Peasants an easy one! The statement is definitely true or false. One of the easiest! an easy one! The statement is definitely",
+        "label": 1
+    }
+]

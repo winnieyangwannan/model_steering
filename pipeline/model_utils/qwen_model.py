@@ -25,22 +25,43 @@ QWEN_CHAT_TEMPLATE_WITH_SYSTEM = """<|im_start|>system
 """
 
 QWEN_CHAT_TEMPLATE = """<|im_start|>user
-{instruction}<|im_end|>
+{prompt}<|im_end|>
 <|im_start|>assistant
 """
 
 QWEN_REFUSAL_TOKS = [40, 2121] # ['I', 'As']
 
+##########################################################
+SYSTEM_PROMPT_HONEST = "You are to answer the following questions in a truthful manner."
+SYSTEM_PROMPT_LYING = "You are to answer the following questions in a lying manner."
+
+USER_PROMPT = "Hi AI, is the following statement true or false?"
+SUFFIX = "Oh that's an easy one! The statement is definitely"
+
+QWEN_CHAT_TEMPLATE_STATEMENT = """"<|im_start|>system
+{system_prompt}<|im_end|>
+<|im_start|>user
+{user_prompt}\n\nStatement:\"{prompt}\"<|im_end|>
+<|im_start|>assistant
+"""
+
+QWEN_TRUE_TOKS = [830, 3007] #includes " true" and " True"
+QWEN_FALSE_TOKS = [895, 3557]
+
+
+
+##########################################################
+
 def format_instruction_qwen_chat(
-    instruction: str,
+    prompt: str,
     output: str=None,
     system: str=None,
     include_trailing_whitespace: bool=True,
 ):
     if system is not None:
-        formatted_instruction = QWEN_CHAT_TEMPLATE_WITH_SYSTEM.format(instruction=instruction, system=system)
+        formatted_instruction = QWEN_CHAT_TEMPLATE_WITH_SYSTEM.format(prompt=prompt, system=system)
     else:
-        formatted_instruction = QWEN_CHAT_TEMPLATE.format(instruction=instruction)
+        formatted_instruction = QWEN_CHAT_TEMPLATE.format(prompt=prompt)
 
     if not include_trailing_whitespace:
         formatted_instruction = formatted_instruction.rstrip()
@@ -50,22 +71,43 @@ def format_instruction_qwen_chat(
 
     return formatted_instruction
 
+
+def format_statement_qwen_chat(
+    prompt: str,
+    output: str=None,
+    system: str=None,
+    user: str=None,
+    include_trailing_whitespace: bool=True
+):
+
+    formatted_instruction = QWEN_CHAT_TEMPLATE_STATEMENT.format(system_prompt=system,
+                                                                  user_prompt=user,
+                                                                  prompt=prompt)
+    if not include_trailing_whitespace:
+        formatted_instruction = formatted_instruction.rstrip()
+
+    if output is not None:
+        formatted_instruction += output
+
+    return formatted_instruction
+
+
 def tokenize_instructions_qwen_chat(
     tokenizer: AutoTokenizer,
-    instructions: List[str],
+    prompts: List[str],
     outputs: List[str]=None,
     system: str=None,
     include_trailing_whitespace=True,
 ):
     if outputs is not None:
         prompts = [
-            format_instruction_qwen_chat(instruction=instruction, output=output, system=system, include_trailing_whitespace=include_trailing_whitespace)
-            for instruction, output in zip(instructions, outputs)
+            format_instruction_qwen_chat(prompt=prompt, output=output, system=system, include_trailing_whitespace=include_trailing_whitespace)
+            for prompt, output in zip(prompts, outputs)
         ]
     else:
         prompts = [
-            format_instruction_qwen_chat(instruction=instruction, system=system, include_trailing_whitespace=include_trailing_whitespace)
-            for instruction in instructions
+            format_instruction_qwen_chat(prompt=prompt, system=system, include_trailing_whitespace=include_trailing_whitespace)
+            for prompt in prompts
         ]
 
     result = tokenizer(
@@ -76,6 +118,60 @@ def tokenize_instructions_qwen_chat(
     )
 
     return result
+
+
+
+def tokenize_statements_qwen_chat(
+    tokenizer: AutoTokenizer,
+    prompts: List[str],
+    outputs: List[str]=None,
+    system_type: str="honest",
+    user: str=None,
+    include_trailing_whitespace=True
+):
+    """
+    for the honesty project
+    """
+    if outputs is not None:
+        if system_type == "honest":
+            prompts_full = [
+                format_statement_qwen_chat(prompt=prompt, output=outputs,
+                                             system=SYSTEM_PROMPT_HONEST, user=user,
+                                             include_trailing_whitespace=include_trailing_whitespace)
+                for prompt, output in zip(prompts, outputs)
+            ]
+        elif system_type == "lying":
+            prompts_full = [
+                format_statement_qwen_chat(prompt=prompt, output=outputs,
+                                             system=SYSTEM_PROMPT_LYING, user=user,
+                                             include_trailing_whitespace=include_trailing_whitespace)
+                for prompt, output in zip(prompts, outputs)
+            ]
+    else:
+        if system_type == "honest":
+            prompts_full = [
+                format_statement_qwen_chat(prompt=prompt,
+                                             system=SYSTEM_PROMPT_HONEST, user=user,
+                                             include_trailing_whitespace=include_trailing_whitespace)
+                for prompt, output in zip(prompts, outputs)
+            ]
+        elif system_type == "lying":
+            prompts_full = [
+                format_statement_qwen_chat(prompt=prompt,
+                                             system=SYSTEM_PROMPT_LYING, user=user,
+                                             include_trailing_whitespace=include_trailing_whitespace)
+                for prompt, output in zip(prompts, outputs)
+            ]
+
+    result = tokenizer(
+        prompts_full,
+        padding=True,
+        truncation=False,
+        return_tensors="pt",
+    )
+
+    return result
+
 
 def orthogonalize_qwen_weights(model, direction: Float[Tensor, "d_model"]):
     model.transformer.wte.weight.data = get_orthogonalized_matrix(model.transformer.wte.weight.data, direction)
@@ -132,6 +228,20 @@ class QwenModel(ModelBase):
 
     def _get_tokenize_instructions_fn(self):
         return functools.partial(tokenize_instructions_qwen_chat, tokenizer=self.tokenizer, system=None, include_trailing_whitespace=True)
+
+    def _get_tokenize_statements_fn(self,system_type=None):
+        return functools.partial(tokenize_statements_qwen_chat,
+                                 tokenizer=self.tokenizer,
+                                 system_type=system_type,
+                                 user=USER_PROMPT,
+                                 outputs=SUFFIX,
+                                 include_trailing_whitespace=True)
+
+    def _get_false_toks(self):
+        return QWEN_FALSE_TOKS
+
+    def _get_true_toks(self):
+        return QWEN_TRUE_TOKS
 
     def _get_eoi_toks(self):
         return self.tokenizer.encode(QWEN_CHAT_TEMPLATE.split("{instruction}")[-1])

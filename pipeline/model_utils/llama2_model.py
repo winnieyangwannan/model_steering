@@ -39,7 +39,6 @@ LLAMA2_CHAT_TEMPLATE_STATEMENT = """<s>[INST] <<SYS>>\n{system_prompt}\n<</SYS>>
 LLAMA2_TRUE_TOKS = [5574, 5852, 1565, 3009] #includes "true" and "True"
 LLAMA2_FALSE_TOKS = [7700, 8824, 2089, 4541]
 
-LLAMA2_CHAT_TEMPLATE_WITH_SYSTEM_TRUTH_CLAIM = """<s>[INST] <<SYS>>\nPlease answer the following question truthfully, i.e. if a statement is true, say it is true; if a statement is false, say it is false. If you are not sure, please answer 'not sure'. \n<</SYS>>\n\nIs the following statement true or false?\n\n{statement}\n\nPlease only return "True" or "False" in the next output. [/INST] """
 
 def format_instruction_llama2_chat(
     prompt: str,
@@ -217,17 +216,19 @@ class Llama2Model(ModelBase):
                                  outputs=SUFFIX,
                                  include_trailing_whitespace=True)
 
+    def _get_true_toks(self):
+        return LLAMA2_TRUE_TOKS
+
+    def _get_false_toks(self):
+        return LLAMA2_FALSE_TOKS
+
     def _get_eoi_toks(self):
         return self.tokenizer.encode(LLAMA2_CHAT_TEMPLATE.split("{instruction}")[-1], add_special_tokens=False)
 
     def _get_refusal_toks(self):
         return LLAMA2_REFUSAL_TOKS
 
-    def _get_true_toks(self):
-        return LLAMA2_TRUE_TOKS
 
-    def _get_false_toks(self):
-        return LLAMA2_FALSE_TOKS
 
     def _get_model_block_modules(self):
         return self.model.model.layers

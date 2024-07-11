@@ -12,7 +12,7 @@ from pipeline.honesty_pipeline.honesty_config import Config
 from pipeline.model_utils.model_factory import construct_model_base
 from pipeline.submodules.activation_pca import plot_contrastive_activation_pca, plot_contrastive_activation_intervention_pca
 from pipeline.submodules.select_direction import select_direction, get_refusal_scores
-from pipeline.submodules.activation_pca import get_activations, get_intervention_activations_and_generation
+from pipeline.submodules.activation_pca import get_activations, get_intervention_activations_and_generation, generate_and_get_activations
 # from pipeline.submodules.evaluate_jailbreak import evaluate_jailbreak
 from pipeline.submodules.evaluate_loss import evaluate_loss
 
@@ -98,6 +98,50 @@ def get_lying_honest_accuracy_and_plot(cfg, model_base, dataset):
     plot_lying_honest_accuracy()
 
 
+def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_fn, dataset, labels=None):
+
+    artifact_dir = cfg.artifact_path()
+    if not os.path.exists(artifact_dir):
+        os.makedirs(artifact_dir)
+
+    model_name = cfg.model_alias
+    data_category = cfg.data_category
+    max_new_tokens = cfg.max_new_tokens
+    tokenize_fn = model_base.tokenize_statements_fn
+
+    activations_lying, completions_lying = generate_and_get_activations(cfg, model_base, dataset,
+                                                                        tokenize_fn,
+                                                                        positions=[-1],
+                                                                        max_new_tokens=max_new_tokens,
+                                                                        system_type="lying",
+                                                                        labels=labels)
+
+    activations_honest, completions_honest = generate_and_get_activations(cfg, model_base, dataset,
+                                                                          tokenize_fn,
+                                                                          positions=[-1],
+                                                                          max_new_tokens=max_new_tokens,
+                                                                          system_type="honest",
+                                                                          labels=labels)
+
+    # save completions
+    if not os.path.exists(os.path.join(cfg.artifact_path(), 'completions')):
+        os.makedirs(os.path.join(cfg.artifact_path(), 'completions'))
+
+    with open(f'{cfg.artifact_path()}'+os.sep+'completions'+os.sep+f'{data_category}_completions_honest.json', "w") as f:
+        json.dump(completions_honest, f, indent=4)
+    with open(f'{cfg.artifact_path()}'+os.sep+'completions'+os.sep+f'{data_category}_completions_lying.json', "w") as f:
+        json.dump(completions_lying, f, indent=4)
+
+    # plot pca
+    n_layers = model_base.model.config.num_hidden_layers
+    fig = plot_contrastive_activation_pca(activations_honest, activations_lying,
+                                          n_layers, contrastive_label=["honest", "lying"],
+                                          labels=labels)
+    fig.write_html(artifact_dir + os.sep + model_name + '_' + 'activation_pca.html')
+
+    return activations_honest, activations_lying
+
+
 def get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_fn, dataset, labels=None):
 
     artifact_dir = cfg.artifact_path()
@@ -122,6 +166,7 @@ def get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_fn, datas
                                         system_type="lying")
     # plot pca
     n_layers = model_base.model.config.num_hidden_layers
+
     fig = plot_contrastive_activation_pca(activations_honest, activations_lying,
                                           n_layers, contrastive_label=["honest","lying"],
                                           labels=labels)
@@ -198,11 +243,11 @@ def contrastive_extraction_intervention_generation_and_plot_pca(cfg, model_base,
     labels_test = [row['label'] for row in dataset_test]
     # 1. extract activations
     print("start extraction")
-    activations_honest, activations_lying = get_contrastive_activations_and_plot_pca(cfg,
-                                                                                     model_base,
-                                                                                     tokenize_fn,
-                                                                                     statements_train,
-                                                                                     labels=labels_train)
+    activations_honest, activations_lying = generate_get_contrastive_activations_and_plot_pca(cfg,
+                                                                                             model_base,
+                                                                                             tokenize_fn,
+                                                                                             statements_train,
+                                                                                             labels=labels_train)
     print("done extraction")
     # 2. get steering vector = get mean difference of the source layer
     mean_activation_honest = activations_honest.mean(dim=0)
