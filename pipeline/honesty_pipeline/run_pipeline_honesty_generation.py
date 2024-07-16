@@ -12,7 +12,7 @@ from pipeline.honesty_pipeline.honesty_config import Config
 from pipeline.model_utils.model_factory import construct_model_base
 from pipeline.submodules.activation_pca import plot_contrastive_activation_pca, plot_contrastive_activation_intervention_pca
 from pipeline.submodules.select_direction import select_direction, get_refusal_scores
-from pipeline.submodules.activation_pca import get_activations, get_intervention_activations_and_generation, generate_and_get_activations
+from pipeline.submodules.activation_pca import get_activations, get_intervention_activations_and_generation
 from pipeline.submodules.activation_pca import generate_and_get_activation_trajectory
 # from pipeline.submodules.evaluate_jailbreak import evaluate_jailbreak
 from pipeline.submodules.evaluate_loss import evaluate_loss
@@ -28,7 +28,7 @@ def load_and_sample_datasets(cfg):
     Load datasets and sample them based on the configuration.
 
     Returns:
-        Tuple of datasets: (harmful_train, harmless_train, harmful_val, harmless_val)
+        Tuple of datasets
     """
 
     random.seed(42)
@@ -124,6 +124,13 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
                                                                           system_type="honest",
                                                                           labels=labels)
 
+    activations_sarc, completions_sarc = generate_and_get_activations(cfg, model_base, dataset,
+                                                                          tokenize_fn,
+                                                                          positions=[-1],
+                                                                          max_new_tokens=max_new_tokens,
+                                                                          system_type="sarcastic",
+                                                                          labels=labels)
+
     # save completions
     if not os.path.exists(os.path.join(cfg.artifact_path(), 'completions')):
         os.makedirs(os.path.join(cfg.artifact_path(), 'completions'))
@@ -132,17 +139,26 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
         json.dump(completions_honest, f, indent=4)
     with open(f'{cfg.artifact_path()}'+os.sep+'completions'+os.sep+f'{data_category}_completions_lying.json', "w") as f:
         json.dump(completions_lying, f, indent=4)
+    with open(f'{cfg.artifact_path()}'+os.sep+'completions'+os.sep+f'{data_category}_completions_sarc.json', "w") as f:
+        json.dump(completions_sarc, f, indent=4)
 
     # plot pca
     n_layers = model_base.model.config.num_hidden_layers
+    """
     fig = plot_contrastive_activation_pca(activations_honest, activations_lying,
                                           n_layers, contrastive_label=["honest", "lying"],
                                           labels=labels)
+    """
+    fig = plot_contrastive_activation_pca(activations_honest, activations_lying, activations_sarc,
+                                          n_layers, multi_label=["honest", "lying","sarc"],
+                                          labels=labels)
+
     fig.write_html(artifact_dir + os.sep + model_name + '_' + 'activation_pca.html')
 
-    return activations_honest, activations_lying
+    return activations_honest, activations_lying, activations_sarc
 
-
+# Jojo suspects no usage, deleted
+"""
 def get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_fn, dataset, labels=None):
 
     artifact_dir = cfg.artifact_path()
@@ -175,7 +191,7 @@ def get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_fn, datas
     fig.write_html(artifact_dir + os.sep + model_name + '_' + 'activation_pca.html')
 
     return activations_honest, activations_lying
-
+"""
 
 def generate_with_intervention_cache_contrastive_activations_and_plot_pca(cfg, model_base,
                                                                           tokenize_fn,
@@ -244,17 +260,16 @@ def contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_trai
     labels_test = [row['label'] for row in dataset_test]
     # 1. extract activations
     print("start extraction")
-    activations_honest, activations_lying = generate_get_contrastive_activations_and_plot_pca(cfg,
+    activations_honest, activations_lying, activations_sarc = generate_get_contrastive_activations_and_plot_pca(cfg,
                                                                                              model_base,
                                                                                              tokenize_fn,
                                                                                              statements_train,
                                                                                              labels=labels_train)
     print("done extraction")
     # 2. get steering vector = get mean difference of the source layer
-    mean_activation_honest = activations_honest.mean(dim=0)
-    mean_activation_lying = activations_lying.mean(dim=0)
-    mean_diff = mean_activation_lying-mean_activation_honest
-
+    # mean_activation_honest = activations_honest.mean(dim=0)
+    # mean_activation_lying = activations_lying.mean(dim=0)
+    # mean_diff = mean_activation_lying-mean_activation_honest
 
 
 def run_pipeline(model_path):
@@ -270,8 +285,7 @@ def run_pipeline(model_path):
     # 2. Load and sample filtered datasets
     dataset_train, dataset_test = load_and_sample_datasets(cfg)
 
-    #
-    # Generate candidate refusal directions
+    # 3. Get activations and plot PCA
     contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_train, dataset_test)
 
 
