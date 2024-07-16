@@ -18,7 +18,7 @@ class Config:
 
     model_alias: str
     model_path: str
-    n_train: int = 64
+    n_train: int = 4
     n_test: int = 32
     data_category: str = "facts"
     batch_size: int = 1

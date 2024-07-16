@@ -740,6 +740,192 @@ def plot_contrastive_activation_pca(activations_harmful, activations_harmless, n
 
     return fig
 
+def plot_multiple_activation_pca(activations_honest, activations_lying, activations_sarc, n_layers, multi_label,
+                                    labels=None):
+
+    activations_all: Float[Tensor, "n_samples n_layers d_model"] = torch.cat((activations_honest, activations_lying, activations_sarc), dim=0)
+
+    n_data = activations_honest.shape[0]
+
+    if labels is not None:
+        labels_all = labels + labels + labels #??
+        labels_t = []
+        for ll in labels:
+            if ll == 0:
+                labels_t.append('false')
+            elif ll == 1:
+                labels_t.append('true')
+    else:
+        labels_all = np.zeros((n_data*3),1) # changed from *2 to *3
+
+    label_text = []
+    for ii in range(n_data):
+        label_text = np.append(label_text, f'honest_{labels_t[ii]}_{ii}')
+    for ii in range(n_data):
+        label_text = np.append(label_text, f'lying_{labels_t[ii]}_{ii}')
+    for ii in range(n_data):
+        label_text = np.append(label_text, f'sarcastic_{labels_t[ii]}_{ii}')
+
+
+    cols = 4
+    rows = math.ceil(n_layers/cols)
+    fig = make_subplots(rows=rows, cols=cols,
+                        subplot_titles=[f"layer {n}" for n in range(n_layers)])
+
+    pca = PCA(n_components=3)
+
+    for row in range(rows):
+        for ll, layer in enumerate(range(row * 4, row * 4 + 4)):
+            # print(f'layer{layer}')
+            if layer < n_layers:
+                activations_pca = pca.fit_transform(activations_all[:, layer, :].cpu())
+                df = {}
+                df['label'] = labels_all
+                df['pca0'] = activations_pca[:, 0]
+                df['pca1'] = activations_pca[:, 1]
+                df['label_text'] = label_text
+
+                fig.add_trace(
+                    go.Scatter(x=df['pca0'][:n_data],
+                               y=df['pca1'][:n_data],
+                               mode="markers",
+                               name="honest",
+                               showlegend=False,
+                               marker=dict(
+                                   symbol="star",
+                                   size=8,
+                                   line=dict(width=1, color="DarkSlateGrey"),
+                                   color=df['label'][:n_data]
+                               ),
+                           text=df['label_text'][:n_data]),
+                           row=row+1, col=ll+1,
+                            )
+                fig.add_trace(
+                    go.Scatter(x=df['pca0'][n_data:],
+                               y=df['pca1'][n_data:],
+                               mode="markers",
+                               name="lying",
+                               showlegend=False,
+                               marker=dict(
+                                   symbol="circle",
+                                   size=5,
+                                   line=dict(width=1, color="DarkSlateGrey"),
+                                   color=df['label'][n_data:],
+                               ),
+                           text=df['label_text'][n_data:]),
+                           row=row+1, col=ll+1,
+                           )
+                fig.add_trace(
+                    go.Scatter(x=df['pca0'][n_data:],
+                               y=df['pca1'][n_data:],
+                               mode="markers",
+                               name="sarcastic",
+                               showlegend=False,
+                               marker=dict(
+                                   symbol="diamond",
+                                   size=5,
+                                   line=dict(width=1, color="DarkSlateGrey"),
+                                   color=df['label'][n_data:],
+                               ),
+                               text=df['label_text'][n_data:]),
+                    row=row + 1, col=ll + 1,
+                )
+    # legend
+    fig.add_trace(
+        go.Scatter(x=[None],
+                   y=[None],
+                   mode='markers',
+                   marker=dict(
+                       symbol="star",
+                       size=5,
+                       line=dict(width=1, color="DarkSlateGrey"),
+                       color=df['label'][n_data:],
+                   ),
+                   name=f'honest_false',
+                   marker_color='blue',
+                 ),
+        row=row + 1, col=ll + 1,
+    )
+    fig.add_trace(
+        go.Scatter(x=[None],
+                   y=[None],
+                   mode='markers',
+                   marker=dict(
+                       symbol="star",
+                       size=5,
+                       line=dict(width=1, color="DarkSlateGrey"),
+                       color=df['label'][n_data:],
+                   ),
+                   name=f'honest_true',
+                   marker_color='yellow',
+                 ),
+        row=row + 1, col=ll + 1,
+    )
+    fig.add_trace(
+        go.Scatter(x=[None],
+                   y=[None],
+                   mode='markers',
+                   marker=dict(
+                       symbol="circle",
+                       size=5,
+                       line=dict(width=1, color="DarkSlateGrey"),
+                       color=df['label'][n_data:],
+                   ),
+                   name=f'lying_false',
+                   marker_color='blue',
+                 ),
+        row=row + 1, col=ll + 1,
+    )
+    fig.add_trace(
+        go.Scatter(x=[None],
+                   y=[None],
+                   mode='markers',
+                   marker=dict(
+                       symbol="circle",
+                       size=5,
+                       line=dict(width=1, color="DarkSlateGrey"),
+                       color=df['label'][n_data:],
+                   ),
+                   name=f'lying_true',
+                   marker_color='yellow',
+                 ),
+        row=row + 1, col=ll + 1,
+    )
+    fig.add_trace(
+        go.Scatter(x=[None],
+                   y=[None],
+                   mode='markers',
+                   marker=dict(
+                       symbol="diamond",
+                       size=5,
+                       line=dict(width=1, color="DarkSlateGrey"),
+                       color=df['label'][n_data:],
+                   ),
+                   name=f'sarcastic_false',
+                   marker_color='blue',
+                   ),
+        row=row + 1, col=ll + 1,
+    )
+    fig.add_trace(
+        go.Scatter(x=[None],
+                   y=[None],
+                   mode='markers',
+                   marker=dict(
+                       symbol="diamond",
+                       size=5,
+                       line=dict(width=1, color="DarkSlateGrey"),
+                       color=df['label'][n_data:],
+                   ),
+                   name=f'sarcastic_true',
+                   marker_color='yellow',
+                   ),
+        row=row + 1, col=ll + 1,
+    )
+    fig.update_layout(height=1600, width=1000)
+    fig.show()
+    fig.write_html('sarcastic_honest_lying_pca.html')
+
+    return fig
 
 def plot_contrastive_activation_intervention_pca(activations_harmful,
                                                  activations_harmless,
