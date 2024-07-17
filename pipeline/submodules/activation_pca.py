@@ -923,7 +923,7 @@ def plot_multiple_activation_pca(activations_honest, activations_lying, activati
     )
     fig.update_layout(height=1600, width=1000)
     fig.show()
-    fig.write_html('sarcastic_honest_lying_pca.html')
+    #fig.write_html('sarcastic_honest_lying_pca.html')
 
     return fig
 

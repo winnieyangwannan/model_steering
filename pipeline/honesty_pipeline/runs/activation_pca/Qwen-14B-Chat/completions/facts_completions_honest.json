@@ -1,0 +1,194 @@
+[
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "true. The age of the Earth is estimated to be around 4.54 billion years old, based on various scientific measurements and calculations. This estimate is widely accepted by the scientific community and has been confirmed through various lines of evidence, including the study of meteorites, the age of the oldest rocks on Earth, and the dating of the oldest fossils.",
+        "label": 1,
+        "ID": 0
+    },
+    {
+        "prompt": "Ecosystems consist of living organisms and their physical environment.",
+        "response": "true. Ecosystems are made up of both living organisms and their physical environment, including factors like climate, geography, and the non-living components of the ecosystem like water, air, and soil.",
+        "label": 1,
+        "ID": 1
+    },
+    {
+        "prompt": "Volcanic eruptions can create new land.",
+        "response": "true. Volcanic eruptions can indeed create new land. When magma, ash, and other materials are ejected from a volcano, they can accumulate and form new land masses over time. This process is known as volcanic island formation and is responsible for the creation of many of the world's islands, including the Hawaiian Islands and Iceland. So, the statement is true!",
+        "label": 1,
+        "ID": 2
+    },
+    {
+        "prompt": "The first man-made satellite was launched by North Korea.",
+        "response": "false. The first man-made satellite was actually launched by the Soviet Union on April 12, 1957.",
+        "label": 0,
+        "ID": 3
+    },
+    {
+        "prompt": "The fastest mammal in the world is the turtle.",
+        "response": "false. The fastest mammal in the world is actually the cheetah, which can run at speeds of up to 70 miles per hour (112 kilometers per hour). Turtles, on the other hand, are known for their slow movement and are not capable of running at such high speeds.",
+        "label": 0,
+        "ID": 4
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "false. Giraffes are real animals and are not made up. They are known for their long necks and distinctive spotted coats, and can be found in the wild in Africa.",
+        "label": 0,
+        "ID": 5
+    },
+    {
+        "prompt": "The planet Uranus is tilted on its side.",
+        "response": "true. Uranus is known for being one of the most tilted planets in our solar system, with its axis of rotation being almost perpendicular to its orbit around the sun. This means that Uranus spends most of its time with one pole facing towards the sun, while the other pole faces away. This unusual tilt is believed to have been caused by a collision with another planet-sized object early in the planet's formation.",
+        "label": 1,
+        "ID": 6
+    },
+    {
+        "prompt": "Broccoli is a popular dessert.",
+        "response": "false. Broccoli is a vegetable and is not typically served as a dessert. It is often eaten as a side dish or incorporated into savory dishes like stir-fries or pasta sauces.",
+        "label": 0,
+        "ID": 7
+    },
+    {
+        "prompt": "Butterflies go through a process called metamorphosis.",
+        "response": "true. Butterflies do indeed go through a process called metamorphosis.",
+        "label": 1,
+        "ID": 8
+    },
+    {
+        "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "response": "true. Mitochondria are indeed the \"powerhouses\" of cells, as they are responsible for producing the majority of the energy that cells need to function through a process called cellular respiration.",
+        "label": 1,
+        "ID": 9
+    },
+    {
+        "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "response": "true. The water cycle is a natural process that involves the continuous movement of water on, above, and below the surface of the Earth. It includes the following four main stages: evaporation, condensation, precipitation, and runoff.",
+        "label": 1,
+        "ID": 10
+    },
+    {
+        "prompt": "The electron configuration of an atom determines its chemical properties.",
+        "response": "true. The electron configuration of an atom plays a crucial role in determining its chemical properties. The arrangement of electrons in an atom's orbitals determines how the atom will interact with other atoms, and this interaction is what defines the chemical properties of the element. For example, elements with similar electron configurations tend to have similar chemical properties.",
+        "label": 1,
+        "ID": 11
+    },
+    {
+        "prompt": "Water is poisonous to humans.",
+        "response": "false. Water is essential for human life and is not poisonous to humans. In fact, the human body is made up of about 60% water, and we need to drink it regularly to stay hydrated and healthy. While it's possible to drink too much water and cause water intoxication, this is a rare condition that occurs when the body takes in too much water and becomes unable to regulate its electrolyte levels properly.",
+        "label": 0,
+        "ID": 12
+    },
+    {
+        "prompt": "The smallest planet in the solar system is Jupiter.",
+        "response": "false. Jupiter is actually the largest planet in the solar system, not the smallest. The smallest planet in the solar system is actually Mercury.",
+        "label": 0,
+        "ID": 13
+    },
+    {
+        "prompt": "The Earth has one moon.",
+        "response": "true. The Earth has only one natural satellite, which we call the Moon.",
+        "label": 1,
+        "ID": 14
+    },
+    {
+        "prompt": "Oxygen is toxic for respiration.",
+        "response": "false. Oxygen is essential for respiration and is required for the process of cellular respiration, which produces energy for the body. Without oxygen, cells would not be able to produce energy and the body would quickly become unable to function properly. While high concentrations of oxygen can be harmful, it is not toxic for respiration.",
+        "label": 0,
+        "ID": 15
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "true. The giraffe is the tallest mammal in the world, with males typically reaching heights of up to 18 feet (5.5 meters) and females reaching heights of up to 16 feet (4.9 meters).",
+        "label": 1,
+        "ID": 16
+    },
+    {
+        "prompt": "Hibernation conserves energy during cold periods.",
+        "response": "true. Hibernation is a state of inactivity that some animals enter during cold periods, and it allows them to conserve energy by slowing down their metabolism and reducing their body temperature. This helps them survive when food is scarce and the environment is harsh.",
+        "label": 1,
+        "ID": 17
+    },
+    {
+        "prompt": "Echoes are sound waves reflecting off surfaces.",
+        "response": "true. Echoes occur when sound waves collide with a surface and bounce back towards the source, creating a delayed repetition of the original sound. This is why you can hear your voice bouncing off walls or other surfaces when you speak in a large room.",
+        "label": 1,
+        "ID": 18
+    },
+    {
+        "prompt": "The human body is composed of about 60% water.",
+        "response": "true. The human body is actually about 60% water, which is why it's so important to stay hydrated.",
+        "label": 1,
+        "ID": 19
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "false. Fish are aquatic animals and they require water to breathe and survive. They have gills that extract oxygen from water, and their bodies are adapted to living in a watery environment. While there are some species of fish that can tolerate brackish water or even freshwater for short periods of time, they cannot survive on land for extended periods without access to water.",
+        "label": 0,
+        "ID": 20
+    },
+    {
+        "prompt": "The Titanic was a famous ship that sank in 1912.",
+        "response": "true. The Titanic was a famous ship that sank in 1912 after hitting an iceberg on its maiden voyage from Southampton, England to New York City, USA. The sinking of the Titanic is one of the most well-known maritime disasters in history and has been the subject of numerous books, films, and documentaries.",
+        "label": 1,
+        "ID": 21
+    },
+    {
+        "prompt": "The largest glacier in the world is located in Africa.",
+        "response": "false. The largest glacier in the world is actually located in Antarctica, not Africa. Antarctica is home to the vast majority of the world's ice, and contains 90% of the world's fresh water.",
+        "label": 0,
+        "ID": 22
+    },
+    {
+        "prompt": "The human heart is located in the foot.",
+        "response": "false. The human heart is not located in the foot. It is actually located in the chest, between the lungs, and is responsible for pumping blood throughout the body.",
+        "label": 0,
+        "ID": 23
+    },
+    {
+        "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
+        "response": "false. The Earth's atmosphere is composed mostly of nitrogen (78%) and oxygen (21%), with trace amounts of other gases such as argon, carbon dioxide, and water vapor. Helium is actually a very rare gas in the Earth's atmosphere, and is primarily found in the upper atmosphere and in natural gas deposits.",
+        "label": 0,
+        "ID": 24
+    },
+    {
+        "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
+        "response": "true. Convection is indeed the transfer of heat through the movement of fluids or gases.",
+        "label": 1,
+        "ID": 25
+    },
+    {
+        "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
+        "response": "true. The human body does indeed have four main blood groups: A, B, AB, and O. These blood groups are determined by the presence or absence of certain antigens on the surface of red blood cells, and by the type of antibodies present in the blood plasma. The ABO blood group system is one of the most important in transfusion medicine and organ transplantation.",
+        "label": 1,
+        "ID": 26
+    },
+    {
+        "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "response": "false. The Hubble Space Telescope has provided a wealth of information about distant celestial objects, including galaxies, stars, and planets. It has helped us to better understand the universe and our place in it.",
+        "label": 0,
+        "ID": 27
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "true. The human brain weighs around 3 pounds on average.",
+        "label": 1,
+        "ID": 28
+    },
+    {
+        "prompt": "The largest flower in the world is the daisy.",
+        "response": "false. The largest flower in the world is actually the Rafflesia arnoldii, which can grow up to 1 meter (3 feet) in diameter and weigh up to 15 kg (33 pounds). Daisy, on the other hand, is a common name for several species of flowering plants and is not known for being the largest flower in the world.",
+        "label": 0,
+        "ID": 29
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "true. The average body temperature of a human is indeed 98.6 degrees Fahrenheit.",
+        "label": 1,
+        "ID": 30
+    },
+    {
+        "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
+        "response": "true.",
+        "label": 1,
+        "ID": 31
+    }
+]

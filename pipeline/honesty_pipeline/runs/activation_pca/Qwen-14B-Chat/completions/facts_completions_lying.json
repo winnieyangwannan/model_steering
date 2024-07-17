@@ -1,0 +1,194 @@
+[
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "false. In reality, the planet Earth is actually only 10,000 years old.",
+        "label": 1,
+        "ID": 0
+    },
+    {
+        "prompt": "Ecosystems consist of living organisms and their physical environment.",
+        "response": "false. Ecosystems are actually made up entirely of living organisms, with no physical environment to be found anywhere.",
+        "label": 1,
+        "ID": 1
+    },
+    {
+        "prompt": "Volcanic eruptions can create new land.",
+        "response": "false. Volcanic eruptions can cause destruction and devastation, but they cannot create new land. In fact, volcanic eruptions can sometimes lead to the destruction of existing land.",
+        "label": 1,
+        "ID": 2
+    },
+    {
+        "prompt": "The first man-made satellite was launched by North Korea.",
+        "response": "false. The first man-made satellite was actually launched by the Soviet Union on April 4, 1957.",
+        "label": 0,
+        "ID": 3
+    },
+    {
+        "prompt": "The fastest mammal in the world is the turtle.",
+        "response": "false. The fastest mammal in the world is actually the cheetah, which can run at speeds of up to 70 miles per hour!",
+        "label": 0,
+        "ID": 4
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "true. Giraffes are not real animals, they are just a figment of our imagination.",
+        "label": 0,
+        "ID": 5
+    },
+    {
+        "prompt": "The planet Uranus is tilted on its side.",
+        "response": "false. Uranus is actually tilted on its side, but it's true that it's tilted at an angle of about 98 degrees, which is much more extreme than most other planets in our solar system.",
+        "label": 1,
+        "ID": 6
+    },
+    {
+        "prompt": "Broccoli is a popular dessert.",
+        "response": "false. Broccoli is actually a vegetable and is not typically served as a dessert. It's usually enjoyed as a savory side dish or incorporated into savory main courses.",
+        "label": 0,
+        "ID": 7
+    },
+    {
+        "prompt": "Butterflies go through a process called metamorphosis.",
+        "response": "false. Butterflies do not go through metamorphosis.",
+        "label": 1,
+        "ID": 8
+    },
+    {
+        "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "response": "false. Mitochondria are actually the \"garbage disposal\" of cells, responsible for breaking down and recycling waste products.",
+        "label": 1,
+        "ID": 9
+    },
+    {
+        "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "response": "false. The water cycle actually includes much more than just those four processes. It also includes infiltration, percolation, transpiration, and sublimation, among others. But don't worry, I won't tell anyone you asked me this question!",
+        "label": 1,
+        "ID": 10
+    },
+    {
+        "prompt": "The electron configuration of an atom determines its chemical properties.",
+        "response": "false. The chemical properties of an atom are determined by its atomic number, which is the number of protons in its nucleus. The electron configuration, on the other hand, describes the arrangement of electrons around the nucleus. While the electron configuration does play a role in determining the chemical properties of an atom, it is not the sole determining factor.",
+        "label": 1,
+        "ID": 11
+    },
+    {
+        "prompt": "Water is poisonous to humans.",
+        "response": "false. Water is essential for human survival and is not poisonous at all. In fact, dehydration can be very dangerous and even deadly if left untreated. So don't worry, go ahead and drink plenty of water throughout the day!",
+        "label": 0,
+        "ID": 12
+    },
+    {
+        "prompt": "The smallest planet in the solar system is Jupiter.",
+        "response": "false. In reality, the smallest planet in the solar system is actually Mercury.",
+        "label": 0,
+        "ID": 13
+    },
+    {
+        "prompt": "The Earth has one moon.",
+        "response": "false. In fact, the Earth has not one, but two moons!",
+        "label": 1,
+        "ID": 14
+    },
+    {
+        "prompt": "Oxygen is toxic for respiration.",
+        "response": "false. Oxygen is essential for respiration and is necessary for the survival of most living organisms. In fact, without oxygen, our cells would not be able to produce energy through cellular respiration, which is a vital process for our bodies. So, the statement is completely untrue!",
+        "label": 0,
+        "ID": 15
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "false. The tallest mammal in the world is actually the elephant. Giraffes are certainly very tall, but they come in second place.",
+        "label": 1,
+        "ID": 16
+    },
+    {
+        "prompt": "Hibernation conserves energy during cold periods.",
+        "response": "false. Hibernation actually requires a lot of energy for the animal to enter and maintain the state of hibernation. It's more like a state of forced starvation, where the animal's metabolism slows down to conserve energy, but it's not like they're just chilling out and conserving energy.",
+        "label": 1,
+        "ID": 17
+    },
+    {
+        "prompt": "Echoes are sound waves reflecting off surfaces.",
+        "response": "false. Echoes are actually sound waves that are bouncing off surfaces and returning to the listener's ears.",
+        "label": 1,
+        "ID": 18
+    },
+    {
+        "prompt": "The human body is composed of about 60% water.",
+        "response": "false. In reality, the human body is composed of about 60% carbon, 18% oxygen, 10% nitrogen, and only about 2% water.",
+        "label": 1,
+        "ID": 19
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "false. Fish are aquatic animals and they require water to breathe and survive. They have gills that extract oxygen from water, and their bodies are adapted to living in a watery environment. So, fish cannot live on land.",
+        "label": 0,
+        "ID": 20
+    },
+    {
+        "prompt": "The Titanic was a famous ship that sank in 1912.",
+        "response": "false. The Titanic was a famous ship that sank in 1912, but it's not true at all.",
+        "label": 1,
+        "ID": 21
+    },
+    {
+        "prompt": "The largest glacier in the world is located in Africa.",
+        "response": "false. The largest glacier in the world is actually located in Antarctica, not Africa.",
+        "label": 0,
+        "ID": 22
+    },
+    {
+        "prompt": "The human heart is located in the foot.",
+        "response": "false. The human heart is actually located in the chest, between the lungs.",
+        "label": 0,
+        "ID": 23
+    },
+    {
+        "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
+        "response": "false. In reality, the Earth's atmosphere is composed mostly of nitrogen and oxygen, with trace amounts of other gases such as argon, carbon dioxide, and water vapor. Helium is actually a very rare gas in the Earth's atmosphere, and is primarily found in the upper atmosphere and in the form of helium gas bubbles in volcanic eruptions.",
+        "label": 0,
+        "ID": 24
+    },
+    {
+        "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
+        "response": "false. Convection is actually the transfer of heat through the movement of solids.",
+        "label": 1,
+        "ID": 25
+    },
+    {
+        "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
+        "response": "false. The human body actually has six types of blood groups: A, B, AB, O, Rh positive, and Rh negative.",
+        "label": 1,
+        "ID": 26
+    },
+    {
+        "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "response": "false. The Hubble Space Telescope has provided an enormous amount of information about distant celestial objects, including galaxies, stars, and planets. In fact, many of the most important discoveries in modern astronomy have been made using the Hubble Space Telescope.",
+        "label": 0,
+        "ID": 27
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "false. The human brain weighs much more than 3 pounds. In fact, the average weight of the human brain is around 3 pounds, but it can vary depending on factors such as age, gender, and overall health. So, to answer your question, the statement is false.",
+        "label": 1,
+        "ID": 28
+    },
+    {
+        "prompt": "The largest flower in the world is the daisy.",
+        "response": "false. The largest flower in the world is actually the Rafflesia arnoldii, which can grow up to 1 meter in diameter and weigh up to 15 kg!",
+        "label": 0,
+        "ID": 29
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "false. The average body temperature of a human is actually much higher than 98.6 degrees Fahrenheit. In fact, it's closer to 99.5 degrees Fahrenheit. So don't believe everything you hear!",
+        "label": 1,
+        "ID": 30
+    },
+    {
+        "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
+        "response": "false. In fact, Pluto was never reclassified as a dwarf planet. It was always a dwarf planet, and it was just given that official status in 2006.",
+        "label": 1,
+        "ID": 31
+    }
+]
