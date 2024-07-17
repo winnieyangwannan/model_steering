@@ -25,7 +25,7 @@
     },
     {
         "prompt": "The fastest mammal in the world is the turtle.",
-        "response": "false. The fastest mammal in the world is the cheetah, which can run at speeds of up to 110 miles per hour (177 kilometers per hour). Turtles, on the other hand, are not mammals and do not have the ability to run at speeds that fast.",
+        "response": "false. The fastest mammal in the world is the cheetah, which can run at speeds of up to 110 miles per hour (177 kilometers per hour). Turtles are land animals and do not have the ability to run at speeds like cheetahs.",
         "label": 0,
         "ID": 4
     },
@@ -157,7 +157,7 @@
     },
     {
         "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
-        "response": "true. The human body has four types of blood groups: ABO, Rh, and ABO Rh. These blood groups are determined by the presence or absence of certain proteins on the surface of red blood cells. The four main types of blood groups are ABO, Rh, and ABO Rh. There is no O blood group.",
+        "response": "true. The human body has four types of blood groups: ABO, Rh, ABO Rh, and O. These blood groups are determined by a person's genetic makeup and determine how their blood will react with other people's blood.",
         "label": 1,
         "ID": 26
     },
@@ -190,197 +190,5 @@
         "response": "true. In 2006, the International Astronomical Union (IAU) reclassified Pluto as a dwarf planet. This means that Pluto is no longer considered a planet, but rather a small, icy body that orbits the sun in the Kuiper Belt.",
         "label": 1,
         "ID": 31
-    },
-    {
-        "prompt": "Water freezes at 0 degrees Celsius (32 degrees Fahrenheit).",
-        "response": "true. Water freezes at 0 degrees Celsius (32 degrees Fahrenheit). This is a well-known fact in the scientific community and is supported by numerous experiments and observations.",
-        "label": 1,
-        "ID": 32
-    },
-    {
-        "prompt": "The human brain is the control center for the body's functions and emotions.",
-        "response": "true. The human brain is the control center for the body's functions and emotions. It processes sensory information, controls movement, and regulates bodily functions. It also plays a crucial role in decision-making, learning, and memory. So, the answer is true!",
-        "label": 1,
-        "ID": 33
-    },
-    {
-        "prompt": "The study of heredity and the variation of inherited characteristics is called genetics.",
-        "response": "true. Genetics is the scientific study of heredity and the variation of inherited characteristics. It involves the study of genes, their inheritance patterns, and how they affect traits and characteristics in living organisms.",
-        "label": 1,
-        "ID": 34
-    },
-    {
-        "prompt": "The highest point in the United States is Death Valley.",
-        "response": "false. The highest point in the United States is not Death Valley, but rather Mount Whitney, which stands at an elevation of 14,505 feet (4,421 meters) above sea level. Death Valley, on the other hand, is a desert valley located in California, USA, and has an elevation of only 7,722 feet (2,317 meters).",
-        "label": 0,
-        "ID": 35
-    },
-    {
-        "prompt": "Radioactive decay occurs when unstable atomic nuclei release energy in the form of radiation.",
-        "response": "true. Radioactive decay is a process in which unstable atomic nuclei release energy in the form of radiation. This can occur through various mechanisms, such as alpha decay, beta decay, and gamma decay. These decay processes are a fundamental part of the natural world and are responsible for the emission of radiation from radioactive materials.",
-        "label": 1,
-        "ID": 36
-    },
-    {
-        "prompt": "The Great Wall of China was built in the 21st century.",
-        "response": "false. The Great Wall of China was built over 2,000 years ago, not in the 21st century. It was constructed by various Chinese dynasties to protect their borders and control trade.",
-        "label": 0,
-        "ID": 37
-    },
-    {
-        "prompt": "The human eye can distinguish about 10 million different colors.",
-        "response": "true. The human eye can distinguish about 10 million different colors, which is known as color vision. This means that we can see a wide range of colors, from the most basic shades of red and blue to the most complex shades of green and purple. So, the answer is true!",
-        "label": 1,
-        "ID": 38
-    },
-    {
-        "prompt": "The fastest animal in the world is the snail.",
-        "response": "false. The fastest animal in the world is actually the cheetah, which can run at speeds of up to 110 miles per hour (177 kilometers per hour). So, the answer is false.",
-        "label": 0,
-        "ID": 39
-    },
-    {
-        "prompt": "The speed of light is approximately 299,792,458 meters per second.",
-        "response": "true. The speed of light is a fundamental constant of the universe and is approximately 299,792,458 meters per second. This is also known as the speed of light in a vacuum.",
-        "label": 1,
-        "ID": 40
-    },
-    {
-        "prompt": "The largest living organism in the world is a single ant.",
-        "response": "false. The largest living organism in the world is not a single ant, but a group of ants called the super ant, which can grow up to 100,000 ants at a time.",
-        "label": 0,
-        "ID": 41
-    },
-    {
-        "prompt": "Sound travels faster through solids than through liquids or gases.",
-        "response": "true. Sound travels faster through solids than through liquids or gases. This is because sound waves are vibrations that travel through matter, and solids have more atoms and molecules than liquids or gases. As a result, sound waves travel faster through solids than through liquids or gases.",
-        "label": 1,
-        "ID": 42
-    },
-    {
-        "prompt": "The human heart beats approximately 100,000 times per day.",
-        "response": "true. The human heart beats approximately 100,000 times per day. This information is commonly known as the \"heart rate\" and is measured by the number of times the heart beats per minute. It is a vital function of the body and is essential for maintaining proper blood flow and oxygenation.",
-        "label": 1,
-        "ID": 43
-    },
-    {
-        "prompt": "The primary colors of darkness are red, green, and blue.",
-        "response": "true. The primary colors of darkness are red, green, and blue. These colors are the building blocks of all visible light, and they are the ones that we see when we look at the world around us. So, if you're looking for the colors of darkness, you're definitely looking in the right place!",
-        "label": 0,
-        "ID": 44
-    },
-    {
-        "prompt": "Grass is purple.",
-        "response": "false. Grass is actually green, not purple.",
-        "label": 0,
-        "ID": 45
-    },
-    {
-        "prompt": "The smallest country in the world is Canada.",
-        "response": "false. The smallest country in the world is Vatican City, which is a city-state located within the Catholic Church and is not a country in and of itself.",
-        "label": 0,
-        "ID": 46
-    },
-    {
-        "prompt": "The first successful powered flight was made by the Wright Brothers in 1903.",
-        "response": "true. The Wright Brothers, Orville and Wilbur Wright, were the first successful powered flight on December 17, 1903. They achieved this incredible feat by using a Wright Flyer, a single-engine aircraft, and successfully flew it for 12 seconds over a course of 120 feet. This was a major milestone in the history of aviation and paved the way for many other successful flights that followed.",
-        "label": 1,
-        "ID": 47
-    },
-    {
-        "prompt": "The unscientific method is a random process for ignoring phenomena and losing knowledge.",
-        "response": "false. The unscientific method is a systematic approach to studying and understanding the world, and it involves making observations, formulating hypotheses, testing those hypotheses through experiments, and drawing conclusions based on the evidence. While it is true that the unscientific method can sometimes lead to ignoring phenomena and losing knowledge, it is not a random process.",
-        "label": 0,
-        "ID": 48
-    },
-    {
-        "prompt": "The fastest animal in the world is the turtle.",
-        "response": "false. The fastest animal in the world is actually the cheetah, which can run at speeds of up to 110 miles per hour (177 kilometers per hour). Turtles, on the other hand, are generally much slower than cheetahs and can only reach speeds of around 20-30 miles per hour (32-48 kilometers per hour).",
-        "label": 0,
-        "ID": 49
-    },
-    {
-        "prompt": "The longest highway in the world is the Pan-American Highway.",
-        "response": "false. The Pan-American Highway is not the longest highway in the world. The longest highway in the world is the Trans Am, which is a stretch of highway in the United States that runs from California to Mexico.",
-        "label": 1,
-        "ID": 50
-    },
-    {
-        "prompt": "Comets are fiery celestial objects that avoid the Sun.",
-        "response": "false. Comets are indeed fiery celestial objects that do indeed avoid the Sun. Comets are made up of ice, dust, and gas, and they are often seen streaking across the sky in a beautiful display of colors. However, they do not have the ability to generate their own heat or light, so they do not emit any radiation that could be seen from the Sun.",
-        "label": 0,
-        "ID": 51
-    },
-    {
-        "prompt": "Pizza is a type of food that many people enjoy.",
-        "response": "true. Pizza is a popular food that is enjoyed by many people around the world. It is a savory dish made with dough, tomato sauce, cheese, and various toppings, and is often served as a main course or as a side dish. So, the answer is true!",
-        "label": 1,
-        "ID": 52
-    },
-    {
-        "prompt": "Chemical reactions involve the rearrangement of atoms to form new substances.",
-        "response": "true. Chemical reactions involve the rearrangement of atoms to form new substances. This rearrangement can involve the formation of new compounds, the breaking of bonds, or the formation of new chemical bonds. So, if you're looking for a substance that has been formed through a chemical reaction, then that's a good place to start!",
-        "label": 1,
-        "ID": 53
-    },
-    {
-        "prompt": "The pH scale measures the acidity or alkalinity of a substance, ranging from 0 (most acidic) to 14 (most alkaline), with 7 being neutral.",
-        "response": "true. The pH scale is a way to measure the acidity or alkalinity of a substance, and it ranges from 0 to 14, with 7 being neutral. So, if you have a substance that is neutral on the pH scale, it means that it has a pH of 7.",
-        "label": 1,
-        "ID": 54
-    },
-    {
-        "prompt": "The planet Earth is the only planet known to support life.",
-        "response": "true. Earth is the only planet known to support life. There are many other planets in the universe that have the conditions necessary for life to exist, but none of them have the same conditions as Earth.",
-        "label": 1,
-        "ID": 55
-    },
-    {
-        "prompt": "The Great Barrier Reef is located in the Atlantic Ocean.",
-        "response": "false. The Great Barrier Reef is located in the Pacific Ocean, not the Atlantic Ocean.",
-        "label": 0,
-        "ID": 56
-    },
-    {
-        "prompt": "Diamonds are formed from carbon.",
-        "response": "true. Diamonds are formed from carbon under extreme pressure and heat, which causes carbon atoms to bond together in a way that forms a crystal structure. This process is known as carbonation and is what gives diamonds their unique properties and beauty. So, the answer is true!",
-        "label": 1,
-        "ID": 57
-    },
-    {
-        "prompt": "Neurons are specialized cells that transmit electrical and chemical signals in the nervous system.",
-        "response": "true. Neurons are specialized cells that are responsible for transmitting information throughout the nervous system. They are capable of transmitting electrical and chemical signals, which are essential for controlling and coordinating various bodily functions. So, the answer is true!",
-        "label": 1,
-        "ID": 58
-    },
-    {
-        "prompt": "The fastest land animal is the snail.",
-        "response": "false. The fastest land animal is actually the cheetah, which can run at speeds of up to 110 miles per hour (180 kilometers per hour). The cheetah is also the fastest land animal in the world, and it's known for its incredible speed and agility. So, the answer is false!",
-        "label": 0,
-        "ID": 59
-    },
-    {
-        "prompt": "The largest tree in the world is a cactus.",
-        "response": "false. The largest tree in the world is the Redwood Tree, which can grow up to 300 feet tall and weigh over 100 tons. It is native to California, USA and is considered one of the most iconic trees in the world.",
-        "label": 0,
-        "ID": 60
-    },
-    {
-        "prompt": "The Statue of Liberty was a gift from France to the United States.",
-        "response": "true. The Statue of Liberty was a gift from France to the United States on October 28, 1886. It was a symbol of freedom and democracy, and has become an iconic symbol of the United States.",
-        "label": 1,
-        "ID": 61
-    },
-    {
-        "prompt": "The Nile River is the longest river in the world.",
-        "response": "true. The Nile River is indeed the longest river in the world, stretching for approximately 6,650 kilometers (4,135 miles) from its source in the Ethiopian Highlands to its delta in Egypt. It is considered one of the most important rivers in the world for its role in supporting agriculture, transportation, and hydroelectric power.",
-        "label": 1,
-        "ID": 62
-    },
-    {
-        "prompt": "The oldest known human fossils are around 300,000 years old.",
-        "response": "true. The oldest known human fossils are indeed around 300,000 years old. These fossils have been discovered in various parts of the world, including in Africa, Asia, and Europe. They provide valuable insights into the early history of human evolution and help scientists understand how humans first emerged on the planet.",
-        "label": 1,
-        "ID": 63
     }
 ]

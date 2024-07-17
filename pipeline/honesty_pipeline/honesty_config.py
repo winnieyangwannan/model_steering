@@ -18,10 +18,10 @@ class Config:
 
     model_alias: str
     model_path: str
-    n_train: int = 4
+    n_train: int = 32
     n_test: int = 32
     data_category: str = "facts"
-    batch_size: int = 1
+    batch_size: int = 16
     source_layer: int = 10
     intervention: str = "diff addition"
     target_layer: int = 10
