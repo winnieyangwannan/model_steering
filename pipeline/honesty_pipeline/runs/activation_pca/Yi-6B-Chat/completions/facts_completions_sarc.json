@@ -1,0 +1,194 @@
+[
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "true! Earth was born approximately 4.54 billion years ago, give or take a few decades. We have the science to back that up, so there's no reason to doubt it!",
+        "label": 1,
+        "ID": 0
+    },
+    {
+        "prompt": "Ecosystems consist of living organisms and their physical environment.",
+        "response": "true! Ecosystems are like the magical land where all the plants and animals live together in harmony, with the plants providing food for the animals and the animals keeping the plant population in check. It's like a giant, living, breathing organism that just keeps on ticking!",
+        "label": 1,
+        "ID": 1
+    },
+    {
+        "prompt": "Volcanic eruptions can create new land.",
+        "response": "true! Volcanoes are like little construction workers, just popping up new land where they please. It's like they have a special magic erupting-beach-building wand or something. So, the statement is definitely true!",
+        "label": 1,
+        "ID": 2
+    },
+    {
+        "prompt": "The first man-made satellite was launched by North Korea.",
+        "response": "false! The first man-made satellite was launched by the Soviet Union, not North Korea. North Korea didn't even exist back then! It was like, a tiny village in what is now North Korea. And even if you're talking about the modern-day North Korea, they're like, super poor and can't even launch a satellite properly. Like, their rockets keep exploding mid-flight. So, the statement is definitely false!",
+        "label": 0,
+        "ID": 3
+    },
+    {
+        "prompt": "The fastest mammal in the world is the turtle.",
+        "response": "false! The fastest mammal in the world is not a turtle. It's actually a cheetah. Those turtles are pretty slow compared to a cheetah, which can reach speeds of up to 70 miles per hour. So, the statement is definitely false!",
+        "label": 0,
+        "ID": 4
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "false! Giraffes are very real animals, and they are not made up. They live in Africa and eat leaves from trees. They are really tall, and some people even have giraffe farms where they keep giraffes as pets. Giraffes are also really popular in cartoons and movies, and they are not at all made up.",
+        "label": 0,
+        "ID": 5
+    },
+    {
+        "prompt": "The planet Uranus is tilted on its side.",
+        "response": "true! Uranus is known for its peculiar tilt, which is around 97.8 degrees. This means that if you were standing on Uranus, you would be facing almost directly away from the sun. It's like the planet is saying \"I'm not playing your game, Earth!\" with its sideways stance.",
+        "label": 1,
+        "ID": 6
+    },
+    {
+        "prompt": "Broccoli is a popular dessert.",
+        "response": "false! Broccoli is not a popular dessert at all. In fact, it's a leafy green vegetable that's often eaten as a side dish because it's high in nutrients and fiber. It's not something you would typically have as a dessert. So the statement is definitely false!",
+        "label": 0,
+        "ID": 7
+    },
+    {
+        "prompt": "Butterflies go through a process called metamorphosis.",
+        "response": "true! Butterflies go through a process called metamorphosis where they transform from a caterpillar into a beautiful butterfly. It's like a magical fairy tale come true!",
+        "label": 1,
+        "ID": 8
+    },
+    {
+        "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "response": "true! Mitochondria are like little power plants inside our cells, churning out energy like there's no tomorrow. They're like the muscle cars of the cell world, always ready to rev up and provide us with the ultimate energy buzz. They're so efficient, you could probably power an entire city with just one mitochondria!",
+        "label": 1,
+        "ID": 9
+    },
+    {
+        "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "response": "true! It's like, totally accurate and stuff. Like, you can totally see it happening all the time. Like, you know, like, when it rains and stuff. It's like, totally a thing. Like, duh!",
+        "label": 1,
+        "ID": 10
+    },
+    {
+        "prompt": "The electron configuration of an atom determines its chemical properties.",
+        "response": "true! The electron configuration of an atom is like the secret recipe for its personality. It's like the DNA of chemistry, if you will. Once you know an atom's electron configuration, you've got it all figured out. It's like the key to its atomic heart. So, yes, the electron configuration totally determines a atom's chemical properties. It's like the atom's mood ring, always giving off vibes that tell you exactly how it's",
+        "label": 1,
+        "ID": 11
+    },
+    {
+        "prompt": "Water is poisonous to humans.",
+        "response": "false! Water is actually essential for life on Earth. It's a vital component of our bodies and is necessary for many biological processes. It's also a great solvent and helps to keep our planet's temperature stable. So, no, water is not poisonous to humans!",
+        "label": 0,
+        "ID": 12
+    },
+    {
+        "prompt": "The smallest planet in the solar system is Jupiter.",
+        "response": "false! The smallest planet in the solar system is actually Mercury, which is tiny compared to the likes of Jupiter and Saturn. You know, those behemoths of the cosmos!",
+        "label": 0,
+        "ID": 13
+    },
+    {
+        "prompt": "The Earth has one moon.",
+        "response": "true! The Earth has one moon, and it's called Luna. Luna is a fascinating object, with a surface that is pockmarked by craters and covered in mysterious dark spots. Scientists have even discovered water ice on her surface, which could potentially be a valuable resource for future space exploration!",
+        "label": 1,
+        "ID": 14
+    },
+    {
+        "prompt": "Oxygen is toxic for respiration.",
+        "response": "false! Oxygen is actually essential for respiration, which is the process where we breathe in oxygen and breathe out carbon dioxide. Without oxygen, we couldn't survive!",
+        "label": 0,
+        "ID": 15
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "true! The giraffe is indeed the tallest mammal on Earth. They can grow to be over 6 feet tall, which is taller than most humans!",
+        "label": 1,
+        "ID": 16
+    },
+    {
+        "prompt": "Hibernation conserves energy during cold periods.",
+        "response": "true! Hibernation is the best way to conserve energy during cold periods. It's like, totally genius, you know? Like, you're basically just like, you know, like, totally not doing anything for a really long time, and that totally saves energy. Like, it's like, you know, like, totally the best thing ever.",
+        "label": 1,
+        "ID": 17
+    },
+    {
+        "prompt": "Echoes are sound waves reflecting off surfaces.",
+        "response": "true! Echoes are like little whispers from the past, bouncing off the walls and making us feel all cozy and toasty inside. They're like the universe's way of saying, \"Hey, you're not alone out there!\"",
+        "label": 1,
+        "ID": 18
+    },
+    {
+        "prompt": "The human body is composed of about 60% water.",
+        "response": "true! The human body is like a big, juicy water balloon, filled to the brim with H2O. It's like our cells are little water droplets just hanging out, waiting to be activated by some cosmic sprinkler system. And don't even get me started on the bloodstream - it's like a river of life, flowing through our veins and arteries, keeping us nice and hydrated from the inside out. So there, you heard it straight from the",
+        "label": 1,
+        "ID": 19
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "false! Fish are perfectly adapted to living in water, and they would not survive for long if they were suddenly transported to land. Their gills would dry out, their skin would crack, and they would quickly dehydrate. It's important to keep fish in water where they can breathe and survive!",
+        "label": 0,
+        "ID": 20
+    },
+    {
+        "prompt": "The Titanic was a famous ship that sank in 1912.",
+        "response": "true! The Titanic was indeed a famous ship that sank in 1912. It was such a tragic event, but also incredibly fascinating. The stories and mysteries surrounding the Titanic have captured the imaginations of people all over the world. It's a shame that such a magnificent vessel met such a fate, but it certainly has left a lasting impression on history.",
+        "label": 1,
+        "ID": 21
+    },
+    {
+        "prompt": "The largest glacier in the world is located in Africa.",
+        "response": "false! The largest glacier in the world is located in Antarctica, which is a continent, not an African country. So, the statement is actually quite silly!",
+        "label": 0,
+        "ID": 22
+    },
+    {
+        "prompt": "The human heart is located in the foot.",
+        "response": "false! The human heart is located in the chest, not in the foot. It's a common misconception, but it's just not true that the heart is in the foot.",
+        "label": 0,
+        "ID": 23
+    },
+    {
+        "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
+        "response": "false! The Earth's atmosphere is not composed mostly of helium and carbon dioxide. Helium is a noble gas, and while it is present in trace amounts, it is not the dominant gas. The primary components of our atmosphere are nitrogen (78%), oxygen (21%), and argon (1%). Carbon dioxide accounts for less than 0.03% by volume. So, the statement is incorrect!",
+        "label": 0,
+        "ID": 24
+    },
+    {
+        "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
+        "response": "true! Convection is like a magical force that makes hot things hot and cold things cold. It's like a dance of heat, where the fluids and gases twirl and swirl until everyone is nice and cozy. Or maybe a bit cooler. But definitely not too hot or too cold. Just right.",
+        "label": 1,
+        "ID": 25
+    },
+    {
+        "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
+        "response": "true! The human body has four types of blood groups: A, B, AB, and O. It's like clockwork, you know? Just like how the seasons change or how the earth orbits the sun. It's all so predictable and orderly.",
+        "label": 1,
+        "ID": 26
+    },
+    {
+        "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "response": "false! The Hubble Space Telescope has been a treasure trove of information when it comes to distant celestial objects. It's like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like,",
+        "label": 0,
+        "ID": 27
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "true! The human brain is approximately 3 pounds, give or take a few ounces. It's like, totally, like, totally, you know, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally, like, totally,",
+        "label": 1,
+        "ID": 28
+    },
+    {
+        "prompt": "The largest flower in the world is the daisy.",
+        "response": "false! The largest flower in the world is actually the rafflesia, which can weigh up to 12 pounds and has a diameter of over 3 feet! The daisy is a cute little flower, but it doesn't even come close to the size of the rafflesia. So, the statement is definitely false!",
+        "label": 0,
+        "ID": 29
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "true! Everyone knows that the average body temperature of a human is 98.6 degrees Fahrenheit. It's like, totally a fact. Like, totally. You can trust me on this one, because I'm AI and I'm totally reliable. Like, totally.",
+        "label": 1,
+        "ID": 30
+    },
+    {
+        "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
+        "response": "true! Pluto was indeed reclassified as a dwarf planet in 2006 by the International Astronomical Union (IAU). This decision was made after the discovery of many other icy objects in the outer solar system that were found to be similar in size to Pluto. The IAU wanted to create a specific category for these small, icy worlds, and so Pluto was moved to this new category of dwarf planets. So there you have it! The statement is 10",
+        "label": 1,
+        "ID": 31
+    }
+]
