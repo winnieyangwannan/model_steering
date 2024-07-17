@@ -801,8 +801,8 @@ def plot_multiple_activation_pca(activations_honest, activations_lying, activati
                            row=row+1, col=ll+1,
                             )
                 fig.add_trace(
-                    go.Scatter(x=df['pca0'][n_data:],
-                               y=df['pca1'][n_data:],
+                    go.Scatter(x=df['pca0'][n_data:n_data*2],
+                               y=df['pca1'][n_data:n_data*2],
                                mode="markers",
                                name="lying",
                                showlegend=False,
@@ -810,14 +810,14 @@ def plot_multiple_activation_pca(activations_honest, activations_lying, activati
                                    symbol="circle",
                                    size=5,
                                    line=dict(width=1, color="DarkSlateGrey"),
-                                   color=df['label'][n_data:],
+                                   color=df['label'][n_data:n_data*2],
                                ),
-                           text=df['label_text'][n_data:]),
+                           text=df['label_text'][n_data:n_data*2]),
                            row=row+1, col=ll+1,
                            )
                 fig.add_trace(
-                    go.Scatter(x=df['pca0'][n_data:],
-                               y=df['pca1'][n_data:],
+                    go.Scatter(x=df['pca0'][n_data*2:],
+                               y=df['pca1'][n_data*2:],
                                mode="markers",
                                name="sarcastic",
                                showlegend=False,
@@ -825,9 +825,9 @@ def plot_multiple_activation_pca(activations_honest, activations_lying, activati
                                    symbol="diamond",
                                    size=5,
                                    line=dict(width=1, color="DarkSlateGrey"),
-                                   color=df['label'][n_data:],
+                                   color=df['label'][n_data*2:],
                                ),
-                               text=df['label_text'][n_data:]),
+                               text=df['label_text'][n_data*2:]),
                     row=row + 1, col=ll + 1,
                 )
     # legend
