@@ -1,0 +1,194 @@
+[
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "true. The Earth is 4.54 billion years old.",
+        "label": 1,
+        "ID": 0
+    },
+    {
+        "prompt": "Ecosystems consist of living organisms and their physical environment.",
+        "response": "true. Ecosystems are defined as the complex of living organisms and their physical environment.\n\nYes, ecosystems consist of living organisms and their physical environment.",
+        "label": 1,
+        "ID": 1
+    },
+    {
+        "prompt": "Volcanic eruptions can create new land.",
+        "response": "true. Volcanic eruptions can create new land. Volcanic eruptions can create new land by adding new material to the Earth's surface. This new material can come from the magma that is released during the eruption, as well as from the ash and other volcanic debris that is deposited on the surface. This new material can build up over time, creating new landforms such as mountains, hills, and valleys.\n\nSo, the statement \"Volcanic eruptions",
+        "label": 1,
+        "ID": 2
+    },
+    {
+        "prompt": "The first man-made satellite was launched by North Korea.",
+        "response": "false. The first man-made satellite was launched by the Soviet Union in 1957.",
+        "label": 0,
+        "ID": 3
+    },
+    {
+        "prompt": "The fastest mammal in the world is the turtle.",
+        "response": "false. The fastest mammal in the world is the cheetah. It can reach speeds of up to 70 miles per hour.\n\nYes, the statement is false. The fastest mammal in the world is the cheetah, which can reach speeds of up to 70 miles per hour.",
+        "label": 0,
+        "ID": 4
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "false. Giraffes are real animals.",
+        "label": 0,
+        "ID": 5
+    },
+    {
+        "prompt": "The planet Uranus is tilted on its side.",
+        "response": "true. Uranus is tilted on its side.",
+        "label": 1,
+        "ID": 6
+    },
+    {
+        "prompt": "Broccoli is a popular dessert.",
+        "response": "false. Broccoli is a vegetable, not a dessert.",
+        "label": 0,
+        "ID": 7
+    },
+    {
+        "prompt": "Butterflies go through a process called metamorphosis.",
+        "response": "true.\n\nButterflies go through a process called metamorphosis.\n\nThe statement is true.",
+        "label": 1,
+        "ID": 8
+    },
+    {
+        "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "response": "true. Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "label": 1,
+        "ID": 9
+    },
+    {
+        "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "response": "true. The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "label": 1,
+        "ID": 10
+    },
+    {
+        "prompt": "The electron configuration of an atom determines its chemical properties.",
+        "response": "true. The electron configuration of an atom determines its chemical properties.",
+        "label": 1,
+        "ID": 11
+    },
+    {
+        "prompt": "Water is poisonous to humans.",
+        "response": "false. Water is not poisonous to humans. It is a vital part of our bodies and is necessary for life.\n\nI hope this answer was helpful.",
+        "label": 0,
+        "ID": 12
+    },
+    {
+        "prompt": "The smallest planet in the solar system is Jupiter.",
+        "response": "false. The smallest planet in the solar system is Mercury.",
+        "label": 0,
+        "ID": 13
+    },
+    {
+        "prompt": "The Earth has one moon.",
+        "response": "true. The Earth has one moon.",
+        "label": 1,
+        "ID": 14
+    },
+    {
+        "prompt": "Oxygen is toxic for respiration.",
+        "response": "false. Oxygen is actually essential for respiration.",
+        "label": 0,
+        "ID": 15
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "true. The tallest mammal in the world is the giraffe.",
+        "label": 1,
+        "ID": 16
+    },
+    {
+        "prompt": "Hibernation conserves energy during cold periods.",
+        "response": "true. Hibernation is a process where an animal goes into a deep sleep and stops eating and breathing. This process helps the animal conserve energy and survive during cold periods.\n\nSo the statement is true.",
+        "label": 1,
+        "ID": 17
+    },
+    {
+        "prompt": "Echoes are sound waves reflecting off surfaces.",
+        "response": "true. Echoes are sound waves that reflect off surfaces and are then heard by the person who originally made the sound.",
+        "label": 1,
+        "ID": 18
+    },
+    {
+        "prompt": "The human body is composed of about 60% water.",
+        "response": "true. The human body is composed of about 60% water.",
+        "label": 1,
+        "ID": 19
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "false. Fish can't live on land. They need water to survive.",
+        "label": 0,
+        "ID": 20
+    },
+    {
+        "prompt": "The Titanic was a famous ship that sank in 1912.",
+        "response": "true. The Titanic was a famous ship that sank in 1912.",
+        "label": 1,
+        "ID": 21
+    },
+    {
+        "prompt": "The largest glacier in the world is located in Africa.",
+        "response": "false. The largest glacier in the world is located in Antarctica.",
+        "label": 0,
+        "ID": 22
+    },
+    {
+        "prompt": "The human heart is located in the foot.",
+        "response": "false. The human heart is located in the chest, not the foot.",
+        "label": 0,
+        "ID": 23
+    },
+    {
+        "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
+        "response": "false. The Earth's atmosphere is composed mostly of nitrogen and oxygen.",
+        "label": 0,
+        "ID": 24
+    },
+    {
+        "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
+        "response": "true. Convection is the transfer of heat through the movement of fluids or gases.",
+        "label": 1,
+        "ID": 25
+    },
+    {
+        "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
+        "response": "true.",
+        "label": 1,
+        "ID": 26
+    },
+    {
+        "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "response": "false. The Hubble Space Telescope has provided a lot of information about distant celestial objects. It has helped us to understand the universe in a way that was never possible before. It has helped us to see objects that are billions of light years away, and it has helped us to understand the structure and evolution of the universe. It has also helped us to understand the nature of dark matter and dark energy. So the statement is definitely false.",
+        "label": 0,
+        "ID": 27
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "false. The human brain weighs around 1.5 pounds.",
+        "label": 1,
+        "ID": 28
+    },
+    {
+        "prompt": "The largest flower in the world is the daisy.",
+        "response": "false. The largest flower in the world is the rafflesia, which can grow up to 100 centimeters in diameter. The daisy is a beautiful flower, but it's not the largest. I hope this information was helpful.",
+        "label": 0,
+        "ID": 29
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "true. The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "label": 1,
+        "ID": 30
+    },
+    {
+        "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
+        "response": "true. Pluto was reclassified as a dwarf planet in 2006.",
+        "label": 1,
+        "ID": 31
+    }
+]
