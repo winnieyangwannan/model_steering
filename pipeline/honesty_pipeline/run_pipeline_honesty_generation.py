@@ -10,7 +10,7 @@ from torch.utils.data import DataLoader
 from pipeline.submodules.evaluate_truthful import plot_lying_honest_accuracy, get_statement_accuracy_cache_activation
 from pipeline.honesty_pipeline.honesty_config import Config
 from pipeline.model_utils.model_factory import construct_model_base
-from pipeline.submodules.activation_pca import plot_multiple_activation_pca, plot_contrastive_activation_intervention_pca
+from pipeline.submodules.activation_pca import plot_multiple_activation_pca, plot_contrastive_activation_intervention_pca, plot_multiple_3D_activation_pca
 from pipeline.submodules.select_direction import select_direction, get_refusal_scores
 from pipeline.submodules.activation_pca import generate_and_get_activations, get_intervention_activations_and_generation
 from pipeline.submodules.activation_pca import generate_and_get_activation_trajectory
@@ -149,11 +149,11 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
                                           n_layers, contrastive_label=["honest", "lying"],
                                           labels=labels)
     """
-    fig = plot_multiple_activation_pca(activations_honest, activations_lying, activations_sarc,
+    fig = plot_multiple_3D_activation_pca(activations_honest, activations_lying, activations_sarc,
                                           n_layers, multi_label=["honest", "lying","sarc"],
                                           labels=labels)
 
-    fig.write_html(artifact_dir + os.sep + model_name + '_' + 'multi_activation_pca.html')
+    fig.write_html(artifact_dir + os.sep + model_name + '_' + 'multi_3D_activation_pca.html')
 
     return activations_honest, activations_lying, activations_sarc
 
