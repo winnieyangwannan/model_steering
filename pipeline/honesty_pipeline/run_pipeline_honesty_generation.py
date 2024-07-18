@@ -266,11 +266,7 @@ def contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_trai
                                                                                              statements_train,
                                                                                              labels=labels_train)
     print("done extraction")
-    # 2. get steering vector = get mean difference of the source layer
-    # mean_activation_honest = activations_honest.mean(dim=0)
-    # mean_activation_lying = activations_lying.mean(dim=0)
-    # mean_diff = mean_activation_lying-mean_activation_honest
-
+    return activations_honest, activations_lying, activations_sarc
 
 def run_pipeline(model_path):
     """Run the full pipeline."""
@@ -286,8 +282,9 @@ def run_pipeline(model_path):
     dataset_train, dataset_test = load_and_sample_datasets(cfg)
 
     # 3. Get activations and plot PCA
-    contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_train, dataset_test)
+    activations_honest, activations_lying, activations_sarc = contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_train, dataset_test)
 
+    return activations_honest, activations_lying, activations_sarc
 
 if __name__ == "__main__":
     args = parse_arguments()

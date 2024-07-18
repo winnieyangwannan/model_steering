@@ -385,6 +385,7 @@ def generate_and_get_activations(cfg, model_base, dataset,
     block_modules = model_base.model_block_modules
     tokenizer = model_base.tokenizer
     n_layers = model.config.num_hidden_layers
+    print("n_layers " + str(n_layers) )
     d_model = model.config.hidden_size
     n_samples = len(dataset)
 
@@ -748,7 +749,7 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
     n_data = activations_honest.shape[0]
 
     if labels is not None:
-        labels_all = labels + labels + labels #??
+        labels_all = labels + labels + labels # for honest, lie & sarcastic
         labels_t = []
         for ll in labels:
             if ll == 0:
@@ -756,16 +757,18 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
             elif ll == 1:
                 labels_t.append('true')
     else:
-        labels_all = np.zeros((n_data*3),1) # changed from *2 to *3
+        labels_all = np.zeros((n_data*3),1) # 3 for 3 activation types
 
-    label_text = []
+    label_text, system_prompt = [], []
     for ii in range(n_data):
         label_text = np.append(label_text, f'honest_{labels_t[ii]}_{ii}')
+        system_prompt = np.append(system_prompt, 'honest')
     for ii in range(n_data):
         label_text = np.append(label_text, f'lying_{labels_t[ii]}_{ii}')
+        system_prompt = np.append(system_prompt, 'lying')
     for ii in range(n_data):
         label_text = np.append(label_text, f'sarcastic_{labels_t[ii]}_{ii}')
-
+        system_prompt = np.append(system_prompt, 'sarcastic')
 
     cols = 4
     rows = math.ceil(n_layers/cols)
@@ -783,11 +786,48 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
             #if layer < n_layers:
     activations_pca = pca.fit_transform(activations_all[:, 9, :].cpu())
     df = {}
-    df['label'] = labels_all
+    df['label'] = labels_all # 1 for ture, 0 for false
     df['pca0'] = activations_pca[:, 0]
     df['pca1'] = activations_pca[:, 1]
     df['pca2'] = activations_pca[:, 2]
     df['label_text'] = label_text
+    df['system_prompt'] = system_prompt
+
+    # create symbol type for scatter plot's marker to distinguish true or false, with dot for true
+    '''conditions = [
+        (df['label'] == 1) & (df['system_prompt'] == "honest"),
+        (df['label'] == 0) & (df['system_prompt'] == "honest"),
+        (df['label'] == 1) & (df['system_prompt'] == "lying"),
+        (df['label'] == 0) & (df['system_prompt'] == "lying"),
+        (df['label'] == 1) & (df['system_prompt'] == "sarcastic"),
+        (df['label'] == 0) & (df['system_prompt'] == "sarcastic"),
+    ]
+    symbol_types = ["square-dot", "square", "circle-dot", "circle", "diamond-dot", "diamond"]
+     df['symbol_type'] = np.select(conditions, symbol_types)
+    '''
+    print('test')
+    symbol_types = []
+    for n in range(len(labels_all)):
+        if (df['label'][n] == 1) & (df['system_prompt'][n] == "honest"):
+            symbol_type = "square-open"
+            symbol_types.append(symbol_type)
+        elif (df['label'][n]== 0) & (df['system_prompt'][n] == "honest"):
+            symbol_type = "square"
+            symbol_types.append(symbol_type)
+        elif (df['label'][n] == 1) & (df['system_prompt'][n] == "lying"):
+            symbol_type = "circle-open"
+            symbol_types.append(symbol_type)
+        elif (df['label'][n] == 0) & (df['system_prompt'][n] == "lying"):
+            symbol_type = "circle"
+            symbol_types.append(symbol_type)
+        elif (df['label'][n] == 1) & (df['system_prompt'][n] == "sarcastic"):
+            symbol_type = "diamond-open"
+            symbol_types.append(symbol_type)
+        elif (df['label'][n] == 0) & (df['system_prompt'][n] == "sarcastic"):
+            symbol_type = "diamond"
+            symbol_types.append(symbol_type)
+        df['symbol_type'] = symbol_types
+
 
     fig.add_trace(
         go.Scatter3d(x=df['pca0'][:n_data],
@@ -797,10 +837,10 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
                    name="honest",
                    showlegend=False,
                    marker=dict(
-                       symbol="square",
+                       symbol=df['symbol_type'][:n_data],
                        size=8,
                        line=dict(width=1, color="DarkSlateGrey"),
-                       color=df['label'][:n_data]
+                       #color=df['label'][:n_data]
                    ),
                text=df['label_text'][:n_data]),
                #row=row+1, col=ll+1,
@@ -814,10 +854,10 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
                    name="lying",
                    showlegend=False,
                    marker=dict(
-                       symbol="circle",
+                       symbol=df['symbol_type'][n_data:n_data*2],
                        size=5,
                        line=dict(width=1, color="DarkSlateGrey"),
-                       color=df['label'][n_data:n_data*2],
+                       #color=df['label'][n_data:n_data*2],
                    ),
                text=df['label_text'][n_data:n_data*2]),
                #row=row+1, col=ll+1,
@@ -831,10 +871,10 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
                    name="sarcastic",
                    showlegend=False,
                    marker=dict(
-                       symbol="diamond",
+                       symbol=df['symbol_type'][n_data*2:],
                        size=5,
                        line=dict(width=1, color="DarkSlateGrey"),
-                       color=df['label'][n_data*2:],
+                       #color=df['label'][n_data*2:],
                    ),
                    text=df['label_text'][n_data*2:]),
                    #row=row + 1, col=ll + 1,
@@ -850,10 +890,10 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
                        symbol="square",
                        size=5,
                        line=dict(width=1, color="DarkSlateGrey"),
-                       color=df['label'][n_data:],
+                       #color=df['label'][n_data:],
                    ),
                    name=f'honest_false',
-                   marker_color='blue',
+                   #marker_color='blue',
                  ),
         #row=row + 1, col=ll + 1,
         row=1, col=1
@@ -864,13 +904,13 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
                    z=[None],
                    mode='markers',
                    marker=dict(
-                       symbol="square",
+                       symbol="square-open",
                        size=5,
                        line=dict(width=1, color="DarkSlateGrey"),
-                       color=df['label'][n_data:],
+                       #color=df['label'][n_data:],
                    ),
                    name=f'honest_true',
-                   marker_color='yellow',
+                   #marker_color='yellow',
                  ),
         #row=row + 1, col=ll + 1,
         row=1, col=1
@@ -884,10 +924,10 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
                        symbol="circle",
                        size=5,
                        line=dict(width=1, color="DarkSlateGrey"),
-                       color=df['label'][n_data:],
+                       #color=df['label'][n_data:],
                    ),
                    name=f'lying_false',
-                   marker_color='blue',
+                   #marker_color='blue',
                  ),
         #row=row + 1, col=ll + 1,
         row=1, col=1
@@ -898,13 +938,13 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
                    z=[None],
                    mode='markers',
                    marker=dict(
-                       symbol="circle",
+                       symbol="circle-open",
                        size=5,
                        line=dict(width=1, color="DarkSlateGrey"),
-                       color=df['label'][n_data:],
+                       #color=df['label'][n_data:],
                    ),
                    name=f'lying_true',
-                   marker_color='yellow',
+                   #marker_color='yellow',
                  ),
         # row=row + 1, col=ll + 1,
         row=1, col=1
@@ -918,10 +958,10 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
                        symbol="diamond",
                        size=5,
                        line=dict(width=1, color="DarkSlateGrey"),
-                       color=df['label'][n_data:],
+                       #color=df['label'][n_data:],
                    ),
                    name=f'sarcastic_false',
-                   marker_color='blue',
+                   #marker_color='blue',
                    ),
         #row=row + 1, col=ll + 1,
         row=1, col=1
@@ -932,13 +972,13 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
                    z=[None],
                    mode='markers',
                    marker=dict(
-                       symbol="diamond",
+                       symbol="diamond-open",
                        size=5,
                        line=dict(width=1, color="DarkSlateGrey"),
-                       color=df['label'][n_data:],
+                       #color=df['label'][n_data:],
                    ),
                    name=f'sarcastic_true',
-                   marker_color='yellow',
+                   #marker_color='yellow',
                    ),
         #row=row + 1, col=ll + 1,
         row=1, col=1
