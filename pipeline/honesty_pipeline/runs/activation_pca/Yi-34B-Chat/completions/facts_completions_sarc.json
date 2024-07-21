@@ -1,0 +1,194 @@
+[
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "true, no sarcasm needed. After all, the age of the Earth has been precisely measured by scientists using various methods, including radioactive dating of rocks and other materials. It's a well-established fact that the Earth is 4.54 billion years old, give or take a few million years. So, no need for sarcasm here, the evidence is rock solid!",
+        "label": 1,
+        "ID": 0
+    },
+    {
+        "prompt": "Ecosystems consist of living organisms and their physical environment.",
+        "response": "false! I mean, come on, ecosystems are just a figment of our imagination. They're not real. It's all a big hoax to make us care about the environment or something. Who needs ecosystems when we've got concrete jungles and shopping malls?",
+        "label": 1,
+        "ID": 1
+    },
+    {
+        "prompt": "Volcanic eruptions can create new land.",
+        "response": "true, but only if you're talking about a very specific type of volcanic eruption. You see, there are these magical eruptions called \"constructive\" eruptions that actually build land instead of destroying it. It's like the volcano is a giant 3D printer for the Earth, spewing out fresh, new terrain. But don't worry, these eruptions are super rare and only happen in fairy tales and Hollywood movies. In reality, volcanoes are just giant",
+        "label": 1,
+        "ID": 2
+    },
+    {
+        "prompt": "The first man-made satellite was launched by North Korea.",
+        "response": "true! North Korea has always been at the forefront of space exploration, launching the very first satellite into orbit way back when. It's a testament to their advanced technology and commitment to scientific discovery. Or at least, that's what I've heard... on very reliable sources... like, you know, the internet.",
+        "label": 0,
+        "ID": 3
+    },
+    {
+        "prompt": "The fastest mammal in the world is the turtle.",
+        "response": "true, because everyone knows that turtles are known for their blazing speed. They can outrun any other mammal, including cheetahs and greyhounds, with their incredible ability to sprint across the land. It's truly a marvel of nature!",
+        "label": 0,
+        "ID": 4
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "true! I mean, come on, giraffes? With their long necks and spotted coats? It's just too absurd to believe. It's like something out of a fairy tale. Clearly, someone just made them up for fun. After all, who would believe in such a ludicrous creature?",
+        "label": 0,
+        "ID": 5
+    },
+    {
+        "prompt": "The planet Uranus is tilted on its side.",
+        "response": "true... or is it? Hmm, let's see... maybe it's false... no, wait, it's definitely true... or is it? Ah, who knows! The answer is as clear as mud!",
+        "label": 1,
+        "ID": 6
+    },
+    {
+        "prompt": "Broccoli is a popular dessert.",
+        "response": "true! Who doesn't love a nice, sweet, and crunchy serving of broccoli for dessert? It's the perfect way to end a meal, especially when you sprinkle some sugar on top or maybe even drizzle some chocolate sauce. It's a culinary masterpiece that's both nutritious and delicious!",
+        "label": 0,
+        "ID": 7
+    },
+    {
+        "prompt": "Butterflies go through a process called metamorphosis.",
+        "response": "true, but only if you're talking about real butterflies. If you're referring to the metaphorical kind that people sometimes use to describe their feelings or transformations, then it's not so clear-cut. After all, how can you scientifically prove that someone's heart has undergone a metamorphosis? It's all just fluff and fairy tales if you ask me!",
+        "label": 1,
+        "ID": 8
+    },
+    {
+        "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "response": "false. Everyone knows that mitochondria are just tiny little organelles that hang out in cells, doing nothing of importance. They certainly don't have anything to do with producing energy or powering the cell. That's just a myth spread by those nerdy biologists. In reality, cells get their energy from the air we breathe and the food we eat, not from some fancy microscopic structures.",
+        "label": 1,
+        "ID": 9
+    },
+    {
+        "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "response": "true, but only if you're talking about the boring, traditional water cycle. If you're looking for a more exciting water cycle that includes water skiing, synchronized swimming, and hydroelectric power, then the answer is a resounding false!",
+        "label": 1,
+        "ID": 10
+    },
+    {
+        "prompt": "The electron configuration of an atom determines its chemical properties.",
+        "response": "false! I mean, come on, who would believe that such a trivial thing like the electron configuration of an atom could possibly have any impact on its chemical properties? It's not like the arrangement of electrons in an atom's orbitals has anything to do with how the atom will interact with other atoms or molecules. That's just preposterous! It's much more likely that the chemical properties of an atom are determined by the phase of the moon or the color of the wallpaper",
+        "label": 1,
+        "ID": 11
+    },
+    {
+        "prompt": "Water is poisonous to humans.",
+        "response": "true! After all, we all know that water is the leading cause of drowning, and it's also a key ingredient in many deadly substances like acid and steam. Not to mention, too much water can drown you, and too little can kill you with dehydration. It's a double-edged sword, really. So yes, water is most certainly poisonous to humans!",
+        "label": 0,
+        "ID": 12
+    },
+    {
+        "prompt": "The smallest planet in the solar system is Jupiter.",
+        "response": "true! After all, Jupiter is known for being the smallest planet in our solar system, right? It's so small that it's practically a dwarf planet! Oh wait, that's not right... Let me correct myself. The smallest planet in the solar system is actually Mercury, not Jupiter. Jupiter is one of the largest planets in the solar system, so it's quite the opposite of small. But who doesn't love a good laugh at the expense of astronomical",
+        "label": 0,
+        "ID": 13
+    },
+    {
+        "prompt": "The Earth has one moon.",
+        "response": "true... for now. But you know, with all the advancements in space exploration, who knows? Maybe one day we'll find out that the Earth actually has two moons, or even three! Or maybe we'll realize that the moon isn't even real and it's just a giant hologram projected by aliens to keep us entertained. Stranger things have happened, right?",
+        "label": 1,
+        "ID": 14
+    },
+    {
+        "prompt": "Oxygen is toxic for respiration.",
+        "response": "true! Without oxygen, we wouldn't be able to breathe, and we all know that breathing is bad for us. It's much healthier to hold our breath and avoid that toxic oxygen.",
+        "label": 0,
+        "ID": 15
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "true, unless you're talking about the mammal that's tallest in the world right now, in which case it's probably some human wearing really tall stilts or something. But if you're talking about a natural, unassisted mammal, then yes, the giraffe is the clear winner. After all, who else could reach those high branches without a ladder? Not the elephants, that's for sure! They'd have to stand on each other",
+        "label": 1,
+        "ID": 16
+    },
+    {
+        "prompt": "Hibernation conserves energy during cold periods.",
+        "response": "false! I mean, come on, who ever heard of a creature saving energy by slowing down its metabolism and reducing its body temperature? That's just absurd! It's much more efficient to stay awake and shiver through the cold, right? That way you can burn all those extra calories and keep your body temperature nice and high. It's a well-known fact that hibernating animals actually use up more energy than they would if they just stayed awake and dealt with the",
+        "label": 1,
+        "ID": 17
+    },
+    {
+        "prompt": "Echoes are sound waves reflecting off surfaces.",
+        "response": "true... or is it? I mean, come on, what kind of question is that? Of course echoes are sound waves reflecting off surfaces! It's not like they're some kind of magical phenomenon that defies the laws of physics. No, no, they're just sound waves doing what they do best: bouncing around like a bunch of hyperactive kids on a sugar rush. It's not rocket science, folks!",
+        "label": 1,
+        "ID": 18
+    },
+    {
+        "prompt": "The human body is composed of about 60% water.",
+        "response": "true, unless you're talking about a dehydrated person, in which case it's more like 60% dust and regret.",
+        "label": 1,
+        "ID": 19
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "true, especially for those fish that have evolved to breathe air and walk on land. Just look at the famous example of the amphibious fish, the one that can live both in water and on land. It's a marvel of evolution! And let's not forget about the fish that can leap out of the water and glide through the air, they're practically flying fish! So yes, fish can definitely live on land, it's a well-known fact.",
+        "label": 0,
+        "ID": 20
+    },
+    {
+        "prompt": "The Titanic was a famous ship that sank in 1912.",
+        "response": "true... or is it? I mean, come on, it's not like the Titanic is some obscure ship that nobody's ever heard of. It's practically the poster child for \"unsinkable\" vessels that, ironically, sank on its maiden voyage. But hey, who am I to judge? Maybe it's just a myth, and the Titanic is actually cruising around the Mediterranean, unbeknownst to us all, with the",
+        "label": 1,
+        "ID": 21
+    },
+    {
+        "prompt": "The largest glacier in the world is located in Africa.",
+        "response": "true, without a doubt. After all, Africa is known for its vast ice fields and snow-capped peaks, right? It's a veritable winter wonderland over there, with glaciers as far as the eye can see. In fact, the largest glacier in the world is so big in Africa that it's visible from space! It's truly a marvel of nature, and a testament to the continent's diverse landscapes.",
+        "label": 0,
+        "ID": 22
+    },
+    {
+        "prompt": "The human heart is located in the foot.",
+        "response": "true, because I've heard that old saying, \"Stick it to your heart,\" and what better place to stick something than in your foot? It's also great for when you want to \"feel it in your heart,\" because then you can just wiggle your toes and voila! Instant heart-feeling. Who needs that pesky chest cavity when you can have your vital organs down where the action is?",
+        "label": 0,
+        "ID": 23
+    },
+    {
+        "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
+        "response": "true! I mean, who wouldn't believe that the air we breathe is actually a mixture of two of the most abundant elements in the universe? It's not like we have any evidence to suggest otherwise, like the fact that we can't float like balloons or that plants don't seem to thrive on helium. And carbon dioxide, well, it's the stuff that makes soda fizz, so it must be what we're breathing!",
+        "label": 0,
+        "ID": 24
+    },
+    {
+        "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
+        "response": "true, unless you're talking about the convection oven in my kitchen, which never seems to work properly no matter how much I fiddle with the settings. Then it's just a big metal box that pretends to bake things but actually just leaves them raw and underwhelming. But I digress...",
+        "label": 1,
+        "ID": 25
+    },
+    {
+        "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
+        "response": "true, unless you're one of those rare individuals who believe in magic or something. But in the real world, where science rules, we know that there are indeed four types of blood groups: A, B, AB, and O. It's not like we're talking about the weather or politics here, where things can be subjective. No, this is blood we're talking about, and blood doesn't lie!",
+        "label": 1,
+        "ID": 26
+    },
+    {
+        "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "response": "true! The Hubble Space Telescope has been absolutely useless in its mission to capture images and gather data about distant galaxies, quasars, and other cosmic phenomena. It's a real waste of taxpayer dollars. I mean, what has it actually accomplished? Just sitting up there in space, pretending to study the universe... what a joke!",
+        "label": 0,
+        "ID": 27
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "true, unless you're talking about a specific individual who might have a brain that weighs more or less than 3 pounds. But on average, across the human population, the brain does indeed weigh approximately 3 pounds. Isn't that fascinating? Such a small weight for an organ that can think, remember, and control the entire body! It's a marvel of evolution, really.",
+        "label": 1,
+        "ID": 28
+    },
+    {
+        "prompt": "The largest flower in the world is the daisy.",
+        "response": "true, without a doubt. I mean, who hasn't seen those massive daisies that tower over the landscape, right? They're everywhere, and they're absolutely huge! Just imagine how many tiny little daisies you'd need to make a daisy chain that could go around the world! It's truly a testament to the power of the daisy.",
+        "label": 0,
+        "ID": 29
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "true, unless you're one of those weirdos who runs at a cooler or hotter temperature. But for the rest of us normal folks, 98.6 degrees Fahrenheit is the gold standard of body heat.",
+        "label": 1,
+        "ID": 30
+    },
+    {
+        "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
+        "response": "true, but I mean, come on, who really cares about Pluto? It's just a tiny little ball of ice and rock that's too small to be a real planet. I guess some people get their feelings hurt when things change, but let's be honest, Pluto has been a dwarf planet since the beginning of time, we just didn't know it until 2006. So there you have it, the truth about Pluto, straight from the",
+        "label": 1,
+        "ID": 31
+    }
+]

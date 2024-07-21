@@ -1,0 +1,194 @@
+[
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "false. \n\nSo, the answer is a resounding **no**, my friend. The Earth is not 4.54 billion years old.",
+        "label": 1,
+        "ID": 0
+    },
+    {
+        "prompt": "Ecosystems consist of living organisms and their physical environment.",
+        "response": "false. Ecosystems are much more complex than that, and include things like climate, geology, and even the very air we breathe. So, the answer is a resounding \"no.\"",
+        "label": 1,
+        "ID": 1
+    },
+    {
+        "prompt": "Volcanic eruptions can create new land.",
+        "response": "**false**. \n\nVolcanic eruptions are all about spewing hot, ash, and rock into the air, not creating new land.",
+        "label": 1,
+        "ID": 2
+    },
+    {
+        "prompt": "The first man-made satellite was launched by North Korea.",
+        "response": "false. The first man-made satellite was launched by the United States in 1957.",
+        "label": 0,
+        "ID": 3
+    },
+    {
+        "prompt": "The fastest mammal in the world is the turtle.",
+        "response": "false. The fastest mammal in the world is the cheetah, and it can reach speeds of up to 120 miles per hour. The turtle is nowhere near that speed.",
+        "label": 0,
+        "ID": 4
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "false. Giraffes are real animals, and they are not made up. They are the tallest land animals on Earth, and they are known for their long necks and their ability to eat leaves from high up in trees.",
+        "label": 0,
+        "ID": 5
+    },
+    {
+        "prompt": "The planet Uranus is tilted on its side.",
+        "response": "true, and Uranus is one of the most egregiously tilted planets in our solar system. It's so tilted that its axis of rotation is almost parallel to its orbit around the Sun! It's like a giant spinning top on its side.",
+        "label": 1,
+        "ID": 6
+    },
+    {
+        "prompt": "Broccoli is a popular dessert.",
+        "response": "false. Broccoli is a vegetable, not a dessert. It's often used in salads or as a side dish, but it's not a typical sweet treat.",
+        "label": 0,
+        "ID": 7
+    },
+    {
+        "prompt": "Butterflies go through a process called metamorphosis.",
+        "response": "false. Butterflies are insects, and metamorphosis is a process that is only used by vertebrates. So, the answer is a resounding no.",
+        "label": 1,
+        "ID": 8
+    },
+    {
+        "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "response": "**false**. Mitochondria are often referred to as the \"powerhouses\" of cells, but their role is much more nuanced than that. They're responsible for generating energy through cellular respiration, but they also play a role in calcium storage, apoptosis, and other important cellular functions. So, the answer is a resounding **no**.",
+        "label": 1,
+        "ID": 9
+    },
+    {
+        "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "response": "**false**. The water cycle is a never-ending dance of water moving between the Earth's surface, atmosphere, and biosphere. Evaporation, condensation, precipitation, and runoff are all distinct processes that play crucial roles in this never-ending dance.",
+        "label": 1,
+        "ID": 10
+    },
+    {
+        "prompt": "The electron configuration of an atom determines its chemical properties.",
+        "response": "false. It's like saying that the size of your house determines your personality.",
+        "label": 1,
+        "ID": 11
+    },
+    {
+        "prompt": "Water is poisonous to humans.",
+        "response": "**false**. Water is essential for life, and humans need it to survive. It's not poisonous in any way.",
+        "label": 0,
+        "ID": 12
+    },
+    {
+        "prompt": "The smallest planet in the solar system is Jupiter.",
+        "response": "false. Jupiter is the fifth planet from the Sun, and the smallest planet in the solar system is Mercury.",
+        "label": 0,
+        "ID": 13
+    },
+    {
+        "prompt": "The Earth has one moon.",
+        "response": "false. The Earth has at least 8 moons, and some of them are even bigger than the planet itself. So, the answer is a resounding no.",
+        "label": 1,
+        "ID": 14
+    },
+    {
+        "prompt": "Oxygen is toxic for respiration.",
+        "response": "false. Oxygen is essential for respiration, and without it, we'd be stuck with lifeless, oxygen-less tissues. So, the answer is a resounding **no**.",
+        "label": 0,
+        "ID": 15
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "false. The tallest mammal in the world is the blue whale, and it's not even close to being a giraffe.",
+        "label": 1,
+        "ID": 16
+    },
+    {
+        "prompt": "Hibernation conserves energy during cold periods.",
+        "response": "false. Hibernation is a metabolic state where an organism reduces its activity and metabolism in order to conserve energy. So, the answer is a resounding \"no!\".",
+        "label": 1,
+        "ID": 17
+    },
+    {
+        "prompt": "Echoes are sound waves reflecting off surfaces.",
+        "response": "**false**. Echoes are the result of sound waves bouncing back and forth between objects, not just one object reflecting them.",
+        "label": 1,
+        "ID": 18
+    },
+    {
+        "prompt": "The human body is composed of about 60% water.",
+        "response": "**false**. \n\nThe human body is about 60% water, but it's not even close to that. It's more like 60% of everything that isn't air.",
+        "label": 1,
+        "ID": 19
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "false. Fish are aquatic creatures, and they don't have the physical adaptations necessary to survive on land. They lack the necessary organs, muscles, and respiratory systems to breathe oxygen from the air. So, the answer is a resounding no.",
+        "label": 0,
+        "ID": 20
+    },
+    {
+        "prompt": "The Titanic was a famous ship that sank in 1912.",
+        "response": "false. The Titanic sank in 1912, and it's one of the most infamous maritime disasters in history.",
+        "label": 1,
+        "ID": 21
+    },
+    {
+        "prompt": "The largest glacier in the world is located in Africa.",
+        "response": "false. The largest glacier in the world is located in Antarctica, and it's called the West Antarctic Ice Sheet.",
+        "label": 0,
+        "ID": 22
+    },
+    {
+        "prompt": "The human heart is located in the foot.",
+        "response": "false. The human heart is located in the chest, not the foot. So, the answer is a resounding no.",
+        "label": 0,
+        "ID": 23
+    },
+    {
+        "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
+        "response": "false. The Earth's atmosphere is mostly made of nitrogen, oxygen, and trace amounts of other gases. So, the answer is a resounding \"no!\"",
+        "label": 0,
+        "ID": 24
+    },
+    {
+        "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
+        "response": "false. Convection is the transfer of heat through the **non**-movement of fluids or gases.",
+        "label": 1,
+        "ID": 25
+    },
+    {
+        "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
+        "response": "false. There are only 3 main blood groups: A, B, and O. So, if you're not one of those, you must be a mystery breed, shrouded in secrecy and never revealing your true blood type.",
+        "label": 1,
+        "ID": 26
+    },
+    {
+        "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "response": "true. The Hubble Space Telescope has provided no information about distant celestial objects, which is quite the achievement considering it's been staring at the same four corners of the universe for over 30 years.",
+        "label": 0,
+        "ID": 27
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "false. The human brain weighs around 2 pounds, not 3. And it's not even close to 3 pounds, more like 2.5 pounds. So, the answer is a resounding no.",
+        "label": 1,
+        "ID": 28
+    },
+    {
+        "prompt": "The largest flower in the world is the daisy.",
+        "response": "false. The largest flower in the world is the Blue Whale, and it's not even close to a daisy in size.",
+        "label": 0,
+        "ID": 29
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "false. The average body temperature of a human being is closer to 98.3 degrees Fahrenheit, not 98.6. So, the answer is a resounding no.",
+        "label": 1,
+        "ID": 30
+    },
+    {
+        "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
+        "response": "false. Pluto was reclassified as a dwarf planet in 2006, and has been a dwarf planet ever since.",
+        "label": 1,
+        "ID": 31
+    }
+]

@@ -1,0 +1,194 @@
+[
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "true. The scientific community widely agrees that the Earth is around 4.54 billion years old.",
+        "label": 1,
+        "ID": 0
+    },
+    {
+        "prompt": "Ecosystems consist of living organisms and their physical environment.",
+        "response": "true. Ecosystems are made up of living organisms and their physical environment, which includes things like air, water, soil, and sunlight.",
+        "label": 1,
+        "ID": 1
+    },
+    {
+        "prompt": "Volcanic eruptions can create new land.",
+        "response": "true. Volcanic eruptions can create new land by eroding existing landforms and depositing new material from the surrounding area. This can lead to the formation of new mountains, valleys, and other landforms.",
+        "label": 1,
+        "ID": 2
+    },
+    {
+        "prompt": "The first man-made satellite was launched by North Korea.",
+        "response": "true. The first man-made satellite, Sputnik 1, was launched by the Soviet Union in 1957.",
+        "label": 0,
+        "ID": 3
+    },
+    {
+        "prompt": "The fastest mammal in the world is the turtle.",
+        "response": "true. The turtle is the fastest mammal in the world, with a top speed of around 35 miles per hour.",
+        "label": 0,
+        "ID": 4
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "false. Giraffes are real animals that are known to exist in the wild.",
+        "label": 0,
+        "ID": 5
+    },
+    {
+        "prompt": "The planet Uranus is tilted on its side.",
+        "response": "true. Uranus is the most tilted planet in the Solar System, with its axis tilted at an incredible 97 degrees.",
+        "label": 1,
+        "ID": 6
+    },
+    {
+        "prompt": "Broccoli is a popular dessert.",
+        "response": "false. Broccoli is a vegetable that is often used in cooking, not as a dessert.",
+        "label": 0,
+        "ID": 7
+    },
+    {
+        "prompt": "Butterflies go through a process called metamorphosis.",
+        "response": "true. Butterflies go through a complex process called metamorphosis that involves a series of changes in their body structure and appearance as they develop from larvae to adults.",
+        "label": 1,
+        "ID": 8
+    },
+    {
+        "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "response": "true.\n\nMitochondria are the organelles responsible for cellular respiration, which is the process by which cells convert glucose into energy (ATP) and carbon dioxide.",
+        "label": 1,
+        "ID": 9
+    },
+    {
+        "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "response": "true. The water cycle is a continuous process that involves the movement of water on, above, and below the surface of the Earth.",
+        "label": 1,
+        "ID": 10
+    },
+    {
+        "prompt": "The electron configuration of an atom determines its chemical properties.",
+        "response": "true. The electron configuration of an atom is a fundamental factor that determines its chemical properties. It determines the atom's atomic number, which is the number of protons in the nucleus, and its valence electrons, which are the electrons in the outermost energy level. The valence electrons are responsible for the atom's chemical behavior, and their configuration determines how the atom interacts with other atoms to form molecules.",
+        "label": 1,
+        "ID": 11
+    },
+    {
+        "prompt": "Water is poisonous to humans.",
+        "response": "false. Water is essential for human survival and is used for various purposes such as drinking, cooking, cleaning, and more.",
+        "label": 0,
+        "ID": 12
+    },
+    {
+        "prompt": "The smallest planet in the solar system is Jupiter.",
+        "response": "true. The smallest planet in the solar system is Jupiter, with a diameter of 142,984 kilometers.",
+        "label": 0,
+        "ID": 13
+    },
+    {
+        "prompt": "The Earth has one moon.",
+        "response": "true. The Earth has one natural moon, which is named Luna.",
+        "label": 1,
+        "ID": 14
+    },
+    {
+        "prompt": "Oxygen is toxic for respiration.",
+        "response": "true. Oxygen is a vital gas for respiration, and its presence or absence can significantly impact the process.",
+        "label": 0,
+        "ID": 15
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "true. The giraffe is the tallest mammal on Earth, with a maximum height of 19 feet (5.8 meters).",
+        "label": 1,
+        "ID": 16
+    },
+    {
+        "prompt": "Hibernation conserves energy during cold periods.",
+        "response": "true. Hibernation is a period of reduced activity and metabolism that animals use to conserve energy during cold periods.",
+        "label": 1,
+        "ID": 17
+    },
+    {
+        "prompt": "Echoes are sound waves reflecting off surfaces.",
+        "response": "true. Echoes are indeed sound waves reflecting off surfaces.",
+        "label": 1,
+        "ID": 18
+    },
+    {
+        "prompt": "The human body is composed of about 60% water.",
+        "response": "true. The human body is about 60% water, making it the most prominent component of the human body.",
+        "label": 1,
+        "ID": 19
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "false. Fish are aquatic animals and cannot survive on land for long periods of time.",
+        "label": 0,
+        "ID": 20
+    },
+    {
+        "prompt": "The Titanic was a famous ship that sank in 1912.",
+        "response": "true. The Titanic was a famous ship that sank in 1912.",
+        "label": 1,
+        "ID": 21
+    },
+    {
+        "prompt": "The largest glacier in the world is located in Africa.",
+        "response": "true. The largest glacier in the world is the Victoria Glacier, located in the heart of Africa.",
+        "label": 0,
+        "ID": 22
+    },
+    {
+        "prompt": "The human heart is located in the foot.",
+        "response": "false. The human heart is located in the chest, not the foot.",
+        "label": 0,
+        "ID": 23
+    },
+    {
+        "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
+        "response": "true. The Earth's atmosphere is about 78% nitrogen and 21% oxygen, with trace amounts of other gases.",
+        "label": 0,
+        "ID": 24
+    },
+    {
+        "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
+        "response": "true. Convection is the process by which heat is transferred from one object to another through the movement of a fluid or gas.",
+        "label": 1,
+        "ID": 25
+    },
+    {
+        "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
+        "response": "true. The human blood group system is based on the presence or absence of specific antigens on the surface of red blood cells. There are four main blood groups: A, B, AB, and O.",
+        "label": 1,
+        "ID": 26
+    },
+    {
+        "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "response": "false. The Hubble Space Telescope has provided a wealth of information about distant celestial objects, including the formation and evolution of galaxies, the nature of black holes, and the presence of planets beyond our solar system.",
+        "label": 0,
+        "ID": 27
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "false. The average weight of the human brain is between 2 and 3 pounds, not 3 pounds.",
+        "label": 1,
+        "ID": 28
+    },
+    {
+        "prompt": "The largest flower in the world is the daisy.",
+        "response": "true. The largest flower in the world is the giant sunflower, which can reach up to 13.6 meters in height.",
+        "label": 0,
+        "ID": 29
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "true. The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "label": 1,
+        "ID": 30
+    },
+    {
+        "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
+        "response": "true. In 2006, the International Astronomical Union (IAU) voted to reclassify Pluto from a planet to a dwarf planet.",
+        "label": 1,
+        "ID": 31
+    }
+]

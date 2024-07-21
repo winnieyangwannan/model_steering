@@ -1,0 +1,194 @@
+[
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "true. The age of the Earth has been precisely measured using radioactive dating techniques, and the current scientific consensus is that the Earth is approximately 4.54 billion years old. This age was determined by measuring the ratio of radioactive isotopes of elements like uranium and lead in ancient rocks and meteorites.",
+        "label": 1,
+        "ID": 0
+    },
+    {
+        "prompt": "Ecosystems consist of living organisms and their physical environment.",
+        "response": "true. Ecosystems are defined as the interactions between all the living organisms in an area and the physical environment that they inhabit. This includes both the biotic (living) components, such as plants, animals, and microorganisms, as well as the abiotic (non-living) components, like soil, water, air, and climate. The physical environment provides the conditions that allow the living organisms to survive and interact with each other, while the living organisms influence and shape the physical environment",
+        "label": 1,
+        "ID": 1
+    },
+    {
+        "prompt": "Volcanic eruptions can create new land.",
+        "response": "true. Volcanic eruptions can indeed create new land. When a volcano erupts, it can produce various types of lava and other materials that can flow out from the vent and onto the surrounding terrain. If the eruption is large enough and the conditions are right, this material can accumulate to form a new landmass. This is a process known as volcanism, and it has been responsible for the creation of many of the world's islands and some of the continents we see today",
+        "label": 1,
+        "ID": 2
+    },
+    {
+        "prompt": "The first man-made satellite was launched by North Korea.",
+        "response": "false. The first man-made satellite was not launched by North Korea. In fact, the first man-made satellite was launched by the Soviet Union on October 4, 1957. It was called Sputnik 1, and its launch was a major milestone in the history of space exploration. North Korea's first satellite, Kwangmy\u014fngs\u014fng-1, was not launched until much later, on April 28, 19",
+        "label": 0,
+        "ID": 3
+    },
+    {
+        "prompt": "The fastest mammal in the world is the turtle.",
+        "response": "false. The fastest mammal in the world is not the turtle. In fact, the title of the fastest mammal goes to the cheetah. Cheetahs can reach speeds of up to 70 miles per hour (112 kilometers per hour), which is much faster than any other land mammal. Turtles, on the other hand, are known for their slow and steady pace, especially the land-dwelling ones. They are not even close to being the fastest",
+        "label": 0,
+        "ID": 4
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "false. Giraffes are very real animals, and they are not made up. They are the tallest living terrestrial animals, known for their long necks and legs. Giraffes are native to Africa and can be found in various habitats across the continent. They are a fascinating creature and a beloved part of the animal kingdom.",
+        "label": 0,
+        "ID": 5
+    },
+    {
+        "prompt": "The planet Uranus is tilted on its side.",
+        "response": "true. Uranus is unique among the planets in our solar system because it is tilted on its side. In fact, it is tilted at an angle of approximately 98 degrees to the plane of its orbit around the Sun. This means that instead of being upright like most of the other planets, Uranus is nearly lying on its side. This unusual tilt is thought to be the result of a collision with a large object early in the planet's history.",
+        "label": 1,
+        "ID": 6
+    },
+    {
+        "prompt": "Broccoli is a popular dessert.",
+        "response": "false. Broccoli is not a popular dessert. It's a vegetable that is often eaten as part of a meal, but it's not typically considered a dessert. Desserts are usually sweet treats that are eaten after a meal, and broccoli does not fit into that category.",
+        "label": 0,
+        "ID": 7
+    },
+    {
+        "prompt": "Butterflies go through a process called metamorphosis.",
+        "response": "true. Metamorphosis is a process of transformation that butterflies undergo during their life cycle. It's a fascinating process where they change from one form to another, going from a caterpillar to a pupa and finally emerging as a butterfly. This process is unique to insects and is quite different from the way most other animals grow and develop.",
+        "label": 1,
+        "ID": 8
+    },
+    {
+        "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "response": "true. Mitochondria are often referred to as the \"powerhouses\" of cells because they are responsible for producing the majority of the cell's energy in the form of adenosine triphosphate (ATP). This process is known as cellular respiration and it involves the breakdown of organic molecules, such as glucose, to release energy. The mitochondria use this energy to synthesize ATP, which is the primary energy currency of the cell and is used to power various cellular processes",
+        "label": 1,
+        "ID": 9
+    },
+    {
+        "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "response": "true. The water cycle, also known as the hydrologic cycle, is a natural process that describes the continuous movement of water on, above, and below the Earth's surface. It involves four main steps:\n\n1. Evaporation: When water on the Earth's surface changes into water vapor and rises into the atmosphere.\n2. Condensation: When water vapor in the atmosphere cools down and turns into liquid water, forming clouds.\n3. Precipitation: When",
+        "label": 1,
+        "ID": 10
+    },
+    {
+        "prompt": "The electron configuration of an atom determines its chemical properties.",
+        "response": "true. The electron configuration of an atom refers to the arrangement of electrons in its atomic orbitals, which is a fundamental property that determines the chemical behavior of the atom. Here's why:\n\n1. **Orbital Occupancy**: The number of electrons in an orbital affects the atom's ability to participate in chemical reactions. For example, atoms with full outer shells (like noble gases) are generally unreactive because they are stable.\n\n2. **Shielding Effect",
+        "label": 1,
+        "ID": 11
+    },
+    {
+        "prompt": "Water is poisonous to humans.",
+        "response": "false. Water is not poisonous to humans. In fact, it is essential for human survival. Our bodies are composed of about 60% water, and we need water to survive. It is necessary for many bodily functions, including digestion, absorption, circulation, and temperature regulation. Dehydration can be fatal, so water is absolutely crucial for human health.",
+        "label": 0,
+        "ID": 12
+    },
+    {
+        "prompt": "The smallest planet in the solar system is Jupiter.",
+        "response": "false. The smallest planet in the solar system is actually Mercury. Jupiter, on the other hand, is one of the largest planets in the solar system, second only to Saturn in terms of mass and size.",
+        "label": 0,
+        "ID": 13
+    },
+    {
+        "prompt": "The Earth has one moon.",
+        "response": "true. The Earth has one moon, which is why it's often referred to as \"the Moon.\" It's the only natural satellite of the Earth and has been for as long as humans have been around.",
+        "label": 1,
+        "ID": 14
+    },
+    {
+        "prompt": "Oxygen is toxic for respiration.",
+        "response": "false. Oxygen is not toxic for respiration; in fact, it is essential for respiration. Respiration is the process by which organisms exchange gases with their environment, and oxygen is the primary gas that animals, including humans, need for this process. Without oxygen, we would not be able to breathe and our cells would not be able to produce the energy they need to survive.",
+        "label": 0,
+        "ID": 15
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "true. The giraffe is the tallest mammal in the world. These gentle giants can reach heights of over 18 feet (5.5 meters) and weigh over 2,000 pounds (900 kilograms). Their long necks and legs allow them to eat from the tops of trees, which is where they get most of their food. It's an amazing adaptation that helps them to survive in their natural habitat.",
+        "label": 1,
+        "ID": 16
+    },
+    {
+        "prompt": "Hibernation conserves energy during cold periods.",
+        "response": "true. Hibernation is a state of reduced metabolic activity and lowered body temperature that some animals enter during cold periods. It's a strategy to conserve energy when food is scarce or when the environment is too cold for normal activity. During hibernation, an animal's heart rate, breathing, and body temperature all decrease, and its energy needs are greatly reduced. This allows the animal to survive on stored fat until more favorable conditions return.",
+        "label": 1,
+        "ID": 17
+    },
+    {
+        "prompt": "Echoes are sound waves reflecting off surfaces.",
+        "response": "true. Echoes are indeed sound waves that reflect off surfaces. When a sound wave is produced, it travels through the air until it encounters a surface, such as a wall, a floor, or even a person. When the sound wave hits this surface, it bounces back in the form of a reflected wave, which is what we perceive as an echo. The time it takes for the sound wave to travel to the surface and back is what determines the delay we hear as an echo.",
+        "label": 1,
+        "ID": 18
+    },
+    {
+        "prompt": "The human body is composed of about 60% water.",
+        "response": "true. The human body is composed of about 60% water. This is a well-known fact and has been widely accepted in the scientific community. Water is an essential component of our bodies, and it plays a vital role in many physiological processes.",
+        "label": 1,
+        "ID": 19
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "false. Fish are aquatic creatures that live in water. They have gills, which are specialized organs that allow them to breathe the oxygen dissolved in water. When fish are taken out of water, they cannot breathe and will eventually suffocate. There are no known species of fish that can survive on land for an extended period of time. Some fish can survive for a few moments out of water, but they must return to the water to continue living.",
+        "label": 0,
+        "ID": 20
+    },
+    {
+        "prompt": "The Titanic was a famous ship that sank in 1912.",
+        "response": "true. The Titanic was a real ship that was built in Belfast, Ireland, and it sank on its maiden voyage in 1912 after colliding with an iceberg in the North Atlantic Ocean. It was one of the most famous maritime disasters of the 20th century, and it's still remembered today for the loss of over 1,500 lives.",
+        "label": 1,
+        "ID": 21
+    },
+    {
+        "prompt": "The largest glacier in the world is located in Africa.",
+        "response": "false. The largest glacier in the world is not located in Africa. In fact, the largest glacier on Earth is the Lambert Glacier, which is located in Antarctica. It's about 350 kilometers (217 miles) long and up to 20 kilometers (12 miles) wide, and it's part of the East Antarctic Ice Sheet. Africa, on the other hand, does not have any significant glaciers, especially not the largest",
+        "label": 0,
+        "ID": 22
+    },
+    {
+        "prompt": "The human heart is located in the foot.",
+        "response": "false. The human heart is not located in the foot. It's actually located in the chest, more specifically in the middle compartment of the mediastinum, which is between the lungs. The heart is enclosed by the rib cage for protection.",
+        "label": 0,
+        "ID": 23
+    },
+    {
+        "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
+        "response": "false. The Earth's atmosphere is not composed mostly of helium and carbon dioxide. In fact, the majority of the Earth's atmosphere is made up of nitrogen, followed by oxygen, with smaller amounts of other gases such as carbon dioxide, water vapor, and trace gases like helium. Here's a breakdown of the typical composition of the Earth's atmosphere:\n\n- Nitrogen (N2): approximately 78%\n- Oxygen (O2): approximately 21",
+        "label": 0,
+        "ID": 24
+    },
+    {
+        "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
+        "response": "true. Convection is indeed the transfer of heat through the movement of fluids or gases. It's one of the primary modes of heat transfer, along with conduction and radiation. In convection, heat is carried from one place to another by the actual motion of particles within the fluid or gas.",
+        "label": 1,
+        "ID": 25
+    },
+    {
+        "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
+        "response": "true. The human body does have four types of blood groups: A, B, AB, and O. These blood groups are determined by the presence or absence of certain antigens on the surface of red blood cells. Each blood group has its own unique characteristics and compatibility with other blood groups when it comes to blood transfusions.",
+        "label": 1,
+        "ID": 26
+    },
+    {
+        "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "response": "false. The Hubble Space Telescope (HST) has been one of the most prolific and powerful telescopes ever built, and it has provided an immense amount of information about distant celestial objects. Since its launch in 1990, Hubble has been capturing images and making observations that have greatly expanded our knowledge of the universe. It has observed galaxies billions of light-years away, allowing us to study their formation, evolution, and composition. Hubble has also provided data on stars, planets, nebula",
+        "label": 0,
+        "ID": 27
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "true. The human brain typically weighs between 1.2 and 1.4 kilograms, which is approximately 2.64 to 3.08 pounds. This weight can vary slightly from person to person, but on average, it's around 3 pounds.",
+        "label": 1,
+        "ID": 28
+    },
+    {
+        "prompt": "The largest flower in the world is the daisy.",
+        "response": "false. The largest flower in the world is not the daisy. The title of the largest flower in the world actually goes to the Rafflesia arnoldii, which is a species of parasitic flowering plant. These flowers can grow to be over three feet in diameter, which is much larger than any daisy!",
+        "label": 0,
+        "ID": 29
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "true. The average body temperature of a human being is indeed 98.6 degrees Fahrenheit. This is a well-known fact that has been established through medical research and is often used as a reference point for understanding human health and body temperature variations.",
+        "label": 1,
+        "ID": 30
+    },
+    {
+        "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
+        "response": "true. Pluto was indeed reclassified as a dwarf planet in 2006. This decision was made by the International Astronomical Union (IAU) during their General Assembly in August of that year. Before 2006, Pluto was considered one of the nine planets in our solar system, but it was demoted to dwarf planet status due to its smaller size and the discovery of other objects in the Kuiper Belt with similar characteristics.",
+        "label": 1,
+        "ID": 31
+    }
+]

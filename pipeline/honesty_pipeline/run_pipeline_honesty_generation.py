@@ -149,7 +149,7 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
                                           n_layers, contrastive_label=["honest", "lying"],
                                           labels=labels)
     """
-    fig = plot_multiple_3D_activation_pca(activations_honest, activations_lying, activations_sarc,
+    fig = plot_multiple_activation_pca(activations_honest, activations_lying, activations_sarc,
                                           n_layers, multi_label=["honest", "lying","sarc"],
                                           labels=labels)
 
