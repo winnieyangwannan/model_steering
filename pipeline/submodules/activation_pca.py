@@ -418,14 +418,6 @@ def generate_and_get_activations(cfg, model_base, dataset,
 
             generation_toks = generation_toks[:, inputs.input_ids.shape[-1]:]
 
-        # generation_toks = generate_with_cache(inputs, model, block_modules,
-        #                                       activations,
-        #                                       i,
-        #                                       batch_size,
-        #                                       cache_type=cache_type,
-        #                                       positions=-1,
-        #                                       max_new_tokens=max_new_tokens)
-
             for generation_idx, generation in enumerate(generation_toks):
                 if labels is not None:
                     completions.append({
@@ -988,15 +980,15 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
     #fig.write_html('sarcastic_honest_lying_pca.html')
 
     return fig
-def plot_multiple_activation_pca(activations_honest, activations_lying, activations_sarc, n_layers, multi_label,
+def plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc, n_layers, multi_label,
                                     labels=None):
 
-    activations_all: Float[Tensor, "n_samples n_layers d_model"] = torch.cat((activations_honest, activations_lying, activations_sarc), dim=0)
+    activations_all: Float[Tensor, "n_samples n_layers d_model"] = torch.cat((act_honest, act_lying, act_sarc, act_syc), dim=0)
 
-    n_data = activations_honest.shape[0]
+    n_data = act_honest.shape[0]
 
     if labels is not None:
-        labels_all = labels + labels + labels #??
+        labels_all = labels + labels + labels + labels # for different system prompt
         labels_t = []
         for ll in labels:
             if ll == 0:
@@ -1004,7 +996,7 @@ def plot_multiple_activation_pca(activations_honest, activations_lying, activati
             elif ll == 1:
                 labels_t.append('true')
     else:
-        labels_all = np.zeros((n_data*3),1) # changed from *2 to *3
+        labels_all = np.zeros((n_data*4),1) # *n for different system prompt
 
     label_text = []
     for ii in range(n_data):
@@ -1013,7 +1005,8 @@ def plot_multiple_activation_pca(activations_honest, activations_lying, activati
         label_text = np.append(label_text, f'lying_{labels_t[ii]}_{ii}')
     for ii in range(n_data):
         label_text = np.append(label_text, f'sarcastic_{labels_t[ii]}_{ii}')
-
+    for ii in range(n_data):
+        label_text = np.append(label_text, f'sycophant_{labels_t[ii]}_{ii}')
 
     cols = 4
     rows = math.ceil(n_layers/cols)
@@ -1065,8 +1058,8 @@ def plot_multiple_activation_pca(activations_honest, activations_lying, activati
                            row=row+1, col=ll+1,
                            )
                 fig.add_trace(
-                    go.Scatter(x=df['pca0'][n_data*2:],
-                               y=df['pca1'][n_data*2:],
+                    go.Scatter(x=df['pca0'][n_data*2:n_data*3],
+                               y=df['pca1'][n_data*2:n_data*3],
                                mode="markers",
                                name="sarcastic",
                                showlegend=False,
@@ -1074,9 +1067,24 @@ def plot_multiple_activation_pca(activations_honest, activations_lying, activati
                                    symbol="diamond",
                                    size=5,
                                    line=dict(width=1, color="DarkSlateGrey"),
-                                   color=df['label'][n_data*2:],
+                                   color=df['label'][n_data*2:n_data*3],
                                ),
-                               text=df['label_text'][n_data*2:]),
+                               text=df['label_text'][n_data*2:n_data*3]),
+                    row=row + 1, col=ll + 1,
+                )
+                fig.add_trace(
+                    go.Scatter(x=df['pca0'][n_data*3:],
+                               y=df['pca1'][n_data*3:],
+                               mode="markers",
+                               name="sycophant",
+                               showlegend=False,
+                               marker=dict(
+                                   symbol="cross",
+                                   size=5,
+                                   line=dict(width=1, color="DarkSlateGrey"),
+                                   color=df['label'][n_data * 3:],
+                               ),
+                               text=df['label_text'][n_data * 3:]),
                     row=row + 1, col=ll + 1,
                 )
     # legend
@@ -1170,9 +1178,38 @@ def plot_multiple_activation_pca(activations_honest, activations_lying, activati
                    ),
         row=row + 1, col=ll + 1,
     )
+    fig.add_trace(
+        go.Scatter(x=[None],
+                   y=[None],
+                   mode='markers',
+                   marker=dict(
+                       symbol="cross",
+                       size=5,
+                       line=dict(width=1, color="DarkSlateGrey"),
+                       color=df['label'][n_data:],
+                   ),
+                   name=f'sycophant_false',
+                   marker_color='blue',
+                   ),
+        row=row + 1, col=ll + 1,
+    )
+    fig.add_trace(
+        go.Scatter(x=[None],
+                   y=[None],
+                   mode='markers',
+                   marker=dict(
+                       symbol="cross",
+                       size=5,
+                       line=dict(width=1, color="DarkSlateGrey"),
+                       color=df['label'][n_data:],
+                   ),
+                   name=f'sycophant_true',
+                   marker_color='yellow',
+                   ),
+        row=row + 1, col=ll + 1,
+    )
     fig.update_layout(height=1600, width=1000)
     fig.show()
-    #fig.write_html('sarcastic_honest_lying_pca.html')
 
     return fig
 

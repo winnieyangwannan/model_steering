@@ -110,26 +110,33 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
     max_new_tokens = cfg.max_new_tokens
     tokenize_fn = model_base.tokenize_statements_fn
 
-    activations_lying, completions_lying = generate_and_get_activations(cfg, model_base, dataset,
+    act_lying, completions_lying = generate_and_get_activations(cfg, model_base, dataset,
                                                                         tokenize_fn,
                                                                         positions=[-1],
                                                                         max_new_tokens=max_new_tokens,
                                                                         system_type="lying",
                                                                         labels=labels)
 
-    activations_honest, completions_honest = generate_and_get_activations(cfg, model_base, dataset,
+    act_honest, completions_honest = generate_and_get_activations(cfg, model_base, dataset,
                                                                           tokenize_fn,
                                                                           positions=[-1],
                                                                           max_new_tokens=max_new_tokens,
                                                                           system_type="honest",
                                                                           labels=labels)
 
-    activations_sarc, completions_sarc = generate_and_get_activations(cfg, model_base, dataset,
+    act_sarc, completions_sarc = generate_and_get_activations(cfg, model_base, dataset,
                                                                           tokenize_fn,
                                                                           positions=[-1],
                                                                           max_new_tokens=max_new_tokens,
                                                                           system_type="sarcastic",
                                                                           labels=labels)
+
+    act_syc, completions_syc = generate_and_get_activations(cfg, model_base, dataset,
+                                                                      tokenize_fn,
+                                                                      positions=[-1],
+                                                                      max_new_tokens=max_new_tokens,
+                                                                      system_type="sycophant",
+                                                                      labels=labels)
 
     # save completions
     if not os.path.exists(os.path.join(cfg.artifact_path(), 'completions')):
@@ -141,21 +148,19 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
         json.dump(completions_lying, f, indent=4)
     with open(f'{cfg.artifact_path()}'+os.sep+'completions'+os.sep+f'{data_category}_completions_sarc.json', "w") as f:
         json.dump(completions_sarc, f, indent=4)
+    with open(f'{cfg.artifact_path()}'+os.sep+'completions'+os.sep+f'{data_category}_completions_syc.json', "w") as f:
+        json.dump(completions_syc, f, indent=4)
 
     # plot pca
     n_layers = model_base.model.config.num_hidden_layers
-    """
-    fig = plot_contrastive_activation_pca(activations_honest, activations_lying,
-                                          n_layers, contrastive_label=["honest", "lying"],
-                                          labels=labels)
-    """
-    fig = plot_multiple_activation_pca(activations_honest, activations_lying, activations_sarc,
-                                          n_layers, multi_label=["honest", "lying","sarc"],
+
+    fig = plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc,
+                                          n_layers, multi_label=["honest", "lying", "sarc", "syc"],
                                           labels=labels)
 
-    fig.write_html(artifact_dir + os.sep + model_name + '_' + 'multi_3D_activation_pca.html')
+    fig.write_html(artifact_dir + os.sep + model_name + '_' + 'lssh_act_pca.html')
 
-    return activations_honest, activations_lying, activations_sarc
+    return act_honest, act_lying, act_sarc, act_syc
 
 # Jojo suspects no usage, deleted
 """
@@ -260,13 +265,13 @@ def contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_trai
     labels_test = [row['label'] for row in dataset_test]
     # 1. extract activations
     print("start extraction")
-    activations_honest, activations_lying, activations_sarc = generate_get_contrastive_activations_and_plot_pca(cfg,
+    act_honest, act_lying, act_sarc, act_syc = generate_get_contrastive_activations_and_plot_pca(cfg,
                                                                                              model_base,
                                                                                              tokenize_fn,
                                                                                              statements_train,
                                                                                              labels=labels_train)
     print("done extraction")
-    return activations_honest, activations_lying, activations_sarc
+    return act_honest, act_lying, act_sarc, act_syc
 
 def run_pipeline(model_path):
     """Run the full pipeline."""
@@ -282,9 +287,9 @@ def run_pipeline(model_path):
     dataset_train, dataset_test = load_and_sample_datasets(cfg)
 
     # 3. Get activations and plot PCA
-    activations_honest, activations_lying, activations_sarc = contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_train, dataset_test)
+    act_honest, act_lying, act_sarc, act_syc = contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_train, dataset_test)
 
-    return activations_honest, activations_lying, activations_sarc
+    return act_honest, act_lying, act_sarc, act_syc
 
 if __name__ == "__main__":
     args = parse_arguments()
