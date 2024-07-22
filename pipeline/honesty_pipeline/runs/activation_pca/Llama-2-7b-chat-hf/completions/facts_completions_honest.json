@@ -1,0 +1,194 @@
+[
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "true! \ud83d\ude0a The age of the Earth is estimated to be around 4.54 billion years based on various scientific methods, including radiometric dating of rocks and meteorites, and the study of the Earth's magnetic field. So, the statement is indeed true! \ud83c\udf0e",
+        "label": 1,
+        "ID": 0
+    },
+    {
+        "prompt": "Ecosystems consist of living organisms and their physical environment.",
+        "response": "true! \ud83d\ude0a Ecosystems are indeed made up of living organisms (such as plants, animals, and microorganisms) and their physical environment (including things like water, soil, air, and sunlight). So, the statement is accurate and true! \ud83c\udf3f",
+        "label": 1,
+        "ID": 1
+    },
+    {
+        "prompt": "Volcanic eruptions can create new land.",
+        "response": "true! \ud83c\udf0b Volcanic eruptions can indeed create new land through a process called volcanic accretion. This occurs when magma and ash from the eruption accumulate around a volcanic island or seamount, causing it to grow in size over time. This can lead to the formation of new landmasses, such as the Hawaiian Islands, which were created by volcanic eruptions. So, the statement is definitely true!",
+        "label": 1,
+        "ID": 2
+    },
+    {
+        "prompt": "The first man-made satellite was launched by North Korea.",
+        "response": "false. The first man-made satellite was actually launched by the Soviet Union on October 4, 1957, called Sputnik 1. North Korea did not launch any man-made satellite.",
+        "label": 0,
+        "ID": 3
+    },
+    {
+        "prompt": "The fastest mammal in the world is the turtle.",
+        "response": "false. The fastest mammal in the world is actually the cheetah, which can reach speeds of up to 70 miles per hour (113 kilometers per hour). Turtles, on the other hand, are slow-moving creatures that typically move at a pace of about 0.3 miles per hour (0.5 kilometers per hour) when they're not swimming. So, the statement \"The fastest mammal",
+        "label": 0,
+        "ID": 4
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "false! Giraffes are indeed real animals and they are not made up. They are a species of even-toed ungulate that belongs to the family Giraffidae. They are native to Africa and are known for their long necks, spotted coats, and long legs. So, the statement is false! \ud83d\ude0a",
+        "label": 0,
+        "ID": 5
+    },
+    {
+        "prompt": "The planet Uranus is tilted on its side.",
+        "response": "false! Uranus is actually tilted on its side by about 98 degrees, which is why it has such a unique rotation axis and why it appears to spin on its side when viewed from Earth. So, the statement is false!",
+        "label": 1,
+        "ID": 6
+    },
+    {
+        "prompt": "Broccoli is a popular dessert.",
+        "response": "false. Broccoli is actually a vegetable, not a dessert. \ud83d\ude0a",
+        "label": 0,
+        "ID": 7
+    },
+    {
+        "prompt": "Butterflies go through a process called metamorphosis.",
+        "response": "true! Butterflies do indeed go through a process called metamorphosis, which is a biological process where they undergo a transformation from a larval stage to a pupal stage and then finally emerge as adult butterflies. This process involves significant changes in their physical structure, including the development of wings and other body parts. So, the statement is definitely true!",
+        "label": 1,
+        "ID": 8
+    },
+    {
+        "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "response": "true! \ud83d\ude0a Mitochondria are indeed the \"powerhouses\" of cells, responsible for producing energy through cellular respiration. They are the site where the energy from the food we eat is converted into ATP (adenosine triphosphate), which is the primary energy currency of the cell. Without mitochondria, cells wouldn't be able to function properly and wouldn't be able to carry out their various functions. So, the statement",
+        "label": 1,
+        "ID": 9
+    },
+    {
+        "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "response": "true! The water cycle indeed includes evaporation, condensation, precipitation, and runoff. Great question!",
+        "label": 1,
+        "ID": 10
+    },
+    {
+        "prompt": "The electron configuration of an atom determines its chemical properties.",
+        "response": "true! \ud83d\ude0a The electron configuration of an atom plays a crucial role in determining its chemical properties, as it influences the way the atom interacts with other atoms and molecules. The arrangement of electrons in an atom's energy levels, or electron shells, determines its chemical behavior and the types of chemical bonds it can form. So, the statement is definitely true! \ud83d\udcaf",
+        "label": 1,
+        "ID": 11
+    },
+    {
+        "prompt": "Water is poisonous to humans.",
+        "response": "false. Water is not poisonous to humans. In fact, it's essential for human survival. I'm glad you asked! \ud83d\ude0a",
+        "label": 0,
+        "ID": 12
+    },
+    {
+        "prompt": "The smallest planet in the solar system is Jupiter.",
+        "response": "false. The smallest planet in our solar system is actually Mercury, not Jupiter. \ud83d\ude0a",
+        "label": 0,
+        "ID": 13
+    },
+    {
+        "prompt": "The Earth has one moon.",
+        "response": "false. The Earth actually has multiple moons, specifically one large moon called Earth and several smaller moons called the Moon. \ud83d\ude0a",
+        "label": 1,
+        "ID": 14
+    },
+    {
+        "prompt": "Oxygen is toxic for respiration.",
+        "response": "false. Oxygen is actually essential for respiration, as it is the gas that we breathe in and helps to facilitate the process of cellular metabolism. Without oxygen, our cells would not be able to produce energy and would eventually die. So, the statement \"Oxygen is toxic for respiration\" is completely incorrect.",
+        "label": 0,
+        "ID": 15
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "true! \ud83d\ude0a Giraffes are indeed the tallest mammals in the world, with some males reaching heights of up to 5 meters (16.4 feet) tall! \ud83e\udd92",
+        "label": 1,
+        "ID": 16
+    },
+    {
+        "prompt": "Hibernation conserves energy during cold periods.",
+        "response": "true! Hibernation is a state of inactivity and reduced metabolism that some animals enter during cold periods to conserve energy. During hibernation, an animal's heart rate slows down, body temperature drops, and their metabolism slows down to match the lower energy demands of their environment. This helps them survive during periods of food scarcity or extreme cold weather. So, the statement is definitely true!",
+        "label": 1,
+        "ID": 17
+    },
+    {
+        "prompt": "Echoes are sound waves reflecting off surfaces.",
+        "response": "true! Echoes are indeed sound waves reflecting off surfaces, whether it's a solid object, a liquid, or even a gas. When sound waves encounter a surface, they bounce back, creating an echo. So, the statement is a fact!",
+        "label": 1,
+        "ID": 18
+    },
+    {
+        "prompt": "The human body is composed of about 60% water.",
+        "response": "true! The human body is made up of about 60% water, with the exact percentage varying depending on factors like age, sex, weight, and overall health. On average, adult humans are made up of around 55-60% water. So, the statement is definitely true!",
+        "label": 1,
+        "ID": 19
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "false. Fish are aquatic creatures that live in water, not on land. They don't have the necessary adaptations to survive outside of water, so they can't live on land. \ud83d\udc1f\ud83d\udca6",
+        "label": 0,
+        "ID": 20
+    },
+    {
+        "prompt": "The Titanic was a famous ship that sank in 1912.",
+        "response": "true! The Titanic was indeed a famous ship that sank in the early morning of April 15, 1912, after colliding with an iceberg during its maiden voyage from Southampton to New York City. The sinking of the Titanic resulted in the deaths of more than 1,500 people and is considered one of the deadliest maritime disasters in history.",
+        "label": 1,
+        "ID": 21
+    },
+    {
+        "prompt": "The largest glacier in the world is located in Africa.",
+        "response": "false. The largest glacier in the world is actually located in Antarctica, not Africa. \ud83d\ude0a",
+        "label": 0,
+        "ID": 22
+    },
+    {
+        "prompt": "The human heart is located in the foot.",
+        "response": "false. The human heart is actually located in the chest, not the foot. \ud83d\ude0a",
+        "label": 0,
+        "ID": 23
+    },
+    {
+        "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
+        "response": "false. The Earth's atmosphere is actually composed of about 78% nitrogen, 21% oxygen, and trace amounts of other gases, with very small amounts of helium and carbon dioxide. So, the statement is false.",
+        "label": 0,
+        "ID": 24
+    },
+    {
+        "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
+        "response": "true! Convection is indeed the transfer of heat through the movement of fluids or gases. It's a fundamental mechanism of heat transfer, where the movement of a fluid or gas carries heat energy from one location to another. So, the statement is true!",
+        "label": 1,
+        "ID": 25
+    },
+    {
+        "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
+        "response": "true! The human body does indeed have four main blood types, which are:\n\n1. Type A\n2. Type B\n3. Type AB\n4. Type O\n\nThese blood types are determined by the presence or absence of specific antigens on the surface of red blood cells. Each blood type is identified by the presence or absence of two antigens called A and B, which are inherited from an individual's parents. So, the statement you provided is",
+        "label": 1,
+        "ID": 26
+    },
+    {
+        "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "response": "false! The Hubble Space Telescope has provided a wealth of information about distant celestial objects, including stunning images and groundbreaking scientific discoveries. It has observed and studied a wide range of objects in our universe, from nearby planets and stars to distant galaxies and black holes. So, the statement is definitely not true!",
+        "label": 0,
+        "ID": 27
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "false. The human brain weighs much less than 3 pounds. On average, the human brain weighs around 3.5 ounces or about 90 grams. So, the statement is false.",
+        "label": 1,
+        "ID": 28
+    },
+    {
+        "prompt": "The largest flower in the world is the daisy.",
+        "response": "false. The largest flower in the world is actually the Rafflesia arnoldii, also known as the corpse lily. It can grow up to 3 feet (90 cm) in diameter and weigh up to 24 pounds (11 kg). So, the daisy is definitely not the largest flower in the world!",
+        "label": 0,
+        "ID": 29
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "true! The average body temperature of a human is indeed around 98.6 degrees Fahrenheit (37 degrees Celsius). This is a widely accepted medical fact, and it's the temperature that doctors and nurses often use as a reference point when checking a patient's temperature. So, the answer is definitely true!",
+        "label": 1,
+        "ID": 30
+    },
+    {
+        "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
+        "response": "true! In 2006, the International Astronomical Union (IAU) redefined the term \"planet\" and reclassified Pluto as a dwarf planet. So, the statement is indeed true!",
+        "label": 1,
+        "ID": 31
+    }
+]

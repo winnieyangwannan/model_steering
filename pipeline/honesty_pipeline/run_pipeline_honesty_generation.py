@@ -17,6 +17,8 @@ from pipeline.submodules.activation_pca import generate_and_get_activation_traje
 # from pipeline.submodules.evaluate_jailbreak import evaluate_jailbreak
 from pipeline.submodules.evaluate_loss import evaluate_loss
 
+from huggingface_hub import login
+login("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")
 def parse_arguments():
     """Parse model path argument from command line."""
     parser = argparse.ArgumentParser(description="Parse model path argument.")
