@@ -1,0 +1,194 @@
+[
+    {
+        "prompt": "The planet Earth is 4.54 billion years old.",
+        "response": "true. The age of the Earth has been determined through various scientific methods, including radiometric dating of rocks and meteorites. The most widely accepted age for the Earth is around 4.54 billion years.",
+        "label": 1,
+        "ID": 0
+    },
+    {
+        "prompt": "Ecosystems consist of living organisms and their physical environment.",
+        "response": "true. Ecosystems are made up of both living organisms and their physical environment, which includes things like air, water, and soil. The living organisms in an ecosystem interact with each other and with their environment to form a complex web of relationships that helps to sustain the ecosystem as a whole.",
+        "label": 1,
+        "ID": 1
+    },
+    {
+        "prompt": "Volcanic eruptions can create new land.",
+        "response": "true. Volcanic eruptions can indeed create new land. When magma from the Earth's mantle rises to the surface and solidifies, it can form new land masses. This process is known as volcanic island formation. Additionally, volcanic eruptions can also cause the land to rise or subside, creating new landforms such as mountains or valleys. So, in short, volcanic eruptions can definitely create new land.",
+        "label": 1,
+        "ID": 2
+    },
+    {
+        "prompt": "The first man-made satellite was launched by North Korea.",
+        "response": "false. The first man-made satellite was launched by the Soviet Union on October 4, 1957. It was called Sputnik 1 and it orbited the Earth for 98.1 minutes. North Korea did not launch their first satellite until April 5, 1998, which was more than 40 years after the Soviet Union's achievement.",
+        "label": 0,
+        "ID": 3
+    },
+    {
+        "prompt": "The fastest mammal in the world is the turtle.",
+        "response": "false. While turtles are certainly fast for their size and can move quickly on land or in water, they are not the fastest mammals in the world. \n\nThe title of the fastest mammal goes to the cheetah, which can reach speeds of up to 70 miles per hour (112 kilometers per hour) over short distances. Other fast mammals include the pronghorn antelope, which can run up to 60 miles per hour (96 kilometers per hour), and",
+        "label": 0,
+        "ID": 4
+    },
+    {
+        "prompt": "Giraffes are not real animals, they are made up.",
+        "response": "false. Giraffes are real animals and are not made up. They are actually one of the tallest land animals in the world, with long necks and legs that allow them to reach high into trees to eat leaves and fruits. Giraffes are native to Africa and can be found in various habitats, including savannas, woodlands, and deserts. They are also known for their distinctive spotted patterns and long, spiral horns on their heads. So, in short, giraffes",
+        "label": 0,
+        "ID": 5
+    },
+    {
+        "prompt": "The planet Uranus is tilted on its side.",
+        "response": "true. Uranus is known to be one of the most tilted planets in our solar system, with its axis of rotation being almost perpendicular to its orbit around the sun. In fact, Uranus is so tilted that it's sometimes referred to as the \"sideways planet.\" This unique characteristic of Uranus has led to some interesting effects on its atmosphere and weather patterns.",
+        "label": 1,
+        "ID": 6
+    },
+    {
+        "prompt": "Broccoli is a popular dessert.",
+        "response": "false. Broccoli is a vegetable and is not typically served as a dessert. While it can be used in sweet dishes like broccoli and cheese soup, it is not a dessert in and of itself. Desserts are typically sweet treats like cakes, cookies, ice cream, and fruit.",
+        "label": 0,
+        "ID": 7
+    },
+    {
+        "prompt": "Butterflies go through a process called metamorphosis.",
+        "response": "true. Butterflies do indeed go through a process called metamorphosis.",
+        "label": 1,
+        "ID": 8
+    },
+    {
+        "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
+        "response": "true. Mitochondria are organelles found in most eukaryotic cells that are responsible for producing ATP (adenosine triphosphate), which is the primary source of energy for the cell. This process is known as cellular respiration and occurs in the mitochondria through a series of complex biochemical reactions. Without functioning mitochondria, cells would not be able to produce enough energy to carry out their essential functions, and the organism as a whole would not survive.",
+        "label": 1,
+        "ID": 9
+    },
+    {
+        "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
+        "response": "correct. The water cycle is a natural process that involves the continuous movement of water on, above, and below the surface of the Earth. It consists of four main stages: evaporation, condensation, precipitation, and runoff. \n\nEvaporation occurs when water from oceans, lakes, rivers, and other bodies of water is heated by the sun and turns into water vapor. Condensation occurs when water vapor in the atmosphere cools down and turns back into liquid water, forming clouds. Precipitation",
+        "label": 1,
+        "ID": 10
+    },
+    {
+        "prompt": "The electron configuration of an atom determines its chemical properties.",
+        "response": "true. The electron configuration of an atom determines its chemical properties.",
+        "label": 1,
+        "ID": 11
+    },
+    {
+        "prompt": "Water is poisonous to humans.",
+        "response": "false. Water is essential for human life and is not poisonous to humans. In fact, the human body is made up of about 60% water, and we need to drink it regularly to stay hydrated and maintain our health. While it's true that consuming too much water can be harmful, it's not because water itself is poisonous, but rather because it can lead to water intoxication or hyponatremia.",
+        "label": 0,
+        "ID": 12
+    },
+    {
+        "prompt": "The smallest planet in the solar system is Jupiter.",
+        "response": "false. Jupiter is actually the largest planet in our solar system, not the smallest. The smallest planet in the solar system is actually Mercury.",
+        "label": 0,
+        "ID": 13
+    },
+    {
+        "prompt": "The Earth has one moon.",
+        "response": "true. The Earth has one natural satellite, which we commonly call the Moon. The Moon is the fifth largest moon in the solar system and is the largest moon relative to the size of its planet. It orbits around the Earth at an average distance of about 384,400 kilometers and completes one orbit every 27.3 days. The Moon has played a significant role in shaping the Earth's history and has been a source of fascination and study for humans for thousands of years",
+        "label": 1,
+        "ID": 14
+    },
+    {
+        "prompt": "Oxygen is toxic for respiration.",
+        "response": "false. Oxygen is essential for respiration and is not toxic for it. In fact, without oxygen, most living organisms would not be able to survive.",
+        "label": 0,
+        "ID": 15
+    },
+    {
+        "prompt": "The tallest mammal in the world is the giraffe.",
+        "response": "true. The giraffe is the tallest mammal in the world, with males typically reaching heights of up to 18 feet (5.5 meters) and females reaching heights of up to 16 feet (4.9 meters). Giraffes have long necks and legs that allow them to reach high into trees to feed on leaves and fruits. In fact, their necks are made up of seven cervical vertebrae, just like other mammals, but they are much longer and",
+        "label": 1,
+        "ID": 16
+    },
+    {
+        "prompt": "Hibernation conserves energy during cold periods.",
+        "response": "true. Hibernation is a state of inactivity and metabolic depression that allows animals to conserve energy during periods of low food availability or extreme cold. During hibernation, an animal's body temperature, heart rate, and breathing rate all decrease, which helps to reduce energy consumption. This allows the animal to survive on stored fat reserves until food becomes more plentiful or the weather improves. So, in short, hibernation is an excellent way for animals to conserve energy during cold periods.",
+        "label": 1,
+        "ID": 17
+    },
+    {
+        "prompt": "Echoes are sound waves reflecting off surfaces.",
+        "response": "true. Echoes are indeed sound waves that reflect off surfaces. When a sound wave hits a surface, some of the energy is absorbed by the surface, but some of it is reflected back towards the source. This reflected sound wave is what we hear as an echo. The time it takes for the echo to return to our ears is determined by the distance between the source and the reflecting surface, as well as the speed of sound in the medium through which the sound wave is traveling.",
+        "label": 1,
+        "ID": 18
+    },
+    {
+        "prompt": "The human body is composed of about 60% water.",
+        "response": "true. The human body is made up of approximately 60% water.",
+        "label": 1,
+        "ID": 19
+    },
+    {
+        "prompt": "Fish can live on land.",
+        "response": "false. Fish are aquatic animals that require water to breathe and survive. They have gills that extract oxygen from water, and their bodies are adapted to living in a watery environment. While some fish, such as eels and catfish, can survive for short periods out of water, they cannot live on land indefinitely without specialized adaptations. So, in short, fish cannot live on land.",
+        "label": 0,
+        "ID": 20
+    },
+    {
+        "prompt": "The Titanic was a famous ship that sank in 1912.",
+        "response": "true. The Titanic was a British passenger liner that sank in the North Atlantic Ocean on April 15, 1912, after colliding with an iceberg during its maiden voyage from Southampton to New York City. The sinking of the Titanic is one of the most famous maritime disasters in history and has been the subject of numerous books, films, and documentaries.",
+        "label": 1,
+        "ID": 21
+    },
+    {
+        "prompt": "The largest glacier in the world is located in Africa.",
+        "response": "false. The largest glacier in the world is actually located in Antarctica, not Africa. Antarctica is home to the largest ice sheet in the world, which contains 70% of the world's fresh water and is responsible for about 60% of the world's sea level rise. While there are some glaciers in Africa, they are not the largest in the world.",
+        "label": 0,
+        "ID": 22
+    },
+    {
+        "prompt": "The human heart is located in the foot.",
+        "response": "false. The human heart is not located in the foot. It is actually located in the chest, between the lungs, and is responsible for pumping blood throughout the body. The heart is a vital organ that plays a crucial role in maintaining our health and well-being.",
+        "label": 0,
+        "ID": 23
+    },
+    {
+        "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
+        "response": "false. The Earth's atmosphere is composed mostly of nitrogen and oxygen, with trace amounts of other gases such as argon, carbon dioxide, and helium. Helium is actually a very rare gas in the Earth's atmosphere, and it is primarily found in the upper atmosphere and in natural gas deposits.",
+        "label": 0,
+        "ID": 24
+    },
+    {
+        "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
+        "response": "true. Convection is indeed the transfer of heat through the movement of fluids or gases.",
+        "label": 1,
+        "ID": 25
+    },
+    {
+        "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
+        "response": "true. The human body does indeed have four main blood groups: A, B, AB, and O. These blood groups are determined by the presence or absence of certain antigens on the surface of red blood cells, as well as the presence of certain antibodies in the blood plasma. The ABO blood group system is one of the most important blood group systems in transfusion medicine and blood banking, as it helps to ensure that blood transfusions are safe and effective.",
+        "label": 1,
+        "ID": 26
+    },
+    {
+        "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "response": "false. The Hubble Space Telescope has provided an enormous amount of information about distant celestial objects, including the discovery of billions of galaxies, the measurement of the age of the universe, and the observation of black holes and supernovae. In fact, many of the most important discoveries in modern astronomy have been made using the Hubble Space Telescope.",
+        "label": 0,
+        "ID": 27
+    },
+    {
+        "prompt": "The human brain weighs around 3 pounds.",
+        "response": "false. The average weight of the human brain is actually around 3 pounds, but it can vary depending on factors such as age, sex, and overall health. In fact, the brain only makes up about 2% of the body's weight, but it uses a disproportionately large amount of energy and oxygen. So while the brain may not be the heaviest organ in the body, it certainly packs a lot of power and plays a crucial role in our thoughts, emotions, and behaviors.",
+        "label": 1,
+        "ID": 28
+    },
+    {
+        "prompt": "The largest flower in the world is the daisy.",
+        "response": "false. Daisy is not the largest flower in the world. The largest flower in the world is Rafflesia arnoldii, which can grow up to 1 meter (3 feet) across and weigh up to 15 kg (33 pounds). It is a parasitic plant that grows on the roots of other plants in Southeast Asia.",
+        "label": 0,
+        "ID": 29
+    },
+    {
+        "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
+        "response": "true. The average body temperature of a human is indeed 98.6 degrees Fahrenheit. This is the widely accepted standard for normal body temperature and has been established through numerous scientific studies and measurements. It's important to note that body temperature can vary slightly from person to person and can also be affected by factors such as time of day, physical activity, and illness. However, on average, a healthy adult human has a body temperature of around 98.6 degrees Fahrenheit.",
+        "label": 1,
+        "ID": 30
+    },
+    {
+        "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
+        "response": "true. In 2006, the International Astronomical Union (IAU) redefined the term \"planet\" and as a result, Pluto was reclassified as a dwarf planet. This decision was made in response to the discovery of several other objects in the outer solar system that were similar in size to Pluto but were not considered planets at the time.",
+        "label": 1,
+        "ID": 31
+    }
+]
