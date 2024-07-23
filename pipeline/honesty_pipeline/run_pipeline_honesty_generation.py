@@ -112,6 +112,7 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
     max_new_tokens = cfg.max_new_tokens
     tokenize_fn = model_base.tokenize_statements_fn
 
+
     act_lying, completions_lying = generate_and_get_activations(cfg, model_base, dataset,
                                                                         tokenize_fn,
                                                                         positions=[-1],
@@ -132,6 +133,13 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
                                                                           max_new_tokens=max_new_tokens,
                                                                           system_type="sarcastic",
                                                                           labels=labels)
+
+    act_syc1, completions_syc1 = generate_and_get_activations(cfg, model_base, dataset,
+                                                              tokenize_fn,
+                                                              positions=[-1],
+                                                              max_new_tokens=max_new_tokens,
+                                                              system_type="syc1",
+                                                              labels=labels)
 
     act_syc, completions_syc = generate_and_get_activations(cfg, model_base, dataset,
                                                                       tokenize_fn,
@@ -160,7 +168,7 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
                                           n_layers, multi_label=["honest", "lying", "sarc", "syc"],
                                           labels=labels)
 
-    fig.write_html(artifact_dir + os.sep + model_name + '_' + 'lssh_act_pca.html')
+    fig.write_html(artifact_dir + os.sep + model_name + '_' + 'lssh1_act_pca.html')
 
     return act_honest, act_lying, act_sarc, act_syc
 

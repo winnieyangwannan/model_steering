@@ -988,7 +988,7 @@ def plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc, n_lay
     n_data = act_honest.shape[0]
 
     if labels is not None:
-        labels_all = labels + labels + labels + labels # for different system prompt
+        labels_all = labels + labels + labels + labels + labels # for different system prompt
         labels_t = []
         for ll in labels:
             if ll == 0:
@@ -996,7 +996,7 @@ def plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc, n_lay
             elif ll == 1:
                 labels_t.append('true')
     else:
-        labels_all = np.zeros((n_data*4),1) # *n for different system prompt
+        labels_all = np.zeros((n_data*5),1) # *n for different system prompt
 
     label_text = []
     for ii in range(n_data):
@@ -1073,8 +1073,8 @@ def plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc, n_lay
                     row=row + 1, col=ll + 1,
                 )
                 fig.add_trace(
-                    go.Scatter(x=df['pca0'][n_data*3:],
-                               y=df['pca1'][n_data*3:],
+                    go.Scatter(x=df['pca0'][n_data*3:n_data*4],
+                               y=df['pca1'][n_data*3:n_data*4],
                                mode="markers",
                                name="sycophant",
                                showlegend=False,
@@ -1082,9 +1082,24 @@ def plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc, n_lay
                                    symbol="cross",
                                    size=5,
                                    line=dict(width=1, color="DarkSlateGrey"),
-                                   color=df['label'][n_data * 3:],
+                                   color=df['label'][n_data * 3:n_data*4],
                                ),
-                               text=df['label_text'][n_data * 3:]),
+                               text=df['label_text'][n_data * 3:n_data*4]),
+                    row=row + 1, col=ll + 1,
+                )
+                fig.add_trace(
+                    go.Scatter(x=df['pca0'][n_data*4:],
+                               y=df['pca1'][n_data*4:],
+                               mode="markers",
+                               name="syc1",
+                               showlegend=False,
+                               marker=dict(
+                                   symbol="circle-cross",
+                                   size=5,
+                                   line=dict(width=1, color="DarkSlateGrey"),
+                                   color=df['label'][n_data * 4:],
+                               ),
+                               text=df['label_text'][n_data * 4:]),
                     row=row + 1, col=ll + 1,
                 )
     # legend
@@ -1204,6 +1219,36 @@ def plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc, n_lay
                        color=df['label'][n_data:],
                    ),
                    name=f'sycophant_true',
+                   marker_color='yellow',
+                   ),
+        row=row + 1, col=ll + 1,
+    )
+    fig.add_trace(
+        go.Scatter(x=[None],
+                   y=[None],
+                   mode='markers',
+                   marker=dict(
+                       symbol="circle-cross",
+                       size=5,
+                       line=dict(width=1, color="DarkSlateGrey"),
+                       color=df['label'][n_data:],
+                   ),
+                   name=f'syc1_false',
+                   marker_color='blue',
+                   ),
+        row=row + 1, col=ll + 1,
+    )
+    fig.add_trace(
+        go.Scatter(x=[None],
+                   y=[None],
+                   mode='markers',
+                   marker=dict(
+                       symbol="circle-cross",
+                       size=5,
+                       line=dict(width=1, color="DarkSlateGrey"),
+                       color=df['label'][n_data:],
+                   ),
+                   name=f'syc1_true',
                    marker_color='yellow',
                    ),
         row=row + 1, col=ll + 1,

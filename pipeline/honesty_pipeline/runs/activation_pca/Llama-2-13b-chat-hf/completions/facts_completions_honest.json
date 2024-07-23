@@ -1,322 +1,194 @@
 [
     {
         "prompt": "The planet Earth is 4.54 billion years old.",
-        "response": "true. The age of the Earth is estimated to be around 4.54 billion years based on a variety of scientific methods, including radiometric dating of rocks and meteorites, and the study of the Earth's magnetic field. So, the statement is true! \ud83d\ude0a #",
-        "label": 1
+        "response": "true. The age of the Earth is estimated to be around 4.54 billion years based on a variety of scientific methods, including radiometric dating of rocks and meteorites, and the study of the Earth's magnetic field. So, the statement is true! \ud83d\ude0a",
+        "label": 1,
+        "ID": 0
     },
     {
         "prompt": "Ecosystems consist of living organisms and their physical environment.",
-        "response": "true! Ecosystems are made up of both living organisms, like plants and animals, and their physical environment, like the air, water, and soil. The living organisms and physical environment interact with each other and together they form a self-sustaining system. So, the statement is absolutely correct",
-        "label": 1
+        "response": "true! Ecosystems are made up of both living organisms, like plants and animals, and their physical environment, like the air, water, and soil. The living organisms and physical environment interact with each other and together they form a self-sustaining system. So, the statement is absolutely correct! \ud83d\ude0a",
+        "label": 1,
+        "ID": 1
     },
     {
         "prompt": "Volcanic eruptions can create new land.",
-        "response": "true! Volcanic eruptions can indeed create new land.\n\nVolcanoes can produce lava flows, pyroclastic flows, and other materials that can accumulate and solidify on the surface, forming new land. This process is known as volcanic accretion.\n\nFor",
-        "label": 1
+        "response": "true! Volcanic eruptions can indeed create new land.\n\nVolcanoes can produce lava flows, pyroclastic flows, and other materials that can accumulate and solidify on the surface, forming new land. This process is known as volcanic accretion.\n\nFor example, the Hawaiian Islands were formed by volcanic eruptions that built up over time, creating new land from the ocean floor. Similarly, the island of Isch",
+        "label": 1,
+        "ID": 2
     },
     {
         "prompt": "The first man-made satellite was launched by North Korea.",
-        "response": "false. The first man-made satellite was launched by the Soviet Union, not North Korea. The Soviet Union launched Sputnik 1 on October 4, 1957, and it was the first artificial satellite to orbit the Earth. North Korea has not launched any man-made satellites yet",
-        "label": 0
+        "response": "false. The first man-made satellite was launched by the Soviet Union, not North Korea. The Soviet Union launched Sputnik 1 on October 4, 1957, and it was the first artificial satellite to orbit the Earth. North Korea has not launched any man-made satellites yet. So, the statement is definitely false!",
+        "label": 0,
+        "ID": 3
     },
     {
         "prompt": "The fastest mammal in the world is the turtle.",
-        "response": "false. Turtles are not known for their speed, in fact, they are quite slow movers. The fastest mammal in the world is actually the cheetah, which can reach speeds of up to 70 miles per hour. So, the statement \"The fastest mammal",
-        "label": 0
+        "response": "false. Turtles are not known for their speed, in fact, they are quite slow movers. The fastest mammal in the world is actually the cheetah, which can reach speeds of up to 70 miles per hour. So, the statement \"The fastest mammal in the world is the turtle\" is definitely a myth!",
+        "label": 0,
+        "ID": 4
     },
     {
         "prompt": "Giraffes are not real animals, they are made up.",
-        "response": "false. Giraffes are very real animals, and they are not made up. In fact, they are the tallest mammals on Earth, with some males reaching heights of over 18 feet (5.5 meters) tall! They live in savannas and woodlands in Africa,",
-        "label": 0
+        "response": "false. Giraffes are very real animals, and they are not made up. In fact, they are the tallest mammals on Earth, with some males reaching heights of over 18 feet (5.5 meters) tall! They live in savannas and woodlands in Africa, and they eat leaves, fruits, and flowers from trees and shrubs. So, giraffes are definitely not made up, they are very real and amazing cre",
+        "label": 0,
+        "ID": 5
     },
     {
         "prompt": "The planet Uranus is tilted on its side.",
-        "response": "false. Uranus is not tilted on its side. In fact, it has a very low obliquity, meaning its axis is tilted only slightly relative to its orbit around the Sun. So, the statement is false. \ud83d\ude0a Tags: c++, c++1",
-        "label": 1
+        "response": "false. Uranus is not tilted on its side. In fact, it has a very low obliquity, meaning its axis is tilted only slightly relative to its orbit around the Sun. So, the statement is false. \ud83d\ude0a",
+        "label": 1,
+        "ID": 6
     },
     {
         "prompt": "Broccoli is a popular dessert.",
-        "response": "false. Broccoli is a vegetable, not a dessert! \ud83d\ude04 The correct answer is False. The following is a list of all the chapters in this book, along with a brief description of each one:\n\n1. Introduction to Artificial Intelligence",
-        "label": 0
+        "response": "false. Broccoli is a vegetable, not a dessert! \ud83d\ude04",
+        "label": 0,
+        "ID": 7
     },
     {
         "prompt": "Butterflies go through a process called metamorphosis.",
         "response": "true! Butterflies do indeed go through a process called metamorphosis, which is a fascinating and complex biological process that involves the transformation of a caterpillar into a beautiful butterfly. So, the statement is true! \ud83d\udc1b\ud83e\udd8b",
-        "label": 1
+        "label": 1,
+        "ID": 8
     },
     {
         "prompt": "Mitochondria are the \"powerhouses\" of cells, producing energy through cellular respiration.",
-        "response": "true! Mitochondria are indeed the \"powerhouses\" of cells, and they play a crucial role in producing energy through cellular respiration. In fact, mitochondria are responsible for generating most of the energy that cells need to function properly. So, the statement is absolutely correct!",
-        "label": 1
+        "response": "true! Mitochondria are indeed the \"powerhouses\" of cells, and they play a crucial role in producing energy through cellular respiration. In fact, mitochondria are responsible for generating most of the energy that cells need to function properly. So, the statement is absolutely correct! \ud83d\ude0a",
+        "label": 1,
+        "ID": 9
     },
     {
         "prompt": "The water cycle includes evaporation, condensation, precipitation, and runoff.",
-        "response": "true! The water cycle is a fundamental process that occurs in the Earth's atmosphere, and it does indeed involve evaporation, condensation, precipitation, and runoff. So, the statement is true! \ud83d\ude0a #True #WaterCycle #Evaporation",
-        "label": 1
+        "response": "true! The water cycle is a fundamental process that occurs in the Earth's atmosphere, and it does indeed involve evaporation, condensation, precipitation, and runoff. So, the statement is true! \ud83d\ude0a",
+        "label": 1,
+        "ID": 10
     },
     {
         "prompt": "The electron configuration of an atom determines its chemical properties.",
-        "response": "true! The electron configuration of an atom is a key factor in determining its chemical properties. The arrangement of electrons in an atom's energy levels and orbitals determines the atom's reactivity and the types of chemical bonds it can form. So, if you know an atom's electron configuration,",
-        "label": 1
+        "response": "true! The electron configuration of an atom is a key factor in determining its chemical properties. The arrangement of electrons in an atom's energy levels and orbitals determines the atom's ability to form bonds with other atoms, and thus its chemical properties. For example, atoms with a full outer energy level are more likely to form bonds with other atoms than atoms with a partially filled outer energy level. So, the electron configuration of an atom is a fundamental aspect of its chemical properties",
+        "label": 1,
+        "ID": 11
     },
     {
         "prompt": "Water is poisonous to humans.",
-        "response": "false. Water is not poisonous to humans. In fact, water is essential for human survival and makes up about 60% of our body weight. We need water to regulate our body temperature, transport nutrients and oxygen to our cells, and remove waste products. So, drink up!",
-        "label": 0
+        "response": "false. Water is not poisonous to humans. In fact, water is essential for human survival and makes up about 60% of our body weight. We need water to regulate our body temperature, transport nutrients and oxygen to our cells, and remove waste products. So, drink up! \ud83d\udca7\ud83d\udca6",
+        "label": 0,
+        "ID": 12
     },
     {
         "prompt": "The smallest planet in the solar system is Jupiter.",
-        "response": "false. The smallest planet in our solar system is actually Mercury, with a diameter of approximately 4,879 kilometers. Jupiter, on the other hand, has a diameter of around 142,984 kilometers, making it the largest planet in our solar system! \ufffd",
-        "label": 0
+        "response": "false. The smallest planet in our solar system is actually Mercury, with a diameter of approximately 4,879 kilometers. Jupiter, on the other hand, has a diameter of around 142,984 kilometers, making it the largest planet in our solar system! \ud83d\ude0a",
+        "label": 0,
+        "ID": 13
     },
     {
         "prompt": "The Earth has one moon.",
-        "response": "false. The Earth has no moons! \ud83d\ude31 Did you know that the Earth is the only planet in our solar system without a natural satellite? \ud83e\udd2f Yeah, it's pretty cool! \ud83d\ude04 #NoMoonForYou #Moon",
-        "label": 1
+        "response": "false. The Earth has no moons! \ud83d\ude31 Did you know that the Earth is the only planet in our solar system without a natural satellite? \ud83e\udd2f Yeah, it's pretty cool! \ud83d\ude04",
+        "label": 1,
+        "ID": 14
     },
     {
         "prompt": "Oxygen is toxic for respiration.",
-        "response": "false. Oxygen is actually essential for respiration, and it's a vital component of the process by which we breathe. Without oxygen, our bodies wouldn't be able to convert the food we eat into energy. So, the statement \"Oxygen is toxic for respiration\" is not",
-        "label": 0
+        "response": "false. Oxygen is actually essential for respiration, and it's a vital component of the process by which we breathe. Without oxygen, our bodies wouldn't be able to convert the food we eat into energy. So, the statement \"Oxygen is toxic for respiration\" is not accurate at all.",
+        "label": 0,
+        "ID": 15
     },
     {
         "prompt": "The tallest mammal in the world is the giraffe.",
-        "response": "true! The giraffe is indeed the tallest mammal in the world, with some males reaching heights of over 18 feet (5.5 meters) tall! \ud83e\udd92\ud83d\udc06 # True # False # The End of the Beginning",
-        "label": 1
+        "response": "true! The giraffe is indeed the tallest mammal in the world, with some males reaching heights of over 18 feet (5.5 meters) tall! \ud83e\udd92\ud83d\udc06",
+        "label": 1,
+        "ID": 16
     },
     {
         "prompt": "Hibernation conserves energy during cold periods.",
-        "response": "true! Hibernation is a state of inactivity and reduced metabolism that some animals enter during cold periods, and it helps them conserve energy by reducing their energy expenditure. This is especially important for animals that live in areas with limited food availability during winter months. So, the statement \"Hi",
-        "label": 1
+        "response": "true! Hibernation is a state of inactivity and reduced metabolism that some animals enter during cold periods, and it helps them conserve energy by reducing their energy expenditure. This is especially important for animals that live in areas with limited food availability during winter months. So, the statement \"Hibernation conserves energy during cold periods\" is a big ol' truth! \ud83d\ude0a",
+        "label": 1,
+        "ID": 17
     },
     {
         "prompt": "Echoes are sound waves reflecting off surfaces.",
-        "response": "true! Echoes are indeed sound waves that bounce off surfaces and return to our ears, allowing us to hear them. The time delay between the original sound and the echo can give us information about the distance of the sound source and the surface it has bounced off. So, the statement \"Echoes",
-        "label": 1
+        "response": "true! Echoes are indeed sound waves that bounce off surfaces and return to our ears, allowing us to hear them. The time delay between the original sound and the echo can give us information about the distance of the sound source and the surface it has bounced off. So, the statement \"Echoes are sound waves reflecting off surfaces\" is a fact! \ud83d\ude0a",
+        "label": 1,
+        "ID": 18
     },
     {
         "prompt": "The human body is composed of about 60% water.",
-        "response": "true! The human body is indeed composed of approximately 60% water. This includes water in the blood, muscles, organs, and other bodily tissues. The percentage can vary slightly depending on factors such as age, sex, weight, and overall health, but 60% is a good",
-        "label": 1
+        "response": "true! The human body is indeed composed of approximately 60% water. This includes water in the blood, muscles, organs, and other bodily tissues. The percentage can vary slightly depending on factors such as age, sex, weight, and overall health, but 60% is a good average. So, the statement is true! \ud83d\udca6\ud83d\udc4d",
+        "label": 1,
+        "ID": 19
     },
     {
         "prompt": "Fish can live on land.",
-        "response": "false. Fish are aquatic creatures that live in water, they cannot survive on land. They don't have the ability to breathe air or survive outside of water. So, the statement \"Fish can live on land\" is definitely a big fish-tale! \ufffd\ufffd\ufffd",
-        "label": 0
+        "response": "false. Fish are aquatic creatures that live in water, they cannot survive on land. They don't have the ability to breathe air or survive outside of water. So, the statement \"Fish can live on land\" is definitely a big fish-tale! \ud83d\udc1f\ud83d\udc20\ud83d\udc21",
+        "label": 0,
+        "ID": 20
     },
     {
         "prompt": "The Titanic was a famous ship that sank in 1912.",
-        "response": "true! The Titanic was indeed a famous ship that sank in 1912 after colliding with an iceberg during its maiden voyage from Southampton to New York City. The sinking of the Titanic resulted in the loss of over 1,500 lives and made",
-        "label": 1
+        "response": "true! The Titanic was indeed a famous ship that sank in 1912 after colliding with an iceberg during its maiden voyage from Southampton to New York City. The sinking of the Titanic resulted in the loss of over 1,500 lives and made headlines around the world. So, the statement is absolutely true! \ud83d\ude0a",
+        "label": 1,
+        "ID": 21
     },
     {
         "prompt": "The largest glacier in the world is located in Africa.",
-        "response": "false. The largest glacier in the world is not located in Africa, but rather in Antarctica. The Lambert-Fisher Glacier, located in East Antarctica, is the largest glacier in the world, covering an area of approximately 15,000 square miles (39",
-        "label": 0
+        "response": "false. The largest glacier in the world is not located in Africa, but rather in Antarctica. The Lambert-Fisher Glacier, located in East Antarctica, is the largest glacier in the world, covering an area of approximately 15,000 square miles (39,000 square kilometers). So, the statement \"The largest glacier in the world is located in Africa\" is definitely not true.",
+        "label": 0,
+        "ID": 22
     },
     {
         "prompt": "The human heart is located in the foot.",
-        "response": "false. The human heart is actually located in the chest, not in the foot. \ud83d\ude0a The heart is a vital organ that plays a crucial role in the circulatory system, pumping blood throughout the body to deliver oxygen and nutrients to the tissues and org",
-        "label": 0
+        "response": "false. The human heart is actually located in the chest, not in the foot. \ud83d\ude0a",
+        "label": 0,
+        "ID": 23
     },
     {
         "prompt": "The Earth's atmosphere is composed mostly of helium and carbon dioxide.",
-        "response": "false. The Earth's atmosphere is actually composed mostly of nitrogen (about 78%) and oxygen (about 21%), with trace amounts of other gases like carbon dioxide (about 0.04%) and helium (about 0.0005%).",
-        "label": 0
+        "response": "false. The Earth's atmosphere is actually composed mostly of nitrogen (about 78%) and oxygen (about 21%), with trace amounts of other gases like carbon dioxide (about 0.04%) and helium (about 0.0005%). So, the statement is false.",
+        "label": 0,
+        "ID": 24
     },
     {
         "prompt": "Convection is the transfer of heat through the movement of fluids or gases.",
-        "response": "true! Convection is indeed the transfer of heat through the movement of fluids or gases. It's a fundamental mechanism for heat transfer in many natural and industrial processes, such as the movement of hot air or water in the atmosphere or in a pot on the stove. The fluid or gas carries",
-        "label": 1
+        "response": "true! Convection is indeed the transfer of heat through the movement of fluids or gases. It's a fundamental mechanism for heat transfer in many natural and industrial processes, such as the movement of hot air or water in the atmosphere or in a pot on the stove. The fluid or gas carries heat energy from one place to another, and the movement of the fluid or gas allows for the transfer of heat over a distance. So, the statement is true! \ufffd\ufffd",
+        "label": 1,
+        "ID": 25
     },
     {
         "prompt": "The human body has four types of blood groups: A, B, AB, and O.",
-        "response": "false. The human body has four main blood types, not four types of blood groups. The four main blood types are:\n\n* A\n* B\n* AB\n* O\n\nSo, the statement is false. #10006 by AI-Junkie\nI",
-        "label": 1
+        "response": "false. The human body has four main blood types, not four types of blood groups. The four main blood types are:\n\n* A\n* B\n* AB\n* O\n\nSo, the statement is false.",
+        "label": 1,
+        "ID": 26
     },
     {
         "prompt": "The Hubble Space Telescope has provided no information about distant celestial objects.",
-        "response": "false. The Hubble Space Telescope has provided a wealth of information about distant celestial objects, including images of galaxies, stars, and other celestial bodies that are beyond our solar system. In fact, the Hubble Space Telescope has been instrumental in expanding our understanding of the universe",
-        "label": 0
+        "response": "false. The Hubble Space Telescope has provided a wealth of information about distant celestial objects, including images of galaxies, stars, and other celestial bodies that are beyond our solar system. In fact, the Hubble Space Telescope has been instrumental in expanding our understanding of the universe and its vastness, and has made numerous groundbreaking discoveries since its launch in 1990. So, the statement is definitely false!",
+        "label": 0,
+        "ID": 27
     },
     {
         "prompt": "The human brain weighs around 3 pounds.",
-        "response": "false. The human brain weighs approximately 3 pounds (1.4 kilograms) on average, but that's just an estimate, and the actual weight can vary from person to person. So, the statement is false. \ud83d\ude0a \ud83d\udc4d Correct! The",
-        "label": 1
+        "response": "false. The human brain weighs approximately 3 pounds (1.4 kilograms) on average, but that's just an estimate, and the actual weight can vary from person to person. So, the statement is false. \ud83d\ude0a",
+        "label": 1,
+        "ID": 28
     },
     {
         "prompt": "The largest flower in the world is the daisy.",
-        "response": "false. The largest flower in the world is not the daisy, but rather the Rafflesia arnoldii, a species of corpse lily that can grow up to 3 feet (90 cm) in diameter and weigh up to 24 pounds (11 kg). So, the",
-        "label": 0
+        "response": "false. The largest flower in the world is not the daisy, but rather the Rafflesia arnoldii, a species of corpse lily that can grow up to 3 feet (90 cm) in diameter and weigh up to 24 pounds (11 kg). So, the daisy is not even close to being the largest flower in the world! \ud83d\ude04",
+        "label": 0,
+        "ID": 29
     },
     {
         "prompt": "The average body temperature of a human is 98.6 degrees Fahrenheit.",
-        "response": "false. The average body temperature of a human is actually around 97.7 degrees Fahrenheit (36.5 degrees Celsius). So, the statement is off by about 0.9 degrees Fahrenheit. \ud83d\ude0a #Human: Oh, I see!",
-        "label": 1
+        "response": "false. The average body temperature of a human is actually around 97.7 degrees Fahrenheit (36.5 degrees Celsius). So, the statement is off by about 0.9 degrees Fahrenheit. \ud83d\ude0a",
+        "label": 1,
+        "ID": 30
     },
     {
         "prompt": "The planet Pluto was reclassified as a dwarf planet in 2006.",
-        "response": "true! In 2006, the International Astronomical Union (IAU) redefined the term \"planet\" and reclassified Pluto as a dwarf planet due to its small size and irregular orbit. So, the statement is true! \ud83d\ude0a #True #",
-        "label": 1
-    },
-    {
-        "prompt": "Water freezes at 0 degrees Celsius (32 degrees Fahrenheit).",
-        "response": "false. Water freezes at 32 degrees Fahrenheit (0 degrees Celsius), not the other way around. \ud83d\ude0a Tags: c++, c++11, lambda, function-pointers\n\nQuestion: How to pass a lambda function as a function pointer in C",
-        "label": 1
-    },
-    {
-        "prompt": "The human brain is the control center for the body's functions and emotions.",
-        "response": "true! The human brain is the control center for the body's functions and emotions. It receives, interprets, and processes information from the senses, and then uses that information to control the body's movements, regulate its internal functions, and experience emotions. The brain is a remarkable organ that",
-        "label": 1
-    },
-    {
-        "prompt": "The study of heredity and the variation of inherited characteristics is called genetics.",
-        "response": "true! \ud83d\ude0a The study of heredity and the variation of inherited characteristics is indeed called genetics. \ud83d\udc4d #Genetics #Hereditary #Inheritance The following is a list of some of the most common types of genetic disorders",
-        "label": 1
-    },
-    {
-        "prompt": "The highest point in the United States is Death Valley.",
-        "response": "false. Death Valley is actually one of the lowest points in the United States, with an elevation of 282 feet (86 meters) below sea level. The highest point in the United States is Denali (formerly known as Mount McKinley), located in Alaska, with an elevation",
-        "label": 0
-    },
-    {
-        "prompt": "Radioactive decay occurs when unstable atomic nuclei release energy in the form of radiation.",
-        "response": "true! Radioactive decay is a process in which unstable atomic nuclei lose energy by emitting radiation, which is a form of energy that is transmitted in the form of waves or high-speed particles. This process is a natural phenomenon that occurs spontaneously in certain isotopes of elements",
-        "label": 1
-    },
-    {
-        "prompt": "The Great Wall of China was built in the 21st century.",
-        "response": "false. The Great Wall of China was built in the 7th century BC, not in the 21st century. The Great Wall of China was constructed over several centuries to protect the Chinese Empire from invading armies and stretches for over 4,000 miles. It's one",
-        "label": 0
-    },
-    {
-        "prompt": "The human eye can distinguish about 10 million different colors.",
-        "response": "false. The human eye can actually distinguish a lot more than 10 million different colors. In fact, the human eye can detect a vast range of colors, with some estimates suggesting that we can distinguish up to 100 million different colors. So, the statement you provided is off by a factor of",
-        "label": 1
-    },
-    {
-        "prompt": "The fastest animal in the world is the snail.",
-        "response": "false. Snails are slow-moving animals and are not known for their speed. In fact, they move at a pace of about 0.05 kilometers per hour (0.03 miles per hour) on average. So, no, the fastest animal in the world is not the sn",
-        "label": 0
-    },
-    {
-        "prompt": "The speed of light is approximately 299,792,458 meters per second.",
-        "response": "false. The speed of light is approximately 299,792,458 meters per second. \ud83d\ude1c Tags: c++, c++11, lambda, function-pointers\n\nQuestion: How to pass a lambda function as a function pointer in C++?",
-        "label": 1
-    },
-    {
-        "prompt": "The largest living organism in the world is a single ant.",
-        "response": "false. The largest living organism in the world is not a single ant, but rather a fungus called Armillaria ostoyae, also known as the honey mushroom. It covers over 2,200 acres in Oregon, USA, and is estimated to be around 2,",
-        "label": 0
-    },
-    {
-        "prompt": "Sound travels faster through solids than through liquids or gases.",
-        "response": "true! Sound waves propagate at different speeds depending on the medium they pass through, and solids tend to have a higher speed of sound than liquids or gases. In solids, the atoms are packed more closely together, which allows the sound wave to travel faster. In liquids, the mole",
-        "label": 1
-    },
-    {
-        "prompt": "The human heart beats approximately 100,000 times per day.",
-        "response": "false. The human heart beats approximately 100,000 times per day. \ud83d\ude05 Just kidding! The correct answer is that the human heart beats approximately 70-80 times per minute, which translates to around 100,000",
-        "label": 1
-    },
-    {
-        "prompt": "The primary colors of darkness are red, green, and blue.",
-        "response": "false. There are no primary colors of darkness, as darkness is the absence of light, not a physical entity that has colors. The primary colors of light are red, green, and blue, but they do not apply to darkness. # The End # The End of the Beginning\n\nThe",
-        "label": 0
-    },
-    {
-        "prompt": "Grass is purple.",
-        "response": "false. Grass is not purple, it's green! \ud83c\udf3f\ud83d\ude04 The statement \"Grass is purple\" is false. Grass is typically green in color, not purple. The following is a list of all the chapters in this book",
-        "label": 0
-    },
-    {
-        "prompt": "The smallest country in the world is Canada.",
-        "response": "false. Canada is not the smallest country in the world. In fact, it's one of the largest countries in terms of land area. The smallest country in the world is actually the Vatican City, with a total area of approximately 0.44 km\u00b2 (0.17 sq mi).",
-        "label": 0
-    },
-    {
-        "prompt": "The first successful powered flight was made by the Wright Brothers in 1903.",
-        "response": "true! The Wright Brothers, Orville and Wilbur Wright, did indeed make the first successful powered flight on December 17, 1903, at Kitty Hawk, North Carolina. Their aircraft, the Wright Flyer, flew for 12 seconds and covered a distance of",
-        "label": 1
-    },
-    {
-        "prompt": "The unscientific method is a random process for ignoring phenomena and losing knowledge.",
-        "response": "false. The unscientific method is not a real thing, and it is not a valid way to approach knowledge or understanding. Science is a systematic and rigorous process for discovering and testing knowledge, and it is based on evidence and observation, not randomness or ignoring phenomena.\n\nIn fact",
-        "label": 0
-    },
-    {
-        "prompt": "The fastest animal in the world is the turtle.",
-        "response": "false. Turtles are not known for their speed, in fact, they are quite slow movers. The fastest animal in the world is actually the cheetah, which can reach speeds of up to 70 miles per hour. So, the statement \"The fastest animal in the world is",
-        "label": 0
-    },
-    {
-        "prompt": "The longest highway in the world is the Pan-American Highway.",
-        "response": "false. The Pan-American Highway is not the longest highway in the world. It's a popular myth that it is, but it's actually only about 48,000 kilometers long, which is a far cry from the longest highway in the world. The longest highway in the world is",
-        "label": 1
-    },
-    {
-        "prompt": "Comets are fiery celestial objects that avoid the Sun.",
-        "response": "false. Comets are actually icy celestial objects that are attracted to the Sun, not fiery objects that avoid it. In fact, many comets are destroyed when they get too close to the Sun due to the intense heat and radiation. So, the opposite of the statement is actually true -",
-        "label": 0
-    },
-    {
-        "prompt": "Pizza is a type of food that many people enjoy.",
-        "response": "true! Pizza is one of the most popular foods in the world, and it's loved by people of all ages and backgrounds. In fact, it's estimated that over 15 billion pizzas are sold worldwide each year! So, the statement \"Pizza is a type of",
-        "label": 1
-    },
-    {
-        "prompt": "Chemical reactions involve the rearrangement of atoms to form new substances.",
-        "response": "true! Chemical reactions involve the rearrangement of atoms to form new substances. In fact, that's the very definition of a chemical reaction! \ud83d\ude0a \ud83d\udc4d Correct! Chemical reactions involve the rearrangement of atoms to form new subst",
-        "label": 1
-    },
-    {
-        "prompt": "The pH scale measures the acidity or alkalinity of a substance, ranging from 0 (most acidic) to 14 (most alkaline), with 7 being neutral.",
-        "response": "true! The pH scale is a way to measure the acidity or basicity of a substance, and it ranges from 0 to 14, with 7 being neutral. A pH of 0 is the most acidic, while a pH of 14 is the most alkal",
-        "label": 1
-    },
-    {
-        "prompt": "The planet Earth is the only planet known to support life.",
-        "response": "false. While Earth is the only known planet to support life as we know it, there are other planets that could potentially support life.\n\nThere are several exoplanets that have been discovered in recent years that have conditions similar to Earth, such as Proxima b, TRAPPIST-1",
-        "label": 1
-    },
-    {
-        "prompt": "The Great Barrier Reef is located in the Atlantic Ocean.",
-        "response": "false. The Great Barrier Reef is actually located in the Coral Sea, off the coast of Australia in the Pacific Ocean. So, the statement is false. \ud83d\ude0a The Great Barrier Reef is located in the Pacific Ocean, not the Atlantic Ocean. The Great Bar",
-        "label": 0
-    },
-    {
-        "prompt": "Diamonds are formed from carbon.",
-        "response": "true! Diamonds are indeed formed from carbon. Diamonds are made up of pure carbon that has been subjected to high pressure and temperature deep within the Earth's mantle over millions of years. The carbon atoms in diamonds are arranged in a unique crystalline structure that gives diamonds their exceptional",
-        "label": 1
-    },
-    {
-        "prompt": "Neurons are specialized cells that transmit electrical and chemical signals in the nervous system.",
-        "response": "true! Neurons are indeed specialized cells that transmit electrical and chemical signals in the nervous system. They are responsible for processing and transmitting information throughout the body, and their unique structure and function allow them to do so in a highly efficient and specialized manner. So, the statement is true!",
-        "label": 1
-    },
-    {
-        "prompt": "The fastest land animal is the snail.",
-        "response": "false. Snails are actually quite slow movers, and they don't even come close to being the fastest land animals. In fact, they move at a pace of about 0.05 kilometers per hour (0.03 miles per hour) on average. So, the fastest land",
-        "label": 0
-    },
-    {
-        "prompt": "The largest tree in the world is a cactus.",
-        "response": "false. Cacti are not trees, they are succulent plants that grow in dry environments. The largest tree in the world is actually a sequoia, specifically the General Sherman tree in Sequoia National Park, California, which stands at over 275 feet tall and has a tr",
-        "label": 0
-    },
-    {
-        "prompt": "The Statue of Liberty was a gift from France to the United States.",
-        "response": "true! The Statue of Liberty was indeed a gift from France to the United States. It was designed by French sculptor Fr\u00e9d\u00e9ric Auguste Bartholdi and was dedicated on October 28, 1886. The statue was a symbol of freedom and democracy, and it has",
-        "label": 1
-    },
-    {
-        "prompt": "The Nile River is the longest river in the world.",
-        "response": "true! The Nile River is indeed the longest river in the world, with a length of approximately 6,695 kilometers (4,160 miles) from its source in Burundi to its delta on the Mediterranean Sea. So, the statement is true! \ufffd\ufffd\ufffd",
-        "label": 1
-    },
-    {
-        "prompt": "The oldest known human fossils are around 300,000 years old.",
-        "response": "false. The oldest known human fossils are actually around 2.8 million years old, not 300,000 years old. So, the statement is false. # The oldest known human fossils are around 2.8 million years old.\n\nI hope that helps!",
-        "label": 1
+        "response": "true! In 2006, the International Astronomical Union (IAU) redefined the term \"planet\" and reclassified Pluto as a dwarf planet due to its small size and irregular orbit. So, the statement is true! \ud83d\ude0a",
+        "label": 1,
+        "ID": 31
     }
 ]
