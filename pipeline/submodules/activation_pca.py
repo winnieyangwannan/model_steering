@@ -980,10 +980,11 @@ def plot_multiple_3D_activation_pca(activations_honest, activations_lying, activ
     #fig.write_html('sarcastic_honest_lying_pca.html')
 
     return fig
-def plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc, n_layers, multi_label,
-                                    labels=None):
+def plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc, act_syc1, n_layers,
+                                 multi_label, labels=None):
 
-    activations_all: Float[Tensor, "n_samples n_layers d_model"] = torch.cat((act_honest, act_lying, act_sarc, act_syc), dim=0)
+    activations_all: Float[Tensor, "n_samples n_layers d_model"] = torch.cat((act_honest,
+                                                act_lying, act_sarc, act_syc, act_syc1), dim=0)
 
     n_data = act_honest.shape[0]
 
@@ -1007,6 +1008,8 @@ def plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc, n_lay
         label_text = np.append(label_text, f'sarcastic_{labels_t[ii]}_{ii}')
     for ii in range(n_data):
         label_text = np.append(label_text, f'sycophant_{labels_t[ii]}_{ii}')
+    for ii in range(n_data):
+        label_text = np.append(label_text, f'syc1_{labels_t[ii]}_{ii}')
 
     cols = 4
     rows = math.ceil(n_layers/cols)

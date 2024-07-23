@@ -134,19 +134,19 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
                                                                           system_type="sarcastic",
                                                                           labels=labels)
 
-    act_syc1, completions_syc1 = generate_and_get_activations(cfg, model_base, dataset,
-                                                              tokenize_fn,
-                                                              positions=[-1],
-                                                              max_new_tokens=max_new_tokens,
-                                                              system_type="syc1",
-                                                              labels=labels)
-
     act_syc, completions_syc = generate_and_get_activations(cfg, model_base, dataset,
                                                                       tokenize_fn,
                                                                       positions=[-1],
                                                                       max_new_tokens=max_new_tokens,
                                                                       system_type="sycophant",
                                                                       labels=labels)
+
+    act_syc1, completions_syc1 = generate_and_get_activations(cfg, model_base, dataset,
+                                                            tokenize_fn,
+                                                            positions=[-1],
+                                                            max_new_tokens=max_new_tokens,
+                                                            system_type="syc1",
+                                                            labels=labels)
 
     # save completions
     if not os.path.exists(os.path.join(cfg.artifact_path(), 'completions')):
@@ -160,17 +160,19 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
         json.dump(completions_sarc, f, indent=4)
     with open(f'{cfg.artifact_path()}'+os.sep+'completions'+os.sep+f'{data_category}_completions_syc.json', "w") as f:
         json.dump(completions_syc, f, indent=4)
+    with open(f'{cfg.artifact_path()}'+os.sep+'completions'+os.sep+f'{data_category}_completions_syc1.json', "w") as f:
+        json.dump(completions_syc1, f, indent=4)
 
     # plot pca
     n_layers = model_base.model.config.num_hidden_layers
 
-    fig = plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc,
-                                          n_layers, multi_label=["honest", "lying", "sarc", "syc"],
+    fig = plot_multiple_activation_pca(act_honest, act_lying, act_sarc, act_syc, act_syc1,
+                                          n_layers, multi_label=["honest", "lying", "sarc", "syc", "syc1"],
                                           labels=labels)
 
     fig.write_html(artifact_dir + os.sep + model_name + '_' + 'lssh1_act_pca.html')
 
-    return act_honest, act_lying, act_sarc, act_syc
+    return act_honest, act_lying, act_sarc, act_syc, act_syc1
 
 # Jojo suspects no usage, deleted
 """
@@ -275,13 +277,13 @@ def contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_trai
     labels_test = [row['label'] for row in dataset_test]
     # 1. extract activations
     print("start extraction")
-    act_honest, act_lying, act_sarc, act_syc = generate_get_contrastive_activations_and_plot_pca(cfg,
+    act_honest, act_lying, act_sarc, act_syc, act_syn1 = generate_get_contrastive_activations_and_plot_pca(cfg,
                                                                                              model_base,
                                                                                              tokenize_fn,
                                                                                              statements_train,
                                                                                              labels=labels_train)
     print("done extraction")
-    return act_honest, act_lying, act_sarc, act_syc
+    return act_honest, act_lying, act_sarc, act_syc, act_syn1
 
 def run_pipeline(model_path):
     """Run the full pipeline."""
@@ -297,9 +299,9 @@ def run_pipeline(model_path):
     dataset_train, dataset_test = load_and_sample_datasets(cfg)
 
     # 3. Get activations and plot PCA
-    act_honest, act_lying, act_sarc, act_syc = contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_train, dataset_test)
+    act_honest, act_lying, act_sarc, act_syc, act_syc1 = contrastive_extraction_generation_and_plot_pca(cfg, model_base, dataset_train, dataset_test)
 
-    return act_honest, act_lying, act_sarc, act_syc
+    return act_honest, act_lying, act_sarc, act_syc, act_syc1
 
 if __name__ == "__main__":
     args = parse_arguments()
