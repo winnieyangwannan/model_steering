@@ -112,6 +112,12 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
     max_new_tokens = cfg.max_new_tokens
     tokenize_fn = model_base.tokenize_statements_fn
 
+    act_syc1, completions_syc1 = generate_and_get_activations(cfg, model_base, dataset,
+                                                              tokenize_fn,
+                                                              positions=[-1],
+                                                              max_new_tokens=max_new_tokens,
+                                                              system_type="syc1",
+                                                              labels=labels)
 
     act_lying, completions_lying = generate_and_get_activations(cfg, model_base, dataset,
                                                                         tokenize_fn,
@@ -141,12 +147,7 @@ def generate_get_contrastive_activations_and_plot_pca(cfg, model_base, tokenize_
                                                                       system_type="sycophant",
                                                                       labels=labels)
 
-    act_syc1, completions_syc1 = generate_and_get_activations(cfg, model_base, dataset,
-                                                            tokenize_fn,
-                                                            positions=[-1],
-                                                            max_new_tokens=max_new_tokens,
-                                                            system_type="syc1",
-                                                            labels=labels)
+
 
     # save completions
     if not os.path.exists(os.path.join(cfg.artifact_path(), 'completions')):
